@@ -10,9 +10,8 @@ const Home = () => {
     <>
       <div>
         <Header/>
-        {/* <h1>This is Home page</h1> */}
         <AboutUs />
-       <WhyUs/>
+        <WhyUs/>
       </div>
     </>
   )

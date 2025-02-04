@@ -34,7 +34,9 @@ const Services = () => {
       <div className="service-content">
         <h1>Our Services</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi velit ipsum, hic sapiente iusto laudantium laborum a sunt deserunt. 
+        we believe that innovation is the cornerstone of progress. 
+          As a next-generation software company, we are dedicated to crafting tailored IT solutions that empower 
+          businesses to thrive in a digitally-driven world.
         </p>
       </div>
       

@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 
 import './App.css'
 import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
@@ -10,12 +8,12 @@ import About from './Pages/About.jsx';
 import Services from './Pages/Services/Services.jsx';
 import Project1 from './Pages/Projects/Project1.jsx';
 import Footer from './Components/Footer.jsx';
-
+import AboutUs from './Components/AboutUs.jsx'
+import WhyUs from './Components/WhyUs.jsx';
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -34,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

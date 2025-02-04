@@ -1,0 +1,47 @@
+body{
+    background-color: aliceblue;
+    color: black;
+    
+}
+.Container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+   /* Button Styling */
+
+.Aboutredirect{
+ 
+
+    background-color: blue; /* Default button color */
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 400px;
+}
+
+/* Hover Effect */
+.Aboutredirect:hover {
+    background-color: black; /* Change to black on hover */
+}
+.TextContent{
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.aboutusimg{
+    width: 50%;
+    height: 500px;
+    float: right;
+    flex: 1;
+    text-align: center;
+
+
+}

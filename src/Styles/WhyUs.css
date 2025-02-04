@@ -1,0 +1,30 @@
+body{
+    background-color: aliceblue;
+    color: black;
+    
+}
+.Container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.whyus{
+    width: 50%;
+    height: 500px;
+    float: right;
+    flex: 1;
+    text-align: center;
+
+
+}
+.TextContent{
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+h4{
+    color: blue;
+}

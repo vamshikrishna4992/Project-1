@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar"; // Import the Navbar component
 import "../Styles/Header.css";
-import Services from "./Services";
+
 
 const Header = () => {
   return (

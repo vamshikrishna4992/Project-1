@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 
 import './App.css'
 import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
@@ -10,10 +8,12 @@ import About from './Pages/About.jsx';
 // import Services from './Pages/Services/Services.jsx';
 import Project1 from './Pages/Projects/Project1.jsx';
 import Footer from './Components/Footer.jsx';
+
 import SoftwareDevelopment from './Pages/Services/SoftwareDevelopment.jsx';
 import ItStaffing from './Pages/Services/ItStaffing.jsx';
 import CloudServices from './Pages/Services/CloudServices.jsx';
 import DigitalMarketing from './Pages/Services/DigitalMarketing.jsx';
+
 
 
 function App() {
@@ -40,4 +40,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

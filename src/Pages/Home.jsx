@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from '../Components/Navbar.jsx'
+import React from 'react';
+import Services from '../Components/Services.jsx'
+
 const Home = () => {
   return (
-    <>
-      <div>
-        <h1>This is Home page</h1>
-      </div>
-    </>
+    <div>
+      <h1>Home</h1>
+      <Services/>
+    </div>
   )
 }
 

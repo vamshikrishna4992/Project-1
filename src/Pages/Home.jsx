@@ -6,6 +6,7 @@ import WhyUs from '../Components/WhyUs.jsx'
 import Footer from '../Components/Footer.jsx'
 import Email from '../Components/Email.jsx'
 import Testimonials from '../Components/Testimonials.jsx'
+import Project from '../Components/Project.jsx'
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <div>
         <Header />
         <Services/>
+        <Project/>
         <AboutUs/>
         <WhyUs />
         <Testimonials />

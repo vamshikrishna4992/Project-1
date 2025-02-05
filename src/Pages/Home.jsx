@@ -4,8 +4,10 @@ import AboutUs from '../Components/AboutUs.jsx'
 import Services from '../Components/Services.jsx'
 import WhyUs from '../Components/WhyUs.jsx'
 import Footer from '../Components/Footer.jsx'
-import Team from '../Components/Team.jsx'
+import Email from '../Components/Email.jsx'
+import Testimonials from '../Components/Testimonials.jsx'
 import Project from '../Components/Project.jsx'
+
 
 const Home = () => {
   return (
@@ -16,7 +18,8 @@ const Home = () => {
         <Project/>
         <AboutUs/>
         <WhyUs />
-        <Team />
+        <Testimonials />
+        <Email/>
         <Footer />
       </div>
     </>

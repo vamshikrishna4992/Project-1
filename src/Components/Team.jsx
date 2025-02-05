@@ -1,7 +1,9 @@
 import React from "react";
-import { FaTwitter, FaInstagram, FaGithub, FaLinkedinIn, FaMailBulk, FaEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion"; // Import Framer Motion
+import { FaInstagram, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import "../Styles/Team.css";
-import teamMember from '../assets/images/team-member.jpg'
+import teamMember from "../assets/images/team-member.jpg";
+import { useNavigate } from "react-router-dom";
 
 const teamMembers = [
   {
@@ -59,13 +61,44 @@ const teamMembers = [
 ];
 
 const Team = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
-    <section className="team-section">
-      <h2 className="team-heading">Our Team</h2>
-      <div className="team-container">
-        {teamMembers.map((member) => (
-          <div key={member.id} className="team-card">
+    <motion.section
+      className="team-section"
+      initial={{ opacity: 0, y: 50 }} // Whole section starts hidden & slightly below
+      whileInView={{ opacity: 1, y: 0 }} // Fades in & moves up when in view
+      transition={{ duration: 1 }}
+      viewport={{ once: true }} // Ensures it animates only once
+    >
+      {/* Heading Animation */}
+      <motion.h2
+        className="team-heading"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        Our Team
+      </motion.h2>
+
+      {/* Team Cards Animation */}
+      <motion.div
+        className="team-container"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
+        {teamMembers.map((member, index) => (
+          <motion.div
+            key={member.id}
+            className="team-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+          >
             <div className="team-image">
               <img src={member.image} alt={member.name} />
             </div>
@@ -85,14 +118,24 @@ const Team = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      <button className="team-button" onClick={() => navigate("/teams")}>
+      {/* Button Animation */}
+      <motion.button
+        className="team-button"
+        onClick={() => navigate("/teams")}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
         View All Team Members
-      </button>
-    </section>
+      </motion.button>
+    </motion.section>
   );
 };
 

@@ -18,7 +18,7 @@ const About = () => {
       </div>
       <div className='Digital'>
         <h3>Spearheading The Digital Transformation.</h3>
-        <p>KrystalNest IT Solutions Pvt. Ltd. is a visionary startup software company founded in December 2024 by the dynamic entrepreneur Mr. 
+        <p>KrystalNest IT Solutions Pvt. Ltd. is a visionary startup software company founded in December 2024 by the dynamic entrepreneur Mr. 
             Vamshi Krishna Goud,, who serves as the Founder and CEO. Based in the thriving tech hub of Madhapur, Hyderabad, India, KrystalNest is 
             designed to bridge the gap between traditional IT services and modern, innovative software solutions. With a passion for delivering 
             cutting edge digital transformations, the company is poised to become a leading name in the global IT landscape.</p>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {FaXTwitter} from 'react-icons/fa6'
 import "../Styles/Footer.css";
 
 const Footer = () => {
@@ -26,7 +27,7 @@ const Footer = () => {
               <FaLinkedin className="social-icon" />
             </a>
             <a href="https://x.com/krystalnestit" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="social-icon" />
+              <FaXTwitter className="social-icon" />
             </a>
             <a href="https://www.instagram.com/krystalnest/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="social-icon" />

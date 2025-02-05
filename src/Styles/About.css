@@ -1,5 +1,5 @@
-/* AboutUs Container */
-.AboutContainer {
+/* WhyUs Section */
+.WhyUs {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,12 +8,12 @@
     margin: auto;
     background-color: #000; /* Black Background */
     color: #fff; /* White text */
-    flex-direction: row-reverse; /* Moves image to the right */
+    flex-direction: row; /* Image on the right, text on the left */
     font-family: 'Poppins', sans-serif;
 }
 
 /* Image Styling */
-.aboutusimg {
+.whyusimg {
     width: 50%;
     max-width: 500px;
     height: auto;
@@ -22,7 +22,8 @@
     transition: transform 0.4s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.aboutusimg:hover {
+.whyusimg:hover {
+    transform: scale(1.08) rotate(3deg);
     filter: brightness(100%);
     box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
 }
@@ -41,68 +42,56 @@
     letter-spacing: 1.5px;
 }
 
+/* H4 Styling */
+.TextContent h4 {
+    font-size: 22px;
+    color: #ffcc00; /* Yellow */
+    margin-top: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.TextContent h4:hover {
+    color: #ff6600; /* Turns Orange on Hover */
+    transform: translateX(5px);
+}
+
+/* Paragraph Styling */
+.TextContent p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #ccc; /* Light gray for readability */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.TextContent p:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
 /* Custom Colors */
 .white-text {
     color: white;
 }
 
 .gold-text {
-    color: #ffcc00;
-}
-
-/* Button Styling */
-.Aboutredirect {
-    background: linear-gradient(90deg, #ffcc00, #ff9900);
-    color: black;
-    border: none;
-    padding: 12px 28px;
-    font-size: 17px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Button Hover Effect */
-.Aboutredirect::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: left 0.5s ease;
-}
-
-.Aboutredirect:hover::before {
-    left: 100%;
-}
-
-.Aboutredirect:hover {
-    background: linear-gradient(90deg, #ff9900, #ff6600);
-    transform: translateY(-4px);
-    box-shadow: 0px 7px 20px rgba(255, 204, 0, 0.4);
+    color: #ffcc00; /* Gold */
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .AboutContainer {
+    .WhyUs {
         padding: 30px;
     }
 }
 
 @media (max-width: 768px) {
-    .AboutContainer {
+    .WhyUs {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
 
-    .aboutusimg {
+    .whyusimg {
         width: 90%;
         max-width: none;
     }
@@ -117,8 +106,7 @@
         font-size: 28px;
     }
 
-    .Aboutredirect {
-        padding: 10px 20px;
-        font-size: 15px;
+    .TextContent p {
+        font-size: 16px;
     }
 }

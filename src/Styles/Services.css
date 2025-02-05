@@ -6,7 +6,6 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    align-self: center;
   }
   
   .slider img {
@@ -27,6 +26,7 @@
     cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
+    z-index: 10;
   }
   
   .prev {
@@ -40,34 +40,38 @@
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+  } */
   .service-container{
-    /* background: linear-gradient(to right, black, rgb(43, 16, 69) 50%, #9b59b6); */
+    background: linear-gradient(to right, black, rgb(43, 16, 69) 50%, #9b59b6);
     display: flex;
-    height: 70vh;
-    align-content: center;
   }
-  .service-container .service-content{
-    width: 50%;
+   .service-container .service-content{
     color: azure;
     padding-left: 25px;
-    align-content: center;
+  } 
+  .service-container .service-content h1 span{
+    color: goldenrod;
+  }
+  .service-container .service-content p{
     text-align: center;
+    line-height: 1.5;
   }
   .service-container .service-slider{
-    width: 50%;
+    width: 100%;
   }
   .service-container .service-slider img{
     width: 100%;
     height: 300px;
   }
 
-  .service-slider {
+  /* .service-slider {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Adjust based on your design */
+    max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
+    
+    border: 2px solid skyblue;
   }
   
   .image-container {
@@ -81,7 +85,7 @@
   
   .image-title {
     position: absolute;
-    bottom: 10px; /* Position it at the bottom of the image */
+    bottom: 10px;  
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -111,7 +115,71 @@
   
   .next {
     right: 10px;
-  }
-  .service-container .service-content h1{
+  } */
+  /* .service-container .service-content h1{
     color: goldenrod;
+  } */
+  .services-card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    z-index: 2;
+    justify-content: center;
   }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card-rows {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Make sure z-index is respected */
+    z-index: 4;
+    /* box-shadow: 5px 0px 10px 0px #FFD700; */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-rows:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-rows img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card-rows h5 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .card-rows button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-rows button:hover {
+    background-color: gold;
+  }
+  

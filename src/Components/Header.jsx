@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "./Navbar"; // Import the Navbar component
 import "../Styles/Header.css";
+import gsap from 'gsap'
 
 
 const Header = () => {

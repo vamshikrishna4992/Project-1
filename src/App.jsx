@@ -6,10 +6,10 @@ import Contact from './Pages/Contact.jsx';
 import About from './Pages/About.jsx';
 import Project1 from './Pages/Projects/Project1.jsx';
 
-import SoftwareDevelopment from './Pages/SoftwareDevelopment.jsx';
-import ItStaffing from './Pages/ItStaffing.jsx';
+// import SoftwareDevelopment from './Pages/SoftwareDevelopment.jsx';
+// import ItStaffing from './Pages/ItStaffing.jsx';
 import CloudServices from './Pages/CloudServices.jsx';
-import DigitalMarketing from './Pages/DigitalMarketing.jsx';
+// import DigitalMarketing from './Pages/DigitalMarketing.jsx';
 
 
 
@@ -26,10 +26,10 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
 
         {/* submenu routes  */}
-        <Route path="/software-development" element={<SoftwareDevelopment />} />
-        <Route path="/it-staffing" element={<ItStaffing />} />
+        {/* <Route path="/software-development" element={<SoftwareDevelopment />} /> */}
+        {/* <Route path="/it-staffing" element={<ItStaffing />} /> */}
         <Route path="/cloud-services" element={<CloudServices />} />
-        <Route path="/digital-marketing" element={<DigitalMarketing />} />
+        {/* <Route path="/digital-marketing" element={<DigitalMarketing />} /> */}
       </Routes>
     </Router>
     </>

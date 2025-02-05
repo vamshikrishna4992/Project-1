@@ -6,6 +6,7 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    align-self: center;
   }
   
   .slider img {
@@ -41,8 +42,10 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
   .service-container{
-    background: linear-gradient(to right, black, rgb(43, 16, 69) 50%, #9b59b6);
+    /* background: linear-gradient(to right, black, rgb(43, 16, 69) 50%, #9b59b6); */
     display: flex;
+    height: 70vh;
+    align-content: center;
   }
   .service-container .service-content{
     width: 50%;

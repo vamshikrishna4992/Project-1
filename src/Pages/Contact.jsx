@@ -1,11 +1,11 @@
 import React from 'react';
-import Services from '../Components/Services.jsx';
+import Navbar from '../Components/Navbar.jsx';
+import '../Styles/Contact.css'
 
 const Contact = () => {
   return (
-    <div>
-       <h1>This is Contact page</h1>
-       <Services/>
+    <div className='contact-container'>
+       <Navbar/>
     </div>
   )
 }

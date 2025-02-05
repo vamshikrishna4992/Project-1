@@ -1,12 +1,9 @@
-import React from 'react'
-import AboutUs from '../Components/AboutUs'
-import WhyUs from '../Components/WhyUs'
+import React from 'react';
+import Navbar from '../Components/Navbar.jsx'
 const About = () => {
   return (
     <>
-      <h1>This is About page</h1>
-      <AboutUs />
-      <WhyUs />
+      <Navbar/>
     </>
   )
 }

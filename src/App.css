@@ -1,5 +1,4 @@
-body{
-  margin: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
+/* Apply Poppins to the entire website */
+* {
+  font-family: 'Poppins', sans-serif;
 }

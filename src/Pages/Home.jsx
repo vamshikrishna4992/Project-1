@@ -5,6 +5,7 @@ import Services from '../Components/Services.jsx'
 import WhyUs from '../Components/WhyUs.jsx'
 import Footer from '../Components/Footer.jsx'
 import Team from '../Components/Team.jsx'
+import Project from '../Components/Project.jsx'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <div>
         <Header />
         <Services/>
+        <Project/>
         <AboutUs/>
         <WhyUs />
         <Team />

@@ -1,4 +1,4 @@
-import "../Styles/AboutUs.css";
+import "../Styles/OurMission.css";
 import img1 from '../assets/images/aboutimg.jpg';
 
 const AboutUs = () => {
@@ -7,15 +7,13 @@ const AboutUs = () => {
       <img className="aboutusimg" src={img1} alt="About Us Image" /> 
 
       <div className="TextContent">
-        <h3>About us</h3>
+        <h3>Our Mission</h3>
         <p><b>
-          At KrystalNest IT Solutions Pvt. Ltd., we believe that innovation is the cornerstone of progress. 
-          As a next-generation software company, we are dedicated to crafting tailored IT solutions that empower 
-          businesses to thrive in a digitally-driven world.
-        </b></p>
-        <a href="about">
-          <button type="button" className="Aboutredirect">Read More</button>
-        </a>
+        Our Mission is to serve as a strategic partner to our customers from various 
+        industry verticals and offer cost-effective, reliable and high-quality IT 
+        solutions and services leveraging our proven methodology and tools, 
+        experienced resources and thought leadership        </b></p>
+        
       </div>
     </div>
   );

@@ -5,14 +5,13 @@
     justify-content: space-between;
     gap: 30px;
     padding: 50px;
-    /* max-width: 1200px; */
     margin: auto;
     background-color: #000; /* Black Background */
     color: #fff; /* White text */
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
     flex-direction: row-reverse; /* Moves image to the right */
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Image Styling */
@@ -20,13 +19,13 @@
     width: 50%;
     max-width: 500px;
     height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    filter: brightness(90%);
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out, filter 0.3s ease-in-out;
+    filter: brightness(90%) contrast(1.1);
 }
 
 .aboutusimg:hover {
-    transform: scale(1.05);
+    transform: scale(1.08) rotate(2deg);
     filter: brightness(100%);
 }
 
@@ -40,9 +39,11 @@
 }
 
 .TextContent h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 15px;
     color: #ffcc00; /* Gold Color */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 /* Button Styling */
@@ -50,19 +51,37 @@
     background: linear-gradient(90deg, #ffcc00, #ff9900);
     color: black;
     border: none;
-    padding: 12px 25px;
-    font-size: 16px;
+    padding: 12px 28px;
+    font-size: 17px;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+.Aboutredirect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.5s ease;
+}
+
+.Aboutredirect:hover::before {
+    left: 100%;
 }
 
 .Aboutredirect:hover {
     background: linear-gradient(90deg, #ff9900, #ff6600);
-    transform: translateY(-3px);
-    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0px 7px 20px rgba(255, 204, 0, 0.4);
 }
 
 /* Keyframe Animations */
@@ -83,17 +102,36 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .AboutContainer {
+        padding: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .AboutContainer {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 
     .aboutusimg {
-        width: 100%;
+        width: 90%;
+        max-width: none;
     }
 
     .TextContent {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .TextContent h3 {
+        font-size: 28px;
+    }
+
+    .Aboutredirect {
+        padding: 10px 20px;
+        font-size: 15px;
     }
 }

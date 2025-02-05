@@ -1,72 +1,103 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../Styles/Footer.css"; // Import an external CSS file
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {FaXTwitter} from 'react-icons/fa6'
+import "../Styles/Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer-container">
-      {/* Company Name */}
-      <div className="footer-brand">
-        <Link to="/">
-          <img src="KN.png" alt="KN Logo" className="logo" />
-        </Link>
-        <h1>
-          <Link to="/" className="brand-name">
-            KrystalNest
-          </Link>
-        </h1>
+      <div className="footer-content">
+        {/* Left Side: Logo & Social Links */}
+        <div className="footer-left">
+          <div className="footer-brand">
+            <Link to="/">
+              <img src="KN.png" alt="KN Logo" className="logo" />
+            </Link>
+            <h1>
+              <Link to="/" className="brand-name">
+                KrystalNest
+              </Link>
+            </h1>
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="footer-social">
+            <a href="https://www.linkedin.com/company/krystalnest/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="social-icon" />
+            </a>
+            <a href="https://x.com/krystalnestit" target="_blank" rel="noopener noreferrer">
+              <FaXTwitter className="social-icon" />
+            </a>
+            <a href="https://www.instagram.com/krystalnest/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        {/* Right Side: Links */}
+        <div className="footer-right">
+          {/* Our Services */}
+          <div className="footer-links">
+            <h3>OUR SERVICES</h3>
+            <ul>
+              <li><Link to="/it-staffing">IT Staffing</Link></li>
+              <li><Link to="/software-development">Software Development</Link></li>
+              <li><Link to="/digital-marketing">Digital Marketing</Link></li>
+              <li><Link to="/cloud-solutions">Cloud Solutions</Link></li>
+            </ul>
+          </div>
+
+          {/* Projects */}
+          <div className="footer-links">
+            <h3>PROJECTS</h3>
+            <ul>
+              <li><Link to="/devops">DevOps</Link></li>
+              <li><Link to="/python">Python</Link></li>
+              <li><Link to="/full-stack">Full Stack</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact Us */}
+          <div className="footer-contact">
+            <h3>CONTACT US</h3>
+            <ul>
+              {/* Phone Link */}
+              <li>
+                <a href="tel:+918923898349" className="contact-link">
+                  <FaPhoneAlt className="contact-icon" /> 8923898349
+                </a>
+              </li>
+
+              {/* Email Link */}
+              <li>
+                <a href="mailto:hr@krystalnest.com" className="contact-link">
+                  <FaEnvelope className="contact-icon" /> hr@krystalnest.com
+                </a>
+              </li>
+
+              {/* Google Maps Link for Address */}
+              <li>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Silicon+Valley,+Madhapur,+Hyderabad,+Telangana"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-link"
+                >
+                  <FaMapMarkerAlt className="contact-icon" /> Silicon Valley, Madhapur, Hyderabad, Telangana.
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      
-      <div className="footer-grid">
-        {/* Quick Links */}
-        <div className="footer-links">
-          <h3>QUICK LINKS</h3>
-          <ul>
-            {/* <li><Link to="/">Home</Link></li> */}
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </div>
 
-        {/* Social Links */}
-        <div className="footer-links">
-          <h3>SOCIAL</h3>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </li>
-          </ul>
-        </div>
+      {/* Horizontal Line */}
+      <hr className="footer-divider" />
 
-        {/* Contact Info */}
-        <div className="footer-contact">
-          <h3>CONTACT</h3>
-          <p>info@krystalnest.com</p>
-          <p>Silicon Valley, Madhapur, Hyderabad, Telangana.</p>
-        </div>
-
-        {/* Policy Links */}
-        <div className="footer-links">
-          <h3>POLICY</h3>
-          <ul>
-            <li><Link to="/terms">Terms & Conditions</Link></li>
-            <li><Link to="/privacy">Privacy Policy</Link></li>
-            <li><Link to="/accessibility">Accessibility Statement</Link></li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Copyright */}
+      {/* Copyright Section */}
       <div className="footer-copyright">
-        <p>© 2025 by KrystalNest IT Solutions Pvt, Ltd.</p>
+        <p>© All Rights Reserved @ KrystalNest IT Solutions Pvt, Ltd.</p>
       </div>
     </footer>
   );

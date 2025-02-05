@@ -3,7 +3,9 @@ import Services from '../Components/Services.jsx';
 import Header from '../Components/Header.jsx'
 import OurMission from '../Components/OurMission.jsx'
 import Footer from '../Components/Footer.jsx'
-import Team from '../Components/Team.jsx'
+import Email from '../Components/Email.jsx'
+import Testimonials from '../Components/Testimonials.jsx'
+
 
 const Home = () => {
   return (
@@ -11,8 +13,9 @@ const Home = () => {
       <div>
         <Header />
         <Services/>
-        <OurMission/>
-        <Team />
+        <OurMission />
+        <Testimonials />
+        <Email />
         <Footer />
       </div>
     </>

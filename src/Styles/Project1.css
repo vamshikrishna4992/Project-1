@@ -1,0 +1,15 @@
+.contact-banner {
+    background: url('../assets/images/contactus-bg.jpeg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .contact-banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .contact-banner p {
+    font-size: 1.2rem;
+  }

@@ -6,6 +6,7 @@ const Services = () => {
     <div>
       <Navbar/>
       <h1>This is Service Page</h1>
+      <Footer/>
     </div>
   )
 }

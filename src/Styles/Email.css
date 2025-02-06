@@ -38,7 +38,7 @@
 
 .email-input:focus,
 .email-input:not(:placeholder-shown) {
-    color: #f0a500;
+    /* color: #f0a500; */
     outline: none;
     border-color: #f0a500;
 }

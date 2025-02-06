@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
-import {FaXTwitter} from 'react-icons/fa6'
+import { FaXTwitter } from 'react-icons/fa6'
 import "../Styles/Footer.css";
 
 const Footer = () => {
@@ -20,7 +20,11 @@ const Footer = () => {
               </Link>
             </h1>
           </div>
-
+          <div className="tag-line">
+            <p>KrystalNest, we weave innovation with
+              precision, Building digital nests for endless
+              ambition.</p>
+          </div>
           {/* Social Media Icons */}
           <div className="footer-social">
             <a href="https://www.linkedin.com/company/krystalnest/" target="_blank" rel="noopener noreferrer">
@@ -39,7 +43,7 @@ const Footer = () => {
         <div className="footer-right">
           {/* Our Services */}
           <div className="footer-links">
-            <h3>OUR SERVICES</h3>
+            <h3>SERVICES</h3>
             <ul>
               <li><Link to="/it-staffing">IT Staffing</Link></li>
               <li><Link to="/software-development">Software Development</Link></li>

@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 import Navbar from '../../Components/Navbar';
 import gsap from "gsap";
 import '../../Styles/CloudServices.css';
-import { div } from "framer-motion/client";
 import WhyChoose from "../../Components/WhyChoose.jsx";
 
 
@@ -50,7 +49,6 @@ const CloudServices = () => {
 
 
 const Unlock = ()=>{
-
   return(
     <>
           

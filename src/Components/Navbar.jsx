@@ -96,17 +96,17 @@ const Navbar = () => {
             <Link to='/services' onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
             {isSubmenuOpen && (
               <ul className="submenu">
-                <li onClick={() => handleNavigation('/services/software-development')}>Software Development</li>
-                <li onClick={() => handleNavigation('/services/it-staffing')}>IT Staffing</li>
-                <li onClick={() => handleNavigation('/services/cloud-services')}>Cloud Services</li>
-                <li onClick={() => handleNavigation('/services/digital-marketing')}>Digital Marketing</li>
+                <li onClick={() => handleNavigation('/software-development')}>Software Development</li>
+                <li onClick={() => handleNavigation('/it-staffing')}>IT Staffing</li>
+                <li onClick={() => handleNavigation('/cloud-services')}>Cloud Services</li>
+                <li onClick={() => handleNavigation('/digital-marketing')}>Digital Marketing</li>
               </ul>
             )}
           </li>
           <li><Link to='/projects' onClick={() => setIsMobileMenuOpen(false)}>Projects</Link></li>
         </ul>
         <ul>
-          <li className="contact-btn"><Link to='/contact' onClick={() => setIsMobileMenuOpen(false)}>Contact</Link></li>
+          <li className="contact-btn"><Link to='/contact' onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link></li>
         </ul>
       </div>
     </nav>

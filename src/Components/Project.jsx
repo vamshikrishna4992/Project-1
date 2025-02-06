@@ -1,12 +1,13 @@
-import React from 'react';
+
 import '../Styles/Project.css';
 
 function Project() {
   return (
     <div className="project-container">
     <div className="project-content">
-     <h1>Our <span>Project</span></h1>
+     <h1>Our <span>Services</span></h1>
      <p> 
+     we believe that innovation is the cornerstone of progress. 
           As a next-generation software company, we are dedicated to crafting tailored IT solutions that empower 
           businesses to thrive in a digitally-driven world.</p>
      </div>

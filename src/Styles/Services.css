@@ -1,12 +1,11 @@
-/* .service-slider {
-  position: relative;
-  width: 100%;
-  max-width: 800px; 
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+.service-slider {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
   
   .slider img {
@@ -44,8 +43,7 @@
   } */
   .service-container{
     background: linear-gradient(to right, black, rgb(43, 16, 69) 50%, #9b59b6);
-    height: 100vh;
-    position: relative;
+    display: flex;
   }
    .service-container .service-content{
     color: azure;

@@ -1,32 +1,38 @@
-import { useState } from 'react'
-
 
 import './App.css'
 import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
-import Navbar from './Components/Navbar.jsx';
 import Home from './Pages/Home.jsx'
 import Contact from './Pages/Contact.jsx';
 import About from './Pages/About.jsx';
-import Services from './Pages/Services/Services.jsx';
-import Project1 from './Pages/Projects/Project1.jsx';
 import Footer from './Components/Footer.jsx';
+// import Project1 from './Pages/Projects/Project1.jsx';
 
+import SoftwareDevelopment from './Pages/services/SoftwareDevelopment.jsx';
+import ItStaffing from './Pages/services/ItStaffing.jsx';
+import DigitalMarketing from './Pages/services/DigitalMarketing.jsx';
+import Services from './Pages/Services/Services.jsx';
+import CloudServices from './Pages/Services/CloudServices.jsx';
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
     <Router>
-      <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/services' element={<Services/>}/>
-        <Route path='/Projects' element={<Project1/>}/>
+        {/* <Route path='/Projects' element={<Project1/>}/> */}
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+
+        {/* submenu routes  */}
+        <Route path="/software-development" element={<SoftwareDevelopment />} />
+        <Route path="/it-staffing" element={<ItStaffing />} />
+        <Route path="/cloud-services" element={<CloudServices />} />
+        <Route path="/digital-marketing" element={<DigitalMarketing />} />
       </Routes>
       <Footer/>
     </Router>
@@ -34,4 +40,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

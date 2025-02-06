@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../../Components/Navbar';
 
 const Services = () => {
   return (
     <div>
-       <h1>This is services page</h1>
+      <Navbar/>
+      <h1>This is Service Page</h1>
     </div>
   )
 }

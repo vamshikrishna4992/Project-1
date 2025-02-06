@@ -1,0 +1,87 @@
+.project-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-color: black;
+}
+
+.project-container .project-content h1 span {
+    color: goldenrod;
+}
+
+.project-container .project-content p {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.project-card {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-rows {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Ensures button can be positioned relative to card */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1; /* Ensure the card is above the background */
+}
+
+.project-rows:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    z-index: 2; /* Bring the hovered card above others */
+}
+
+.project-rows img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-rows h5 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Initially hide the button */
+.hover-button {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 10px; /* Position the button near the bottom */
+    left: 50%;
+    transform: translateX(-50%) translateY(30px); /* Position the button slightly below the bottom edge */
+    background-color: white;
+    color: rgb(247, 207, 12);
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease;
+    z-index: 3; /* Make sure button is on top of the card */
+}
+
+/* On hover of .project-rows, show the button */
+.project-rows:hover .hover-button {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); /* Move the button to the bottom edge */
+    transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
+}
+
+/* Hover effect on the button */
+.hover-button:hover {
+    border-color: goldenrod;
+}

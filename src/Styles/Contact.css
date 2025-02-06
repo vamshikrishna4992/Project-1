@@ -83,7 +83,7 @@
   margin-right: 10px;
 }
 
-button {
+.contact-button {
   display: block;
   width: 20%;
   padding: 10px;
@@ -95,7 +95,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.contact-button:hover {
   background-color: #c6c5c5;
 }
 

@@ -3,17 +3,17 @@ import ReactPlayer from 'react-player';
 import Footer from '../Components/Footer.jsx';
 import Navbar from '../Components/Navbar.jsx';
 import vedio from '../assets/images/Messaging.mp4';
+import BannerImg from '../assets/images/wmremove-transformed.jpeg'
 import Fundamental from '../assets/images/6-steps-creative-business-infographics-design-template.png';
 
-// Team Images
-import team1 from '../assets/images/Group 1000003006.png';
-import team2 from '../assets/images/Group 1000003007.png';
-import team3 from '../assets/images/Group 1000003008.png';
-import team4 from '../assets/images/Group 1000003009.png';
-import team5 from '../assets/images/Group 1000003010.png';
+// Data Array
+import image1 from '../assets/images/5.jpg';
+import image2 from '../assets/images/5.jpg';
+import image3 from '../assets/images/5.jpg';
+import image4 from '../assets/images/5.jpg';
+import image5 from '../assets/images/5.jpg';
 
-// Team Members Array (Only Images)
-const teamMembers = [team1, team2, team3, team4, team5];
+
 
 const About = () => {
   return (
@@ -22,6 +22,9 @@ const About = () => {
 
       {/* Banner Section */}
       <div className='Banner'>
+        <div className="Banner-Img">
+          <img src={ BannerImg }/>
+        </div>
       <div className="sub-banner">
       <div className="line"></div>
        <div className="Banner-Content">
@@ -48,9 +51,13 @@ const About = () => {
       </div>
 
       {/* Fundamental Principles Section */}
+      <div className='Fundamental-Banner'>
+      <h3>Fundamental Principles</h3>
+      </div>
       <div className='Fundamental'>
+
+      <img src={Fundamental} alt="Fundamental Principles" />
         <div className="Fundamental-Content">
-          <h3>Fundamental Principles</h3>
           <p>
             At KrystalNest IT Solutions Pvt. Ltd., we believe that innovation is the cornerstone of progress. As a next-generation software company, 
             we are dedicated to crafting tailored IT solutions that empower businesses to thrive in a digitally-driven world. Though we are new to 
@@ -58,22 +65,86 @@ const About = () => {
             in their operations.
           </p>
         </div>
-        <img src={Fundamental} alt="Fundamental Principles" />
+        
       </div>
 
       {/* Our Team Section - Only Images */}
-      <div className='Our-Team'>
-        <h3>Our Team</h3>
-        <div className="OurTeamContainer">
-          <div className="TeamGrid">
-            {teamMembers.map((image, index) => (
-              <div className="TeamCard" key={index}>
-                <img src={image} alt={`Team Member ${index + 1}`} />
-              </div>
-            ))}
+      <div className="Our-Team">
+        <h2>Our Team</h2> 
+        
+             <div className="main-container">
+
+        <div className="container">
+        
+          <div className="image-container">
+            <img src={image1}  />
           </div>
+          <div className="content">
+            <h3>This is the Name</h3>
+            <p>this is the designation</p>
+            
+          </div>
+
+          
+
+        </div>
+        <div className="container">
+        
+          <div className="image-container">
+            <img src={image2}  />
+          </div>
+          <div className="content">
+            <h3>This is the Name</h3>
+            <p>this is the designation</p>
+            
+          </div>
+
+          
+
+        </div>
+        <div className="container">
+        
+        <div className="image-container">
+          <img src={image3}  />
+        </div>
+        <div className="content">
+          <h3>This is the Name</h3>
+          <p>this is the designation</p>
+          
+        </div>
+
+        
+
+      </div>
+      <div className="container">
+        
+        <div className="image-container">
+          <img src={image4}  />
+        </div>
+        <div className="content">
+          <h3>This is the Name</h3>
+          <p>this is the designation</p>
+          
         </div>
       </div>
+      <div className="container">
+        <div className="image-container">
+          <img src={image5}  />
+        </div>
+        <div className="content">
+          <h3>This is the Name</h3>
+          <p>this is the designation</p>
+          
+        </div>
+
+        
+
+      </div>
+
+    </div>
+    </div>
+
+     
 
 <Footer />
     </div>

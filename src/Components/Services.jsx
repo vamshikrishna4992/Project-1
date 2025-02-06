@@ -41,22 +41,7 @@ const Services = () => {
         </p>
       </div> 
       
-      {/* Slider with titles */}
-      {/* <div className="service-slider">
-        <button className="prev" onClick={prevSlide}>
-          &#10094;
-        </button>
-        
-        
-        <div className="image-container">
-          <img src={images[currentIndex].src} alt={`Slide ${currentIndex + 1}`} />
-          <div className="image-title">{images[currentIndex].title}</div>
-        </div>
-
-        <button className="next" onClick={nextSlide}>
-          &#10095;
-        </button>
-      </div> */}
+    
       <div className="services-card">
         <div className="cards">
         <div className="card-rows">

@@ -1,8 +1,7 @@
-import React from 'react'
+
+import Services from '../Components/Services.jsx';
 import Header from '../Components/Header.jsx'
-import AboutUs from '../Components/AboutUs.jsx'
-import Services from '../Components/Services.jsx'
-import WhyUs from '../Components/WhyUs.jsx'
+import OurMission from '../Components/OurMission.jsx'
 import Footer from '../Components/Footer.jsx'
 import Email from '../Components/Email.jsx'
 import Testimonials from '../Components/Testimonials.jsx'
@@ -13,13 +12,13 @@ const Home = () => {
   return (
     <>
       <div>
-        <Header />
+        <Header/>
         <Services/>
-        <Project/>
-        <AboutUs/>
-        <WhyUs />
+        <OurMission />
+        <Project />
         <Testimonials />
-        <Email/>
+        
+        <Email />
         <Footer />
       </div>
     </>

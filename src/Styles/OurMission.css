@@ -10,6 +10,7 @@
     color: #fff; /* White text */
     flex-direction: row-reverse; /* Moves image to the right */
     font-family: 'Poppins', sans-serif;
+    height: 50vh;
 }
 
 /* Image Styling */

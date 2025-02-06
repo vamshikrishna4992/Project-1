@@ -85,7 +85,7 @@ body {
 .aboutusimg {
     width: 50%;
     max-width: 500px;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     filter: brightness(90%);
@@ -175,7 +175,7 @@ body {
 .cloud-sec-coontainer{
     background-color: #000;
     padding: 1%;
-    height: 300px;
+    height: 600px;
 }
 
  
@@ -187,39 +187,48 @@ body {
 
 
 .cloud-approach-main-container{
-    border: 2px solid yellow;
+    padding: 20px;
+    background-color: #e8b541;
+    font-weight: bold;
 }
 
 .cloud-approach-container{
-    border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding: 20px;
+    padding: 50px;
     gap: 30px;
-    margin-top: 20%;
+    row-gap: 100px;
     width: 80%;
-    /* margin: auto; */
+    margin: auto;
     align-self: center;
-
-    
-
+}
+.cloud-approach-main-container h2{
+    text-align: center;
+    color: #000;
+    font-size: xx-large;
 }
 .cloud-approach-sub{
-border: 2px solid blue;
-background-color: #FFD54F;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color: #d9d9d9;
+color: black;
 border-radius: 100%;
-width: 40%;
-height: 130px;
+width: 50%;
+height: 160px;
 text-align: center;
 padding: 50px;
 margin: auto;
-
+align-content: center;
+}
+.cloud-approach-sub:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .cloud-approach-sub img{
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
+}
+.cloud-approach-sub p{
+font-weight: 500;
 }
 
 
 /* ******************Appoch end ***************** */
-  

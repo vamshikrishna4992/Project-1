@@ -1,0 +1,26 @@
+.cloud-why-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    column-gap: 120px;
+    background-color: #e8b541;
+    padding-bottom: 20px;
+}
+.cloud-why-container .cloud-why-sub{
+   border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* height: 18vh; */
+}
+.cloud-why-container .cloud-why-sub:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.answer{
+    font-weight: lighter;
+    padding-left: 10px;
+}

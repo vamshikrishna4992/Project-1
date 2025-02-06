@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from '../../Components/Navbar';
 
 const Services = () => {
   return (
     <div>
-      This is Service Page
+      <Navbar/>
+      <h1>This is Service Page</h1>
     </div>
   )
 }

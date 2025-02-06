@@ -27,7 +27,6 @@
 .footer-brand {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 
 .footer-brand .logo {
@@ -47,12 +46,17 @@
   color: #f0a500;
 }
 
+.tag-line p{
+  text-align: justify;
+  width: 80%;
+}
+
 /* Social Icons */
 .footer-social {
   display: flex;
   gap: 15px;
   margin-top: 15px;
-  align-self: center;
+  /* align-self: center; */
 }
 
 .social-icon {
@@ -76,7 +80,7 @@
 .footer-links h3,
 .footer-contact h3 {
   font-size: 20px;
-  color: #f0a500;
+  color: #fff;
   position: relative;
   padding-bottom: 8px;
 }
@@ -137,7 +141,7 @@
 
 .contact-icon {
   font-size: 18px;
-  color: #f0a500;
+  color: #fff;
 }
 
 .contact-link {

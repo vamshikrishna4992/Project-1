@@ -1,3 +1,196 @@
-.Banner{
-    background-image: url(src\assets\images\wmremove-transformed.jpeg);
+.About-Container {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #000;
+    /* padding: 0 20px; */
+}
+
+/* Banner Section (Background Image) */
+.Banner {
+    background-image: url('../assets/images/wmremove-transformed.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    position: relative;
+}
+
+.Banner-Content {
+    /* background: rgba(255, 40, 40, 0.6); */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    /* margin-left: 10%; */
+    width: 400px;
+    /* display: flex; */
+}
+
+/* .Banner-Content::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: yellow;
+    margin-left: 10px;
+} */
+.sub-banner{
+    /* background: rgba(0, 0, 0, 0.6); */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 10%;
+    display: flex;
+}
+.line{
+    height: 200px;
+    border: 2px solid yellow;
+    width: 4px;
+    background-color: yellow;
+    
+}
+.Banner-Content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.Banner-Content h1:hover {
+    color: orange;
+}
+
+.Banner-Content h4 {
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.Banner-Content h4:hover {
+    color: orange;
+}
+
+/* Digital Transformation Section */
+.Digital {
+    text-align: center;
+    padding: 50px;
+}
+
+.Digital h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.Digital h3 span {
+    color: yellow;
+}
+
+.Digital p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Video Section */
+.VideoSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Fundamental Principles Section */
+.Fundamental {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.Fundamental img {
+    width: 50%;
+    height: auto;
+}
+
+.Fundamental-Content {
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.Fundamental-Content h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.Fundamental-Content h3:hover {
+    color: orange;
+    transform: scale(1.05);
+}
+
+/* Our Team Section */
+.Our-Team {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.OurTeamContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TeamGrid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.TeamCard {
+    background-color: #d3d3d3;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.TeamCard:hover {
+    transform: scale(1.1);
+}
+
+.TeamCard img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/* Adjusted Placeholder Position */
+.TeamLabel {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Lowered the placeholder */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.TeamLabel:hover {
+    background-color: orange;
+    color: white;
+    transform: translateY(3px);
 }

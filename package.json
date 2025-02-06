@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "framer-motion": "^12.2.0",
+    "framer-motion": "^12.3.1",
     "gsap": "^3.12.7",
     "project-1": "file:",
     "react": "^18.3.1",

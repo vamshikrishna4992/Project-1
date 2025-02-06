@@ -4,6 +4,7 @@ import Navbar from '../../Components/Navbar';
 import gsap from "gsap";
 import '../../Styles/CloudServices.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
+import Footer from "../../Components/Footer.jsx";
 
 
 const CloudServices = () => {
@@ -105,6 +106,7 @@ const Approach = ()=>{
     </div>
     <WhyChoose/>
     </div>
+    <Footer/>
     </>
   )
 }

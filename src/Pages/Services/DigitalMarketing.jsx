@@ -3,6 +3,7 @@ import Navbar from '../../Components/Navbar';
 import gsap from "gsap";
 import '../../Styles/DigitalMarketing.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
+import Footer from "../../Components/Footer.jsx";
 
 const DigitalMarketing = () => {
 
@@ -42,6 +43,7 @@ const DigitalMarketing = () => {
     </div>
     <DigUnlock/>
     <DgApproach/>
+    <Footer/>
    </>
   )
 }

@@ -36,7 +36,7 @@ const Header = () => {
         <p className="description">
           "We build digital products and ecosystems that will support and grow your business seamlessly at any scale."
         </p>
-        <button ref={buttonRef} className="get-started">
+        <button ref={buttonRef} className="head-get-started">
           Contact Us <span>→</span>
         </button>
       </div>

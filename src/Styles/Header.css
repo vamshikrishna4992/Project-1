@@ -48,7 +48,7 @@ body {
         margin-bottom: 25px;
       }
       
-      .get-started {
+      .head-get-started {
         margin-top: 20px;
         padding: 12px 24px;
         background: gold;
@@ -67,18 +67,16 @@ body {
         margin-left: 30%;
       }
       
-      .get-started span {
+      .head-get-started span {
         font-size: 1.5rem;
       }
-     .get-started:hover{
+     .head-get-started:hover{
         color: gold;
         font-weight: bold;
         background-color: #0f0f0f;
         border: 0.5px solid gold;
         background-color: black;
       }
-
-      
       .description {
         margin-top: 20px;
         font-size: 1.1rem;

@@ -5,6 +5,13 @@ import gsap from "gsap";
 import '../../Styles/CloudServices.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
 import Footer from "../../Components/Footer.jsx";
+import approach4 from '../../assets/images/approach4.png';
+import approach2 from '../../assets/images/approach2.png'
+import approach1 from '../../assets/images/approach1.png'
+import approach3 from '../../assets/images/approach3.png'
+import approach5 from '../../assets/images/approach5.png'
+import approach6 from '../../assets/images/approach6.png';
+import cloudInfo from '../../assets/images/cloud-info.png'
 
 
 const CloudServices = () => {
@@ -58,7 +65,7 @@ const Unlock = ()=>{
         <h2>Unlocking the Power of <span>Cloud Services</span></h2>
       </div>
      <div className="AboutContainer"> {/* Changed class name */}
-          <img className="aboutusimg" src='cloud-info.png' alt="About Us Image" /> 
+          <img className="aboutusimg" src={cloudInfo} alt="About Us Image" /> 
 
           <div className="TextContent">
             
@@ -83,12 +90,12 @@ const Unlock = ()=>{
 
 const Approach = ()=>{
  const  cloudapproaches = [
-  {icon:'approach4',content:'Implement robust data backup and recovery strategies'},
-  {icon:'approach2',content:'Encrypt data at rest and in transit'},
-  {icon:'approach5',content:'Continuously monitor and adapt to evolving threats'},
-  {icon:'approach6',content:'Leverage cloud provider security features'},
-  {icon:'approch2',content:'Regularly update and patch systems'},
-  {icon:'approach3',content:'Implement cloud security monitoring and logging'}
+  {icon:approach4,content:'Implement robust data backup and recovery strategies'},
+  {icon:approach2,content:'Encrypt data at rest and in transit'},
+  {icon:approach5,content:'Continuously monitor and adapt to evolving threats'},
+  {icon:approach6,content:'Leverage cloud provider security features'},
+  {icon:approach1,content:'Regularly update and patch systems'},
+  {icon:approach3,content:'Implement cloud security monitoring and logging'}
 
  ]
  
@@ -99,7 +106,7 @@ const Approach = ()=>{
     <div className="cloud-approach-container">
     {cloudapproaches.map((approach, index) => (
        <div className="cloud-approach-sub" key={index}>
-        <img src={`/${approach.icon}.png`} alt={approach.icon} />
+        <img src={`${approach.icon}`} alt={approach.icon} />
         <p>{approach.content}</p>
        </div>
     ))}

@@ -85,7 +85,7 @@ body {
       .head-get-started span {
         font-size: 1.5rem;
       }
-     .head-get-started:hover{
+     .get-started:hover{
         color: gold;
         font-weight: bold;
         background-color: #0f0f0f;

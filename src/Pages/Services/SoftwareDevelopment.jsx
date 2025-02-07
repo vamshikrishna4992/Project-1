@@ -4,6 +4,12 @@ import gsap from "gsap";
 import "../../Styles/SoftwareDevelopment.css";
 import Footer from "../../Components/Footer";
 import WhyChoose from "../../Components/WhyChoose";
+import icon1 from '../../assets/images/icon1.svg'; 
+import icon2 from '../../assets/images/icon2.svg'; 
+import icon3 from '../../assets/images/icon3.svg'; 
+import icon4 from '../../assets/images/icon4.svg'; 
+import icon5 from '../../assets/images/icon5.svg'; 
+import icon6 from '../../assets/images/icon6.svg'; 
 
 const SoftwareDevelopment = () => {
   const textRef = useRef(null);
@@ -90,15 +96,12 @@ const UnlockSoftware = () => {
 
 const SoftwareApproach = () => {
   const content = [
-    { title: "Handle increased traffic and data", image: "icon-1.svg" },
-    { title: "Designed according to needs", image: "icon-2.svg" },
-    { title: "flow of goods, information, and resources", image: "icon-3.svg" },
-    { title: "scalable solutions", image: "icon-4.svg" },
-    { title: "Fully responsive and optimized", image: "icon-5.svg" },
-    {
-      title: "We identify and fix bugs to ensure a flawless",
-      image: "icon-6.svg",
-    },
+    { title: "Handle increased traffic and data", image: icon1 },
+    { title: "Designed according to needs", image:icon2 },
+    { title: "flow of goods, information, and resources", image: icon3},
+    { title: "scalable solutions", image: icon4 },
+    { title: "Fully responsive and optimized", image: icon5},
+    {title: "We identify and fix bugs to ensure a flawless",image: icon6,},
   ];
 
   return (

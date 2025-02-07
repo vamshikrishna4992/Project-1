@@ -66,6 +66,17 @@ body {
         text-align: start;
         margin-left: 30%;
       }
+
+      /* .head-get-started:hover{
+        color: white;
+      } */
+      .head-get-started a{
+        text-decoration: none;
+        color: black;
+      }
+      .head-get-started a:hover{
+        color: white;
+      }
       
       .head-get-started span {
         font-size: 1.5rem;

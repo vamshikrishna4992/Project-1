@@ -13,7 +13,6 @@
   right: 0;
   z-index: 1000;
 }
-
 /* Logo */
 .logo {
   display: flex;
@@ -40,6 +39,7 @@
   display: flex;
   gap: 30px;
   align-items: center;
+  font-weight: 400;
 }
 
 .nav-links li {
@@ -105,23 +105,41 @@
   cursor: pointer;
 }
 /* Contact Button */
-.contact-btn {
-  background-color: black;
+.nav-contact-btn  {
   width: 100px;
-  height: 30px;
+  height: 25px;
   align-content: center;
-  color: white;
-  padding: 8px 16px;
+  align-items: center;
+  background-color: black;
+  /* color: white; */
   border: 0.5px solid gold;
+  padding: 8px 16px;
   border-radius: 20px;
   cursor: pointer;
   list-style: none;
   text-decoration: none;
 }
+.nav-contact-btn .contactus:hover{
+  color: black;
+  background-color: gold;
+}
+.nav-contact-btn:hover{
+  /* color: black; */
+  background-color: gold;
+}
+.all-nav-links .nav-contact-btn:hover{
+  /* border: 2px solid red; */
+  color: black;
+}
 
-.contact-btn a {
+.nav-contact-btn .contactus {
   text-decoration: none;
-  color: rgb(255, 254, 254);
+  color:white;
+  font-weight: lighter;
+  /* border: 2px solid red; */
+  width: fit-content;
+  align-items: center;
+  
 }
 
 /* Navigation Alignment */
@@ -246,8 +264,51 @@
 
 .navbar {
   font-weight: bold;
-  color: white;
   text-align: center;
   animation: fadeSlide 1.0s ease-in-out;
 }
 
+
+
+
+
+
+/* Contact Button */
+.nav-contact-btn {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black; /* Updated background color */
+  border: 0.5px solid gold;
+  border-radius: 25px;
+  cursor: pointer;
+  list-style: none;
+  /* transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; */
+}
+
+.nav-contact-btn .contactus {
+  text-decoration: none;
+  color: yellow; /* Updated text color */
+  font-weight: lighter;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: color 0.1s ease-in-out; */
+}
+
+/* Hover Effects */
+.nav-contact-btn:hover {
+  background-color: gold;
+}
+
+.nav-contact-btn:hover .contactus {
+  color: black;
+  background-color: gold;
+  border: 0.5px solid gold;
+}

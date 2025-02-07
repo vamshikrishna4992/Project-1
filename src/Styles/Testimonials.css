@@ -1,7 +1,7 @@
 .testimonials-section {
     background-color: black;
     text-align: center;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     background-image: url('../assets/images/testimonials-bg.jpg'); /* Set your background image here */
     background-size: cover;
     background-position: center;

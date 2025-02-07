@@ -1,6 +1,9 @@
-import React from 'react';
+
 import '../Styles/project.css';
 import { Link } from 'react-router-dom';
+import Project1 from '../assets/images/dm-devops-tools-20-top-tools-for-successful-devops-768x498 3.png';
+import Project2 from '../assets/images/full-stack-web-development 3.png'
+import Project3 from '../assets/images/what is python 2088x125213.png'
 
 function Project() {
   return (
@@ -14,25 +17,27 @@ function Project() {
    <div className='project-cards'>
     <div className='cards'>
     <div className='card-rows'>
-      <img src = 'card1.jpeg' alt=''/>
-      <h5>Your vision our code</h5>
+      <img src = {Project2} alt=''/>
+      <h5>A smart IoT-based home
+        automation system
+        for modern living.</h5>
       <Link to="/Projects"><button>know more</button></Link>
     </div>
     <div className='card-rows'>
-      <img src = 'card2.jpeg' alt=''/>
-      <h5>Your business elevated by the cloud</h5>
+      <img src = {Project1} alt=''/>
+      <h5>An innovative AI-driven solution
+        for predictive analytics
+        in healthcare.</h5>
       <Link to="/Projects"><button>know more</button></Link>
     </div>
     <div className='card-rows'>
-      <img src = 'card3.jpeg' alt=''/>
-      <h5>Driving your Brand,amplifying your reach </h5>
+      <img src = {Project3} alt=''/>
+      <h5> A cloud-based e-commerce
+          platform tailored for
+          small businesses.</h5>
       <Link to="/Projects"><button>know more</button></Link>
     </div>
-    <div className='card-rows'>
-      <img src = 'card4.jpeg' alt=''/>
-      <h5>Connecting top talent with leading technology</h5>
-      <Link to="/Projects"><button>know more</button></Link>
-    </div>
+    
     </div>
    </div>
    

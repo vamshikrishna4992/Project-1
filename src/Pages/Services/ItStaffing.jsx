@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 import Navbar from '../../Components/Navbar';
 import gsap from "gsap";
 import '../../Styles/ITStaffing.css';
-import { div } from "framer-motion/client";
 import WhyChoose from "../../Components/WhyChoose.jsx";
 import itStaffImg from '../../assets/images/IT-STAFFING-1.png'
 

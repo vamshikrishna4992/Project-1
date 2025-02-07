@@ -65,7 +65,7 @@ body {
 /* ******************  Unlock start ********************* */
 
 /* AboutUs Container */
-.AboutContainer {  
+.dgContainer {  
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,21 +76,21 @@ body {
     color: #fff; 
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
-    flex-direction: row-reverse; 
+    /* flex-direction: row-reverse;  */
     font-family: Arial, sans-serif;
 }
 
 /* Image Styling */
-.aboutusimg {
+.dgusimg {
     width: 50%;
     max-width: 500px;
     height: 400px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     filter: brightness(90%);
+    /* border: 2px solid red; */
 }
-
-.aboutusimg:hover {
+.dgusimg:hover {
     transform: scale(1.05);
     filter: brightness(100%);
 }

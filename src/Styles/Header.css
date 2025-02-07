@@ -70,19 +70,28 @@ body {
         text-align: start;
         margin-left: 30%;
       }
+
+      /* .head-get-started:hover{
+        color: white;
+      } */
+      .head-get-started a{
+        text-decoration: none;
+        color: black;
+      }
+      .head-get-started a:hover{
+        color: white;
+      }
       
-      .get-started span {
+      .head-get-started span {
         font-size: 1.5rem;
       }
-     .get-started:hover{
+     .head-get-started:hover{
         color: gold;
         font-weight: bold;
         background-color: #0f0f0f;
         border: 0.5px solid gold;
         background-color: black;
       }
-
-      
       .description {
         margin-top: 20px;
         font-size: 1.1rem;

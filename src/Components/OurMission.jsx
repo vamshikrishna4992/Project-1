@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import "../Styles/OurMission.css";
-import img1 from "../assets/images/OurMission-img.png";
+import vedio from "../assets/images/Messaging.mp4";
+import ReactPlayer from "react-player";
 
 const OurMission = () => {
   return (
@@ -12,13 +13,9 @@ const OurMission = () => {
       viewport={{ once: false, amount: 0.5 }}
     >
       {/* Image with hover effect */}
-      <motion.img
-        className="aboutusimg"
-        src={img1}
-        alt="About Us Image"
-        whileHover={{ scale: 1.08, rotate: 2 }}
-        transition={{ duration: 0.3 }}
-      />
+      <div className='VideoSection'>
+              <ReactPlayer url={vedio} controls={true} className="react-player"  />
+            </div>
 
       {/* Text Content */}
       <motion.div
@@ -33,13 +30,13 @@ const OurMission = () => {
           <span className="gold-text">Mission</span>
         </h3>
         <p>
-          <b>
+          
             Our Mission is to serve as a strategic partner to our customers from
             various industry verticals and offer cost-effective, reliable, and
             high-quality IT solutions and services leveraging our proven
             methodology and tools, experienced resources, and thought
             leadership.
-          </b>
+          
         </p>
       </motion.div>
     </motion.div>

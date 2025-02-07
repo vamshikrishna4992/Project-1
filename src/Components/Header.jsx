@@ -35,7 +35,7 @@ const Header = () => {
       <div className="hero-section">
         <h1>Forging businesses to grow without any hassle.</h1>
         <p className="description">
-          "We build digital products and ecosystems that will support and grow your business seamlessly at any scale."
+          We build digital products and ecosystems that will support and grow your business seamlessly at any scale.
         </p>
         <Link to={'/contact'} className="headerButton">
         <button ref={buttonRef} className="get-started">
@@ -48,4 +48,3 @@ const Header = () => {
 };
 
 export default Header;
-

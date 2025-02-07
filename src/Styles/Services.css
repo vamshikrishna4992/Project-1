@@ -64,68 +64,117 @@
     height: 300px;
   }
 
- 
+
+/***************************************************************/
+
   .services-card {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-    z-index: 2;
-    justify-content: center;
-  }
-  
-  .cards {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .card-rows {
+    margin: 3%;
+    width : 75%;
+    height: 75%;
+    margin: auto;
+    
+}
+
+.services-rows {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 13%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    width: 200px;
     padding: 20px;
     text-align: center;
-    position: relative; /* Make sure z-index is respected */
-    z-index: 4;
-    /* box-shadow: 5px 0px 10px 0px #FFD700; */
+    position: relative; /* Ensures button can be positioned relative to card */
+    overflow: hidden;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .card-rows:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card-rows img {
-    width: 100%;
-    height: 150px;
+    z-index: 1; /* Ensure the card is above the background */
+}
+
+.services-rows:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    z-index: 2; /* Bring the hovered card above others */
+}
+
+.services-rows img {
+    width: 80%;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
-  }
-  
-  .card-rows h5 {
-    margin-top: 15px;
+}
+
+.services-rows p {
+    margin-top: 3px;
     font-size: 18px;
     font-weight: 600;
     color: #333;
-  }
-  
-  .card-rows button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: goldenrod;
-    color: white;
-    border: none;
-    border-radius: 5px;
+}
+
+/* Initially hide the button */
+.hover-button {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 15px; /* Position the button near the bottom */
+    left: 50%;
+    transform: translateX(-50%) translateY(30px); /* Position the button slightly below the bottom edge */
+    background-color: white;
+    color: rgb(247, 207, 12);
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    padding: 5px 30px;
     cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card-rows button:hover {
-    background-color: gold;
-  }
-  
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease;
+    z-index: 3; /* Make sure button is on top of the card */
+}
+
+/* On hover of .project-rows, show the button */
+.services-rows:hover .hover-button {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); /* Move the button to the bottom edge */
+    transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
+}
+
+/* Hover effect on the button */
+.hover-button:hover {
+    border-color: rgb(221, 181, 81);
+}
+
+
+
+.services-rows{
+    position: relative;
+    width: 100%; /* Adjusted for the container */
+    height: 100%; /* Adjusted to fit */
+    overflow: hidden;
+    flex: 1; /* Make the image container take available space */
+}
+
+
+.service-rows {
+  background-color: #fff;
+  border-radius: 13%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Ensures button can be positioned relative to card */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1; /* Ensure the card is above the background */
+}
+
+.service-rows:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  z-index: 2; /* Bring the hovered card above others */
+}
+
+.service-rows img {
+  width: 80%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}

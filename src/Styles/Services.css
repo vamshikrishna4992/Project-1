@@ -72,6 +72,10 @@
     gap: 20px;
     justify-content: center;
     margin: 3%;
+    width : 75%;
+    height: 75%;
+    margin: auto;
+    
 }
 
 .services-rows {
@@ -99,8 +103,8 @@
     border-radius: 8px;
 }
 
-.services-rows h5 {
-    margin-top: 5px;
+.services-rows p {
+    margin-top: 3px;
     font-size: 18px;
     font-weight: 600;
     color: #333;

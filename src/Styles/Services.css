@@ -1,17 +1,27 @@
 
   .service-container{
     background-color: black;
+
+
   }
    .service-container .service-content{
     color: azure;
-    padding-left: 25px;
-    margin-top: 50px;
+    /* padding-left: 25px; */
+    /* margin: 20px 0; */
   } 
   .service-container .service-content h1 span{
     color: goldenrod;
   }
+
+  .service-content h1 {
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
   .service-container .service-content p{
-    text-align: center;
+    /* text-align: left; */
+    margin-left: 50px;
+    /* margin-bottom: 20px; */
     line-height: 1.5;
   }
   .service-container .service-slider{
@@ -29,16 +39,16 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin: 3%;
-    width: 90%;
-    margin-left: 55px;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
 }
 
 .services-rows {
     background-color: #fff;
-    border-radius: 13%;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 60%;
+    width: 250px;
     padding: 20px;
     text-align: center;
     position: relative; /* Ensures button can be positioned relative to card */
@@ -101,12 +111,12 @@
 
 
 
-.services-rows{
+/* .services-rows{
     position: relative;
-    width: 100%; /* Adjusted for the container */
-    height: 100%; /* Adjusted to fit */
+    width: 100%; 
+    height: 100%; 
     overflow: hidden;
-    flex: 1; /* Make the image container take available space */
+    flex: 1; 
 }
 
 
@@ -118,15 +128,15 @@
   width: 250px;
   padding: 20px;
   text-align: center;
-  position: relative; /* Ensures button can be positioned relative to card */
+  position: relative; 
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  z-index: 1; /* Ensure the card is above the background */
+  z-index: 1;
 }
 
 .service-rows:hover {
-  transform: translateY(-10px); /* Slight lift effect on hover */
-  z-index: 2; /* Bring the hovered card above others */
+  transform: translateY(-10px); 
+  z-index: 2; 
 }
 
 .service-rows img {
@@ -134,4 +144,4 @@
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
-}
+} */

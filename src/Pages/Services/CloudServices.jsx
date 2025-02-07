@@ -114,7 +114,6 @@ const Approach = ()=>{
     </div>
     <WhyChoose/>
     </div>
-    <Footer/>
     </>
   )
 }

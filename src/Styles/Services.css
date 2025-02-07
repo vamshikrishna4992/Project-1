@@ -1,53 +1,11 @@
-.service-slider {
-    position: relative;
-    width: 600px;
-    height: 300px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .prev,
-  .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 5px;
-    z-index: 10;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  } */
+
   .service-container{
-    background: linear-gradient(to right, black, rgb(43, 16, 69) 50%, #9b59b6);
-    display: flex;
+    background: black;
   }
    .service-container .service-content{
     color: azure;
     padding-left: 25px;
+    margin-top: 50px;
   } 
   .service-container .service-content h1 span{
     color: goldenrod;
@@ -72,13 +30,14 @@
     gap: 20px;
     justify-content: center;
     margin: 3%;
+    width: 90%;
 }
 
 .services-rows {
     background-color: #fff;
     border-radius: 13%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 60%;
     padding: 20px;
     text-align: center;
     position: relative; /* Ensures button can be positioned relative to card */
@@ -99,8 +58,8 @@
     border-radius: 8px;
 }
 
-.services-rows h5 {
-    margin-top: 5px;
+.services-rows p {
+    margin-top: 3px;
     font-size: 18px;
     font-weight: 600;
     color: #333;
@@ -111,7 +70,7 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    bottom: 15px; /* Position the button near the bottom */
+    bottom: 5px; /* Position the button near the bottom */
     left: 50%;
     transform: translateX(-50%) translateY(30px); /* Position the button slightly below the bottom edge */
     background-color: white;
@@ -151,6 +110,7 @@
 
 
 .service-rows {
+  margin-left: 30px;
   background-color: #fff;
   border-radius: 13%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

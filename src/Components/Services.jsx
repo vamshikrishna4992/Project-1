@@ -21,22 +21,22 @@ const Services = () => {
       <div className="services-card">
     <div className="services-rows">
       <img src="service1.gif" alt=""/>
-      <h5>Software Development</h5>
+      <p>Software Development</p>
       <Link to="/software-development"><button className="hover-button">View</button></Link>
     </div>
     <div className="services-rows">
       <img src="service2.gif" alt=""/>
-      <h5>Cloud Services</h5>
+      <p>Cloud Services</p>
       <Link to="/cloud-services"><button className="hover-button">View</button></Link>
     </div>
     <div className="services-rows">
       <img src="service3.gif" alt=""/>
-      <h5>IT Staffing</h5>
+      <p>IT Staffing</p>
        <Link to="/it-staffing"><button className="hover-button">View</button></Link>
     </div>
     <div className="services-rows">
       <img src="project4.gif" alt=""/>
-      <h5>Digital Marketing</h5>
+      <p>Digital Marketing</p>
       <Link to="/digital-marketing"><button className="hover-button">View</button></Link>
     </div>
   </div>

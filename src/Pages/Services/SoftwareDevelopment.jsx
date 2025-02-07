@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
+import Footer from '../../Components/Footer';
 
 const SoftwareDevelopment = () => {
   return (
     <div>
-      <Navbar/>
-      <h1>This is Software Devlopment page</h1>
+      <Navbar />
+      <Footer />
     </div>
   )
 }

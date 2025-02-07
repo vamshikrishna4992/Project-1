@@ -1,9 +1,11 @@
-
+import Navbar from "../../Components/Navbar"
+import Footer from '../../Components/Footer'
 
 const Project1 = () => {
   return (
     <div>
-       <h1>This is Projects page</h1>
+      <Navbar />
+       <Footer />
     </div>
   )
 }

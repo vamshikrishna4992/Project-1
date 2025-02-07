@@ -8,7 +8,6 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        {/* Left Side: Logo & Social Links */}
         <div className="footer-left">
           <div className="footer-brand">
             <Link to="/">
@@ -25,7 +24,6 @@ const Footer = () => {
               precision, Building digital nests for endless
               ambition.</p>
           </div>
-          {/* Social Media Icons */}
           <div className="footer-social">
             <a href="https://www.linkedin.com/company/krystalnest/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="social-icon linkedin" />
@@ -38,8 +36,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        {/* Right Side: Links */}
+        
         <div className="footer-right">
           {/* Our Services */}
           <div className="footer-links">
@@ -66,24 +63,22 @@ const Footer = () => {
           <div className="footer-contact">
             <h3>CONTACT US</h3>
             <ul>
-              {/* Phone Link */}
+
               <li>
                 <a href="tel:+918923898349" className="contact-link">
                   <FaPhoneAlt className="contact-icon" /> 8923898349
                 </a>
               </li>
 
-              {/* Email Link */}
               <li>
                 <a href="mailto:hr@krystalnest.com" className="contact-link">
                   <FaEnvelope className="contact-icon" /> hr@krystalnest.com
                 </a>
               </li>
 
-              {/* Google Maps Link for Address */}
               <li>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Silicon+Valley,+Madhapur,+Hyderabad,+Telangana"
+                    href="https://www.google.com/maps/search/?api=1&query=High+Spirits,+3rd+Floor+Image+Gardens,+19,+Function+Hall+Lane,+Silicon+Valley,+Madhapur,+Telangana+500081"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-link"

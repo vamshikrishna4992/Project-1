@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 import Home from './Pages/Home.jsx';
 import Contact from './Pages/Contact.jsx';
 import About from './Pages/About.jsx';
-import SoftwareDevelopment from './Pages/services/SoftwareDevelopment.jsx';
+import SoftwareDevelopment from './Pages/Services/SoftwareDevelopment.jsx';
 import ItStaffing from './Pages/services/ItStaffing.jsx';
-import DigitalMarketing from './Pages/services/DigitalMarketing.jsx';
+import DigitalMarketing from './Pages/Services/DigitalMarketing.jsx';
 import Services from './Pages/Services/Services.jsx';
 import CloudServices from './Pages/Services/CloudServices.jsx';
 import Project1 from './Pages/Projects/Project1.jsx'

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from '../../Components/Navbar';
+import Footer from '../../Components/Footer.jsx'
 import gsap from "gsap";
 import '../../Styles/DigitalMarketing.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
@@ -42,6 +43,7 @@ const DigitalMarketing = () => {
     </div>
     <DigUnlock/>
     <DgApproach/>
+    <Footer />
    </>
   )
 }

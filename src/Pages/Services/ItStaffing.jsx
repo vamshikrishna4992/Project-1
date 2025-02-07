@@ -5,7 +5,13 @@ import gsap from "gsap";
 import '../../Styles/ITStaffing.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
 import itStaffImg from '../../assets/images/IT-STAFFING-1.png'
-
+import Footer from '../../Components/Footer.jsx'
+import icon1 from '../../assets/images/hr-management.png'
+import icon2 from '../../assets/images/lead-management.png'
+import icon3 from '../../assets/images/people-arrows.png'
+import icon4 from '../../assets/images/people-group.png'
+import icon5 from '../../assets/images/referral-user.png'
+import icon6 from '../../assets/images/users-gear.png'
 
 const ItStaffing = () => {
   const textRef = useRef(null);
@@ -45,6 +51,7 @@ const ItStaffing = () => {
       </div>
       <Unlock />
       <Approach />
+      <Footer />
     </>
   );
 };
@@ -78,12 +85,12 @@ const Unlock = () => {
 
 const Approach = () => {
   const itstaffingapproaches = [
-    { icon: 'approach4', content: 'Access to Top Talent ' },
-    { icon: 'approach2', content: 'Fast and Effective Hiring' },
-    { icon: 'approach5', content: 'Technical IT Roles ' },
-    { icon: 'approach6', content: 'Managed Staffing Services' },
-    { icon: 'approch2', content: 'Contract- to- Hire' },
-    { icon: 'approach3', content: 'Cost-Effective results' }
+    { icon: icon1, content: 'Access to Top Talent ' },
+    { icon: icon2, content: 'Fast and Effective Hiring' },
+    { icon: icon3, content: 'Technical IT Roles ' },
+    { icon: icon4, content: 'Managed Staffing Services' },
+    { icon: icon5, content: 'Contract- to- Hire' },
+    { icon: icon6, content: 'Cost-Effective results' }
 
   ]
 
@@ -94,7 +101,7 @@ const Approach = () => {
         <div className="cloud-approach-container">
           {itstaffingapproaches.map((approach, index) => (
             <div className="cloud-approach-sub" key={index}>
-              <img src={`/${approach.icon}.png`} alt={approach.icon} />
+              <img src={`${approach.icon}`} alt={approach.icon} />
               <p>{approach.content}</p>
             </div>
           ))}

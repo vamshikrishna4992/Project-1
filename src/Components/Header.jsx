@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from "./Navbar"; // Import the Navbar component
+import Navbar from "./Navbar"; 
+import {Link} from 'react-router-dom'
 import "../Styles/Header.css";
 import gsap from 'gsap'
 
@@ -36,9 +37,11 @@ const Header = () => {
         <p className="description">
           "We build digital products and ecosystems that will support and grow your business seamlessly at any scale."
         </p>
+        <Link to={'/contact'} className="headerButton">
         <button ref={buttonRef} className="get-started">
           Contact Us <span>→</span>
         </button>
+        </Link>
       </div>
     </div>
   );

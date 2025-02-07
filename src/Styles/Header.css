@@ -48,6 +48,10 @@ body {
         margin-bottom: 25px;
       }
       
+      .headerButton{
+        text-decoration: none;
+      }
+      
       .get-started {
         margin-top: 20px;
         padding: 12px 24px;

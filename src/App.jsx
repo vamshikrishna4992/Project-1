@@ -7,7 +7,6 @@ import About from './Pages/About.jsx';
 import SoftwareDevelopment from './Pages/Services/SoftwareDevelopment.jsx';
 import ItStaffing from './Pages/services/ItStaffing.jsx';
 import DigitalMarketing from './Pages/Services/DigitalMarketing.jsx';
-import Services from './Pages/Services/Services.jsx';
 import CloudServices from './Pages/Services/CloudServices.jsx';
 import Project1 from './Pages/Projects/Project1.jsx'
 
@@ -38,7 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          {/* <Route path="/services" element={<Services />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path='/project1' element={<Project1/>} />
           {/* Submenu routes */}

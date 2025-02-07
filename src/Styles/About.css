@@ -4,44 +4,53 @@
     background-color: #000;
     /* padding: 0 20px; */
 }
-
-/* Banner Section (Background Image) */
-.Banner-Img {
-    opacity: 0.55;   
-    background-size: cover;
-    background-position: center;
-    height: 150px;
+.about-main-container{
+    height: 80vh;
+    align-content: center;
     display: flex;
-    align-items: center;
-    justify-content: left;
-    text-align: left;
-    position: relative;
-
-    
 }
+.about-main-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("../assets//images/wmremove-transforme.jpeg") no-repeat center/cover;
+    opacity: 0.25;
+    z-index: -1; 
+}
+.about-hero-section {
+    width: 60%;
+    align-self: center;
+    margin-left: 7%;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .about-hero-section h1{
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 800px;
+    text-align: start;
+    margin: auto;
+  }
+  .about-hero-section p{
+    max-width: 800px;
+    text-align: start;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 
 .Banner-Content {
-    /* background: rgba(255, 40, 40, 0.6); */
     padding: 20px;
     border-radius: 10px;
     position: relative;
     /* margin-left: 10%; */
     width: 400px;
-    /* display: flex; */
 }
-
-/* .Banner-Content::after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 0;
-    height: 100%;
-    width: 3px;
-    background-color: yellow;
-    margin-left: 10px;
-} */
 .sub-banner{
-    /* background: rgba(0, 0, 0, 0.6); */
     padding: 20px;
     border-radius: 10px;
     position: relative;
@@ -63,7 +72,7 @@
 }
 
 .Banner-Content h1:hover {
-    color: orange;
+    color: #ffa500;
 }
 
 .Banner-Content h4 {
@@ -77,26 +86,22 @@
 }
 
 /* Digital Transformation Section */
+/* Digital Section */
 .Digital {
     text-align: center;
     padding: 50px;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
-.Digital h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
+@keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .Digital h3 span {
     color: yellow;
 }
 
-.Digital p {
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 /* Video Section */
 .VideoSection {
@@ -110,6 +115,7 @@
 .Fundamental-Banner{
     text-align: center;
     font-size: 22px;
+    /* height: 10vh; */
 
 }
 .Fundamental {
@@ -119,6 +125,7 @@
     justify-content: center;
     text-align: justify;
     padding: 50px;
+    height: 25vh;
 }
 
 .Fundamental img {
@@ -148,6 +155,8 @@
 .Our-Team{
     text-align: center;
     font-size: 26px;
+    height :80vh;
+    margin-top: 150px;
 }
 .main-container{
     display: flex;
@@ -214,4 +223,55 @@
     color: black;
     margin-top: 3px;
 }
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex: 1;
+    align-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    border-radius: 6px;
+    z-index: 10;
+    width: 80%;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    transition: background-color 0.3s ease-in-out;
+    align-items: center;
+}
+
+.content:hover {
+    background-color: rgba(255, 165, 0, 0.9);
+    /* height: 60px; */
+    /* padding-bottom: 20px; */
+    border-radius: 10px;
+}
+
 

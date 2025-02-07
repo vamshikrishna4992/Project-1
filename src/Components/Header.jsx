@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import Navbar from "./Navbar"; // Import the Navbar component
 import "../Styles/Header.css";
 import gsap from 'gsap'
@@ -34,7 +34,7 @@ const Header = () => {
       <div className="hero-section">
         <h1>Forging businesses to grow without any hassle.</h1>
         <p className="description">
-          "We build digital products and ecosystems that will support and grow your business seamlessly at any scale."
+          We build digital products and ecosystems that will support and grow your business seamlessly at any scale.
         </p>
         <button ref={buttonRef} className="head-get-started">
           Contact Us <span>→</span>

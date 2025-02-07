@@ -17,8 +17,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="./KN.png" alt="logo" />
-        <h3>KrystalNest</h3>
+       <Link to='/' onClick={() => setIsMobileMenuOpen(false)}> <img src="./KN.png" alt="logo" /></Link>
+       <Link to='/' onClick={() => setIsMobileMenuOpen(false)}> <h3>KrystalNest</h3></Link>
+      
       </div>
 
       {/* Hamburger Menu (for mobile) */}
@@ -34,7 +35,7 @@ const Navbar = () => {
           <li className="services" 
               onMouseEnter={() => setIsSubmenuOpen(true)}
               onMouseLeave={() => setIsSubmenuOpen(false)}>
-            <Link to='/services' onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
+            <Link to='#' onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
             {isSubmenuOpen && (
               <ul className="submenu">
                 <li onClick={() => handleNavigation('/software-development')}>Software Development</li>

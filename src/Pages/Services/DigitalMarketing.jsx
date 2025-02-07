@@ -4,10 +4,16 @@ import gsap from "gsap";
 import '../../Styles/DigitalMarketing.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
 import Footer from "../../Components/Footer.jsx";
+import ads from '../../assets/images/ads.png';
+import analytics from '../../assets/images/analytics.png';
+import email from '../../assets/images/email.png';
+import graphic from '../../assets/images/graphicDesigning.png';
+import seo from '../../assets/images/seo.png';
+import social from '../../assets/images/socialmedia.png'
 
 const DigitalMarketing = () => {
 
-   const textRef = useRef(null);
+   const textRef = useRef(null); 
     const descriptionRef = useRef(null);
     const buttonRef = useRef(null);
 
@@ -57,17 +63,18 @@ const DigUnlock = ()=>{
       <div className="cloud-head1">
         <h2>Driving Your Brand, Amplifying <span>Your Reach</span></h2>
       </div>
-     <div className="AboutContainer"> {/* Changed class name */}
-          <img className="aboutusimg" src='dg-info.png' alt="About Us Image" /> 
+     <div className="dgContainer"> {/* Changed class name */}
+          {/* <img className="aboutusimg" src='dg-info.png' alt="About Us Image" />  */}
 
           <div className="TextContent">
             
             <p>
-            KrystalNest is here to make your business shine digitally in this modern world of digital marketing. By optimizing the entire potential of modern digital marketing strategies, it has become an imperative to establish a stronger presence in this fast-paced and highly competitive online environment. Our team of marketers and data analysts work collaboratively to design and execute results-driven, strategic plans for you to drive high-quality traffic, enhance brand visibility, and ultimately convert prospects into loyal, long-term customers.
+            KrystalNest is here to make your business shine digitally in this modern world of digital marketing. By optimizing the entire potential of modern digital marketing strategies, it has become an imperative to establish a stronger presence in this fast-paced and highly competitive online environment. Our team of marketers and data analysts work collaboratively to design and execute results-driven, strategic plans for you to drive high-quality traffic, enhance brand visibility, and ultimately convert prospects into loyal, long-term customers.We provide a wide array of digital marketing services to cater to businesses of all sizes and industries. Our solutions are designed to meet your unique goals, ensuring measurable success across every channel.
            
             </p>
             
           </div>
+          <img className="dgusimg" src='dg-info.png' alt="About Us Image" /> 
         </div>
      </div>
     </>
@@ -76,12 +83,12 @@ const DigUnlock = ()=>{
 
 const DgApproach = ()=>{
   const  dgapproaches = [
-   {icon:'approach4',content:'Implement robust data backup and recovery strategies'},
-   {icon:'approach2',content:'Encrypt data at rest and in transit'},
-   {icon:'approach5',content:'Continuously monitor and adapt to evolving threats'},
-   {icon:'approach6',content:'Leverage cloud provider security features'},
-   {icon:'approch2',content:'Regularly update and patch systems'},
-   {icon:'approach3',content:'Implement cloud security monitoring and logging'}
+   {icon:ads,content:'Google ads'},
+   {icon:analytics,content:'Google Analytics'},
+   {icon:email,content:'Email Marketing'},
+   {icon:graphic,content:'Graphic Designing'},
+   {icon:seo,content:'Search Engine Optimization'},
+   {icon:social,content:'Social Media Marketing'}
  
   ]
   
@@ -92,7 +99,7 @@ const DgApproach = ()=>{
      <div className="dg-approach-container">
      {dgapproaches.map((approach, index) => (
         <div className="dg-approach-sub" key={index}>
-         <img src={`/${approach.icon}.png`} alt={approach.icon} />
+         <img src={`${approach.icon}`} alt={approach.icon} />
          <p>{approach.content}</p>
         </div>
      ))}

@@ -2,7 +2,7 @@
     background-color: black;
     text-align: center;
     padding: 50px 0;
-    background-image: url('../assets/images/testimonials-bg.jpg'); /* Set your background image here */
+    background-image: url('../assets/images/testimonials-bg.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -11,7 +11,7 @@
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 20px; /* Added margin for spacing */
+    margin-bottom: 20px; 
 }
 
 .testimonial-card {
@@ -22,7 +22,7 @@
     height: 250px;
     margin: auto;
     position: relative;
-    overflow: hidden; /* Ensures no overflow */
+    overflow: hidden; 
     z-index: -1;
 }
 
@@ -70,22 +70,22 @@
     background: none;
     border: none;
     color: white;
-    font-size: 2rem; /* Increased font size for visibility */
+    font-size: 2rem; 
     cursor: pointer;
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
-    z-index: 10; /* Ensure buttons are above slides */
+    z-index: 10;
 }
 
 .prev-btn {
-    left: 15%; /* Adjusted position */
+    left: 15%;
 }
 
 .next-btn {
-    right: 15%; /* Adjusted position */
+    right: 15%; 
 }
 
 .swiper-button-next, .swiper-button-prev {
-    display: none; /* Hide the default Swiper navigation */
+    display: none; 
 }

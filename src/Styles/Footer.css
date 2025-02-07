@@ -1,15 +1,13 @@
-/* Footer Container */
 .footer-container {
   background-color: black;
   color: white;
-  padding: 50px 20px;
+  padding: 40px 20px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Flexbox Layout */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -46,34 +44,45 @@
   color: #f0a500;
 }
 
-.tag-line p{
+.tag-line p {
   text-align: justify;
   width: 80%;
+  margin: 0;
 }
 
-/* Social Icons */
 .footer-social {
   display: flex;
   gap: 15px;
   margin-top: 15px;
-  /* align-self: center; */
 }
 
 .social-icon {
-  color: white;
   font-size: 28px;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: inherit;
+}
+
+.social-icon.linkedin {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icon.twitter {
+  color: #1DA1F2; /* Twitter Blue */
+}
+
+.social-icon.instagram {
+  color: #E4405F; /* Instagram Pink */
 }
 
 .social-icon:hover {
   transform: scale(1.2);
-  color: #f0a500;
 }
 
 /* Right Side: Links */
 .footer-right {
   display: flex;
   gap: 40px;
+  align-items: flex-start;
 }
 
 /* Headings with Animated Underline */
@@ -83,6 +92,7 @@
   color: #fff;
   position: relative;
   padding-bottom: 8px;
+  display: inline-block;  /* Ensure the underline only goes under the title */
 }
 
 /* Underline Animation */
@@ -105,15 +115,17 @@
 }
 
 /* Links & Contact */
-.footer-links ul,
-.footer-links li {
-  list-style: none;
+.footer-links ul {
+  display: flex; /* Make the list items appear inline */
+  flex-wrap: wrap; /* Allow wrapping if the screen is small */
+  gap: 15px; /* Adds spacing between items */
   padding: 0;
   margin: 0;
 }
 
 .footer-links li {
-  margin: 8px 0;
+  list-style: none;
+  white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .footer-links a {
@@ -130,6 +142,7 @@
 .footer-contact ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-contact li {
@@ -137,11 +150,13 @@
   align-items: center;
   gap: 8px;
   margin: 8px 0;
+  white-space: nowrap;
 }
 
 .contact-icon {
   font-size: 18px;
   color: #fff;
+  margin-right: 8px;
 }
 
 .contact-link {
@@ -149,6 +164,8 @@
   color: white;
   transition: color 0.3s ease-in-out;
   font-size: 16px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .contact-link:hover {

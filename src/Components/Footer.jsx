@@ -28,13 +28,13 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="footer-social">
             <a href="https://www.linkedin.com/company/krystalnest/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" />
+              <FaLinkedin className="social-icon linkedin" />
             </a>
             <a href="https://x.com/krystalnestit" target="_blank" rel="noopener noreferrer">
-              <FaXTwitter className="social-icon" />
+              <FaXTwitter className="social-icon twitter" />
             </a>
             <a href="https://www.instagram.com/krystalnest/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="social-icon" />
+              <FaInstagram className="social-icon instagram" />
             </a>
           </div>
         </div>
@@ -43,12 +43,12 @@ const Footer = () => {
         <div className="footer-right">
           {/* Our Services */}
           <div className="footer-links">
-            <h3>SERVICES</h3>
+            <h3>OUR SERVICES</h3>
             <ul>
               <li><Link to="/it-staffing">IT Staffing</Link></li>
               <li><Link to="/software-development">Software Development</Link></li>
+              <li><Link to="/cloud-services">Cloud Services</Link></li>
               <li><Link to="/digital-marketing">Digital Marketing</Link></li>
-              <li><Link to="/cloud-solutions">Cloud Solutions</Link></li>
             </ul>
           </div>
 
@@ -56,9 +56,9 @@ const Footer = () => {
           <div className="footer-links">
             <h3>PROJECTS</h3>
             <ul>
-              <li><Link to="/devops">DevOps</Link></li>
-              <li><Link to="/python">Python</Link></li>
-              <li><Link to="/full-stack">Full Stack</Link></li>
+              <li><Link to="/project1">DevOps</Link></li>
+              <li><Link to="/project1">Python</Link></li>
+              <li><Link to="/project1">Full Stack</Link></li>
             </ul>
           </div>
 

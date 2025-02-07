@@ -1,12 +1,13 @@
 
   .service-container{
     background-color: black;
-    height: 80vh;
+
+
   }
    .service-container .service-content{
     color: azure;
-    padding-left: 25px;
-    margin-top: 50px;
+    /* padding-left: 25px; */
+    /* margin: 20px 0; */
   } 
   .service-container .service-content h1{
     margin-left: 3%;
@@ -14,8 +15,16 @@
   .service-container .service-content h1 span{
     color: goldenrod;
   }
+
+  .service-content h1 {
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
   .service-container .service-content p{
-    text-align: center;
+    /* text-align: left; */
+    margin-left: 50px;
+    /* margin-bottom: 20px; */
     line-height: 1.5;
   }
   .service-container .service-slider{
@@ -26,23 +35,20 @@
     height: 300px;
   }
 
-
-/***************************************************************/
-
   .services-card {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin: 3%;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
 }
 
 .services-rows {
     background-color: #fff;
-    border-radius: 13%;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 60%;
+    width: 250px;
     padding: 20px;
     text-align: center;
     position: relative; /* Ensures button can be positioned relative to card */
@@ -101,10 +107,4 @@
 /* Hover effect on the button */
 .hover-button:hover {
     border-color: rgb(221, 181, 81);
-}
-
-
-.service-rows:hover {
-  transform: translateY(-10px); /* Slight lift effect on hover */
-  z-index: 2; /* Bring the hovered card above others */
 }

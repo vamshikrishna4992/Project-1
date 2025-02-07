@@ -154,11 +154,21 @@ body {
 
 /* **************Approach start***************** */
 
-.software-approac-contarine {
+.why{
+    background-color:#e8b541 ;
+}
+.why h2{
+    text-align: center;
+}
+.why div{
+    text-align: left;
+}
+
+.software-approach-contariner {
     background-color: #e8b541; /* Gold background for the outer container */
     padding: 20px;
     text-align: center;
-    z-index: 3; /* Ensure it stays above other elements */
+    z-index: 3;
 }
 
 .software-approach-content {
@@ -179,7 +189,8 @@ body {
     align-self: center;
     justify-items: center;
     align-items: center;
-    z-index: 1; /* Ensure circles are below content */
+    z-index: 1; 
+    height: 100vh;
 }
 .content-circle:hover {
     transform: scale(1.1);  /* Slightly increase the size of the circle */

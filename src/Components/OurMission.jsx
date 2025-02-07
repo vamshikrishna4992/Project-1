@@ -7,10 +7,10 @@ const OurMission = () => {
   return (
     <motion.div
       className="AboutContainer"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false, amount: 0.5 }}
+      // initial={{ opacity: 0, y: 50 }}
+      // whileInView={{ opacity: 1, y: 0 }}
+      // transition={{ duration: 1, ease: "easeOut" }}
+      // viewport={{ once: false, amount: 0.5 }}
     >
       {/* Image with hover effect */}
       <div className='VideoSection'>
@@ -20,10 +20,10 @@ const OurMission = () => {
       {/* Text Content */}
       <motion.div
         className="TextContent"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.3 }}
+        // initial={{ opacity: 0, x: -30 }}
+        // whileInView={{ opacity: 1, x: 0 }}
+        // transition={{ duration: 1, ease: "" }}
+        // viewport={{ once: false, amount: 0.5 }}
       >
         <h3>
           <span className="white-text">Our</span>{" "}

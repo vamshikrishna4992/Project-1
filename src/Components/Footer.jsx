@@ -1,11 +1,105 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from 'react-icons/fa6'
+import "../Styles/Footer.css";
 
 const Footer = () => {
   return (
-    <>
-      <h1>This is Footer page</h1>
-    </>
-  )
-}
+    <footer className="footer-container">
+      <div className="footer-content">
+        <div className="footer-left">
+          <div className="footer-brand">
+            <Link to="/">
+              <img src="KN.png" alt="KN Logo" className="logo" />
+            </Link>
+            <h1>
+              <Link to="/" className="brand-name">
+                KrystalNest
+              </Link>
+            </h1>
+          </div>
+          <div className="tag-line">
+            <p>KrystalNest, we weave innovation with
+              precision, Building digital nests for endless
+              ambition.</p>
+          </div>
+          <div className="footer-social">
+            <a href="https://www.linkedin.com/company/krystalnest/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="social-icon linkedin" />
+            </a>
+            <a href="https://x.com/krystalnestit" target="_blank" rel="noopener noreferrer">
+              <FaXTwitter className="social-icon twitter" />
+            </a>
+            <a href="https://www.instagram.com/krystalnest/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="social-icon instagram" />
+            </a>
+          </div>
+        </div>
+        
+        <div className="footer-right">
+          {/* Our Services */}
+          <div className="footer-links">
+            <h3>OUR SERVICES</h3>
+            <ul>
+              <li><Link to="/it-staffing">IT Staffing</Link></li>
+              <li><Link to="/software-development">Software Development</Link></li>
+              <li><Link to="/cloud-services">Cloud Services</Link></li>
+              <li><Link to="/digital-marketing">Digital Marketing</Link></li>
+            </ul>
+          </div>
 
-export default Footer
+          {/* Projects */}
+          <div className="footer-links">
+            <h3>PROJECTS</h3>
+            <ul>
+              <li><Link to="/project1">DevOps</Link></li>
+              <li><Link to="/project1">Python</Link></li>
+              <li><Link to="/project1">Full Stack</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact Us */}
+          <div className="footer-contact">
+            <h3>CONTACT US</h3>
+            <ul>
+
+              <li>
+                <a href="tel:+918923898349" className="contact-link">
+                  <FaPhoneAlt className="contact-icon" /> 8923898349
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:hr@krystalnest.com" className="contact-link">
+                  <FaEnvelope className="contact-icon" /> hr@krystalnest.com
+                </a>
+              </li>
+
+              <li>
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=High+Spirits,+3rd+Floor+Image+Gardens,+19,+Function+Hall+Lane,+Silicon+Valley,+Madhapur,+Telangana+500081"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-link"
+                >
+                  <FaMapMarkerAlt className="contact-icon" /> Silicon Valley, Madhapur, Hyderabad, Telangana.
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Horizontal Line */}
+      <hr className="footer-divider" />
+
+      {/* Copyright Section */}
+      <div className="footer-copyright">
+        <p>© All Rights Reserved @ KrystalNest IT Solutions Pvt, Ltd.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

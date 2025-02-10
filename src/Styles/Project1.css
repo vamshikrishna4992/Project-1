@@ -1,0 +1,26 @@
+.project-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background: url("../assets/images/project-bg.jpg") no-repeat center/cover;
+  opacity: 0.25;
+  z-index: -1; 
+  }
+  .project-banner{
+    height: 50vh;
+    align-content: center;
+  }
+  
+  .project-banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .project-banner p {
+    font-size: 1.2rem;
+    text-align: center;
+  }

@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1a1a2e);
+    color: white;
+  }
+  .cloud-services-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1; /* Ensure text stays above */
+}
+
+.cloud-services-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/cloud-background.jpg") no-repeat center/cover;
+    opacity: 0.25;
+    z-index: -1; 
+}
+
+  .cloud-services-content {
+    width: 60%;
+    margin-top: 8%;
+    margin-left: 20%;
+    text-align: center;
+  }
+  
+  .cloud-services-content h1{
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 800px;
+    /* text-align: start; */
+    margin: auto;
+    /* text-align: center; */
+  }
+  .cloud-services-content p{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  
+
+  
+  .cloud-description {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #d1d1d1;
+    margin-left: 80px;
+  }
+
+
+
+
+
+/* ******************  Unlock start ********************* */
+
+/* AboutUs Container */
+.AboutContainer {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    margin: auto;
+    background-color: #000; 
+    color: #fff; 
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    flex-direction: row-reverse; 
+    font-family: Arial, sans-serif;
+}
+
+/* Image Styling */
+.aboutusimg {
+    width: 50%;
+    max-width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(90%);
+}
+
+.aboutusimg:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+/* Text Content */
+.TextContent {
+    width: 50%;
+    text-align: left;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+.TextContent h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Gold Color */
+}
+
+/* Button Styling */
+.Aboutredirect {
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.Aboutredirect:hover {
+    background: linear-gradient(90deg, #ff9900, #ff6600);
+    transform: translateY(-3px);
+    /* box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3); */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .AboutContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutusimg {
+        width: 100%;
+    }
+
+    .TextContent {
+        width: 100%;
+    }
+}
+
+.cloud-head1 h2 span{
+    color: gold;
+}
+.cloud-head1 h2{
+    text-align: center;
+    background-color: #000;
+    font-size: xx-large;
+}
+.cloud-sec-coontainer{
+    background-color: #000;
+    padding: 1%;
+    height: 600px;
+}
+
+ 
+/* ******************  Unlock end ********************* */
+
+
+
+/* **************Approch start***************** */
+
+
+.cloud-approach-main-container{
+    padding: 20px;
+    background-color: #e8b541;
+    font-weight: bold;
+}
+
+.cloud-approach-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px;
+    gap: 30px;
+    row-gap: 100px;
+    width: 80%;
+    margin: auto;
+    align-self: center;
+}
+.cloud-approach-main-container h2{
+    text-align: center;
+    color: #000;
+    font-size: xx-large;
+}
+.cloud-approach-sub{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color: #d9d9d9;
+color: black;
+border-radius: 100%;
+width: 50%;
+height: 160px;
+text-align: center;
+padding: 50px;
+margin: auto;
+align-content: center;
+}
+.cloud-approach-sub:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.cloud-approach-sub img{
+    width: 80px;
+    height: 80px;
+}
+.cloud-approach-sub p{
+font-weight: 500;
+}
+
+
+/* ******************Appoch end ***************** */

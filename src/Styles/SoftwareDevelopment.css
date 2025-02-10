@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1a1a2e);
+    color: white;
+}
+
+.software-development-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 2; /* Text container stays on top of the background image */
+}
+
+.software-development-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("software-bg.jpg") no-repeat center/cover;
+    opacity: 0.25;
+    z-index: 1; /* Background image stays behind */
+}
+
+.software-development-content {
+    width: 60%;
+    margin-top: 8%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.software-development-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 800px;
+    margin: auto;
+}
+
+.software-development-content p {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* ****************** Unlock start ********************* */
+
+/* AboutUs Container */
+.AboutSoftwareContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+    opacity: 0;
+    height: 40vh;
+    animation: fadeIn 1s ease-in-out forwards;
+    flex-direction: row-reverse;
+    font-family: Arial, sans-serif;
+    z-index: 3; /* Ensure it is above the other containers */
+}
+
+/* Image Styling */
+.aboutusimg {
+    width: 60%;
+    max-width: 650px;
+    height: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(90%);
+    z-index: 4; /* Make sure image stays above text content */
+}
+
+.aboutusimg:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+/* Text Content */
+.SoftwareTextContent {
+    width: 50%;
+    text-align: left;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    z-index: 2; /* Ensure text stays above background */
+}
+
+.SoftwareTextContent h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Gold Color */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .AboutSoftwareContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutusimg {
+        width: 100%;
+    }
+
+    .SoftwareTextContent {
+        width: 100%;
+    }
+}
+
+.software-head1 h2 span {
+    color: gold;
+}
+
+.software-head1 h2 {
+    text-align: center;
+    background-color: #000;
+    font-size: xx-large;
+}
+
+.software-sec-coontainer {
+    background-color: #000;
+    padding: 1%;
+    height: 480px;
+}
+
+/* ****************** Unlock end ********************* */
+
+/* **************Approach start***************** */
+
+.why{
+    background-color:#e8b541 ;
+}
+.why h2{
+    text-align: center;
+}
+.why div{
+    text-align: left;
+}
+
+.software-approach-contariner {
+    background-color: #e8b541; /* Gold background for the outer container */
+    padding: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+.software-approach-content {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    z-index: 4; /* Ensure the content stays above the circles */
+}
+
+.content-circle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+    gap: 10px;
+    row-gap: 30px;
+    width: 80%;
+    margin: auto;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 1; 
+    height: 100vh;
+}
+.content-circle:hover {
+    transform: scale(1.1);  /* Slightly increase the size of the circle */
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 25px; /* Make the shadow stronger */
+}
+.content-circle {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d9d9d9; /* Circle background */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+    z-index: 2; /* Circles are below the content but above the background */
+}
+
+.circle-image {
+    width: 80px;
+    height: 80px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    z-index: 2; /* Ensure image is above circle content */
+}
+
+.circle-content {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    z-index: 2; /* Ensure text is above background in the circle */
+}
+
+/* ****************** Approach end ***************** */

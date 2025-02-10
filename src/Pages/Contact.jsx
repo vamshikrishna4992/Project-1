@@ -51,7 +51,7 @@ const Contact = () => {
             <label className="form-label">Phone No :</label>
             <div className="phone-inputs">
               <input type="text" placeholder="Area Code" className="input-field short-input" maxLength={5} required />
-              <input type="text" placeholder="Number" className="input-field" maxLength={15} pattern="[0-9]{10}" required />
+              <input type="text" placeholder="Number" className="input-field" maxLength={10} pattern="[0-9]{10}" required />
             </div>
           </div>
           <div className="form-group">

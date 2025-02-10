@@ -114,7 +114,7 @@ const About = () => {
           </div>
           <div className="content">
             <p>Uday Kiran </p>
-            <h3>C0-Founder</h3>
+            <h3>Co-Founder</h3>
             
           </div>
 

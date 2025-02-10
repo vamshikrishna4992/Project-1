@@ -90,15 +90,39 @@ const Unlock = ()=>{
 };
 
 const Approach = ()=>{
- const  cloudapproaches = [
-  {icon:approach4,content:'Implement robust data backup and recovery strategies'},
-  {icon:approach2,content:'Encrypt data at rest and in transit'},
-  {icon:approach5,content:'Continuously monitor and adapt to evolving threats'},
-  {icon:approach6,content:'Leverage cloud provider security features'},
-  {icon:approach1,content:'Regularly update and patch systems'},
-  {icon:approach3,content:'Implement cloud security monitoring and logging'}
-
- ]
+  const cloudapproaches = [
+    {
+      icon: approach4,
+      content: 'Implement robust data backup and recovery strategies',
+      hoverContent: 'Ensure continuous data availability with secure backups and quick recovery solutions.'
+    },
+    {
+      icon: approach2,
+      content: 'Encrypt data at rest and in transit',
+      hoverContent: 'Protect sensitive information by using advanced encryption methods for data security.'
+    },
+    {
+      icon: approach5,
+      content: 'Continuously monitor and adapt to evolving threats',
+      hoverContent: 'Stay ahead of security risks with real-time monitoring and adaptive threat detection.'
+    },
+    {
+      icon: approach6,
+      content: 'Leverage cloud provider security features',
+      hoverContent: 'Enhance protection using built-in security measures from trusted cloud providers.'
+    },
+    {
+      icon: approach1,
+      content: 'Regularly update and patch systems',
+      hoverContent: 'Keep your infrastructure secure by applying the latest updates and security patches.'
+    },
+    {
+      icon: approach3,
+      content: 'Implement cloud security monitoring and logging',
+      hoverContent: 'Track and analyze security events to detect and respond to potential threats effectively.'
+    }
+  ];
+  
  
   return (
     <>
@@ -109,13 +133,15 @@ const Approach = ()=>{
        <div className="cloud-approach-sub" key={index}>
         <img src={`${approach.icon}`} alt={approach.icon} />
         <p>{approach.content}</p>
+        <div className="cloud-hover-content">
+              <p>{approach.hoverText}</p>
+            </div>
        </div>
     ))}
     </div>
     <WhyChoose/>
     </div>
-    <Footer/>
-    </>
+    </>  
   )
 }
 

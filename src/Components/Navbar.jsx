@@ -45,7 +45,7 @@ const Navbar = () => {
                     </ul>
                   )}
                 </li>
-                <li><Link to='/projects' onClick={() => setIsMobileMenuOpen(false)}>Projects</Link></li>
+                <li><Link to='/project1' onClick={() => setIsMobileMenuOpen(false)}>Projects</Link></li>
               </ul>
         <ul>
           <li className="nav-contact-btn"><Link to='/contact' className="contactus" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link></li>

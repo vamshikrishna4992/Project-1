@@ -39,7 +39,7 @@ const Header = () => {
         </p>
         <Link to={'/contact'} className="headerButton">
         <button ref={buttonRef} className="get-started">
-          Contact Us <span>→</span>
+          Contact Us <span></span>
         </button>
         </Link>
       </div>

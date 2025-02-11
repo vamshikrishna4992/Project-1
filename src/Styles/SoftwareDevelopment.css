@@ -226,3 +226,127 @@ body {
 }
 
 /* ****************** Approach end ***************** */
+/* Responsive Adjustments */
+
+/* Software Development Section */
+@media (max-width: 1024px) {
+    .software-development-content {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .software-development-container {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .software-development-content {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .software-development-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .software-development-content p {
+        font-size: 1rem;
+    }
+}
+
+/* About Software Container - No Overlapping */
+@media (max-width: 1024px) {
+    .AboutSoftwareContainer {
+        gap: 20px;
+        padding: 40px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .aboutusimg {
+        width: 60%;
+        height: auto;
+    }
+
+    .SoftwareTextContent {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .AboutSoftwareContainer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 30px;
+    }
+
+    .aboutusimg {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .SoftwareTextContent {
+        width: 90%;
+        text-align: center;
+    }
+
+    .SoftwareTextContent h3 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Software Approach Section */
+@media (max-width: 1024px) {
+    .content-circle-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .content-circle {
+        width: 140px;
+        height: 140px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-circle-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 25px;
+    }
+
+    .content-circle {
+        width: 120px;
+        height: 120px;
+        padding: 25px;
+    }
+
+    .circle-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Ensure No Overlapping and Proper Padding */
+@media (max-width: 768px) {
+    .software-sec-coontainer {
+        height: auto;
+        padding: 5%;
+    }
+
+    .why {
+        padding: 20px;
+    }
+
+    .why div {
+        text-align: center;
+    }
+}

@@ -1,0 +1,231 @@
+/* Global Styling */
+.Main-About {
+  font-family: "Poppins", sans-serif;
+  background-color: #d9d9d9;
+  /* color: black; */
+}
+
+/* Banner Section */
+/* .About-Banner {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} */
+
+/* Background Image */
+/* .About-back-Container::before {
+    background: url("../assets/images/Skype_Picture_2025_02_10T08_33_27_110Z.jpeg") no-repeat center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    opacity: 0.3;
+} */
+/* .banner-title{
+    text-align: center;
+    height: 60vh;
+    align-content: center;
+} */
+/* Banner Name */
+/* .Banner-Name {
+    text-align: center;
+}
+
+.Banner-Name h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white ;
+    /* background-color: rgba(255, 255, 255, 0.7); */
+/* padding: 10px 20px;
+    border-radius: 10px;
+} */
+
+/* Banner start */
+
+.bio-banner {
+  background: url("../assets/images/bio-bg.jpeg") center/cover no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  align-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+  height: 60vh;
+}
+
+.bio-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 0;
+}
+
+.bio-banner h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.bio-title {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeInUp 1s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Banner end */
+
+/* Main Content Container */
+.About-Main-Content-Bio {
+  background-color: white;
+  width: 70%;
+  margin: 30px auto 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+}
+
+/* CEO Section */
+.About-Container-Bio {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+}
+
+.Bio-Img-Card {
+  display: flex;
+  /* width: 300px;
+  height: 200px; */
+  padding: 30px auto;
+
+  /* object-fit: cover; */
+}
+
+.Bio-Img-Card:hover{
+    transform: scale(1.02);
+}
+
+.Bio-Img-Card img {
+  border: 2px solid #e5a514;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* CEO Name & Role */
+.bio-name-Container {
+    background-image: linear-gradient(#e5a514,#e5a61481 );
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  /* border: 2px solid red; */
+  color: black;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.bio-name-Container h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.bio-name-Container h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bio-name-Container:hover{
+    transform: scale(1.02);
+}
+
+.Bio-Icons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  /* background-color: #e5a514; */
+}
+
+.Bio-icon{
+    color:rgba(0, 0, 0, 0.5);
+}
+.Bio-icon:hover{
+color: #000000 ;
+transform: scale(1.1);
+}
+.Bio-Line{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #e5a514;
+
+}
+
+/* CEO Information Section */
+.bio-information {
+  margin-top: 20px;
+  text-align: justify;
+  line-height: 1.6;
+  color: black;
+}
+.bio-information p {
+  padding: 30px;
+}
+
+/* CEO Contact Details */
+.bio-details {
+    display: flex;
+  background-color: #d9d9d9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  /* margin-top: 20px; */
+  justify-content: center;
+  color: #000000;
+  gap: 10px;
+
+  
+}
+/* 
+.bio-details  {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: black;
+} */
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .About-Container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Ceo-img-Container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Banner-Name h1 {
+    font-size: 2rem;
+    padding: 8px 15px;
+  }
+} */

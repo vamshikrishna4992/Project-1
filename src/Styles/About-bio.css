@@ -5,8 +5,6 @@
   /* color: black; */
 }
 
-
-
 /* Banner start */
 
 .bio-banner {
@@ -87,8 +85,8 @@
 
 .Bio-Img-Card img {
   border: 2px solid #e5a514;
-  height: 260px;
-  width: 240px;
+  height: 250px;
+  width: 245px;
   border-radius: 50%;
 }
 
@@ -170,30 +168,172 @@ transform: scale(1.1);
   margin: auto;
   /* height: 3px; */
 }
-/* 
-.bio-details  {
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: black;
-} */
 
-/* Responsive Design */
-/* @media (max-width: 768px) {
-  .About-Container {
-    flex-direction: column;
-    text-align: center;
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .content {
+      width: 70%;
+      font-size: 14px;
+      padding: 6px;
   }
+  .content h3 {
+      font-size: 16px;
+  }
+  .content p {
+      font-size: 12px;
+  }
+  .Fundamental-Content {
+      max-width: 600px;
+      text-align: center;
+      margin: auto;
+  }
+  .line {
+      height: 150px;
+  }
+  .bio-name-Container {
+      width: 500px;
+      padding: 18px;
+  }
+  .bio-name-Container h1 {
+      font-size: 1.8rem;
+  }
+  .bio-name-Container h3 {
+      font-size: 1rem;
+  }
+}
 
-  .Ceo-img-Container {
-    width: 150px;
-    height: 150px;
+@media (max-width: 992px) {
+  .content {
+      width: 75%;
+      font-size: 12px;
+      padding: 6px;
   }
+  .content h3 {
+      font-size: 14px;
+  }
+  .content p {
+      font-size: 10px;
+  }
+  .Fundamental-Content {
+      max-width: 550px;
+  }
+  .line {
+      height: 120px;
+  }
+  .bio-name-Container {
+      width: 450px;
+      padding: 16px;
+  }
+  .bio-name-Container h1 {
+      font-size: 1.6rem;
+  }
+  .bio-name-Container h3 {
+      font-size: 0.9rem;
+  }
+}
 
-  .Banner-Name h1 {
-    font-size: 2rem;
-    padding: 8px 15px;
+@media (max-width: 768px) {
+  .content {
+      width: 80%;
+      font-size: 11px;
+      padding: 5px;
   }
-} */
+  .content h3 {
+      font-size: 13px;
+  }
+  .content p {
+      font-size: 9px;
+  }
+  .Fundamental {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+  }
+  .Fundamental img {
+      width: 80%;
+  }
+  .Fundamental-Content {
+      max-width: 500px;
+      margin-top: 20px;
+  }
+  .line {
+      height: 100px;
+  }
+  .bio-name-Container {
+      width: 400px;
+      padding: 14px;
+  }
+  .bio-name-Container h1 {
+      font-size: 1.4rem;
+  }
+  .bio-name-Container h3 {
+      font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+      width: 85%;
+      font-size: 10px;
+      padding: 4px;
+  }
+  .content h3 {
+      font-size: 12px;
+  }
+  .content p {
+      font-size: 8px;
+  }
+  .Fundamental img {
+      width: 90%;
+  }
+  .Fundamental-Content {
+      max-width: 450px;
+  }
+  .line {
+      height: 80px;
+  }
+  .bio-name-Container {
+      width: 350px;
+      padding: 12px;
+  }
+  .bio-name-Container h1 {
+      font-size: 1.2rem;
+  }
+  .bio-name-Container h3 {
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+      width: 90%;
+      font-size: 9px;
+      padding: 3px;
+  }
+  .content h3 {
+      font-size: 10px;
+  }
+  .content p {
+      font-size: 7px;
+  }
+  .Fundamental img {
+      width: 100%;
+  }
+  .Fundamental-Content {
+      max-width: 400px;
+      padding: 10px;
+  }
+  .line {
+      display: none;
+  }
+  .bio-name-Container {
+      width: 300px;
+      padding: 10px;
+  }
+  .bio-name-Container h1 {
+      font-size: 1rem;
+  }
+  .bio-name-Container h3 {
+      font-size: 0.75rem;
+  }
+}

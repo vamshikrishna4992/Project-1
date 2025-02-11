@@ -185,55 +185,147 @@ body {
 
 /* **************Approch start***************** */
 
+/* Responsive Adjustments */
 
-.cloud-approach-main-container{
-    padding: 20px;
-    background-color: #e8b541;
-    font-weight: bold;
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .cloud-services-content {
+        width: 75%;
+    }
+    .TextContent {
+        width: 75%;
+    }
 }
 
-.cloud-approach-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 50px;
-    gap: 30px;
-    row-gap: 100px;
-    width: 80%;
-    margin: auto;
-    align-self: center;
-}
-.cloud-approach-main-container h2{
-    text-align: center;
-    color: #000;
-    font-size: xx-large;
-}
-.cloud-approach-sub{
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-background-color: #d9d9d9;
-color: black;
-border-radius: 100%;
-width: 50%;
-height: 160px;
-text-align: center;
-padding: 50px;
-margin: auto;
-align-content: center;
-}
-.cloud-approach-sub:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-.cloud-approach-sub img{
-    width: 80px;
-    height: 80px;
-}
-.cloud-approach-sub p{
-font-weight: 500;
+@media (max-width: 992px) {
+    .cloud-services-content {
+        width: 85%;
+    }
+    .cloud-services-content h1 {
+        font-size: 2rem;
+    }
+    .TextContent {
+        width: 85%;
+    }
 }
 
+@media (max-width: 768px) {
+    .cloud-services-content {
+        width: 90%;
+    }
+    .cloud-services-content h1 {
+        font-size: 1.8rem;
+    }
+    .cloud-services-content p {
+        font-size: 0.9rem;
+    }
+    .TextContent {
+        width: 100%;
+        text-align: center;
+    }
+    .aboutusimg {
+        width: 100%;
+        height: auto;
+    }
+    .AboutContainer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+}
 
-/* ******************Appoch end ***************** */
+@media (max-width: 576px) {
+    .cloud-services-content {
+        width: 95%;
+    }
+    .cloud-services-content h1 {
+        font-size: 1.5rem;
+    }
+    .cloud-services-content p {
+        font-size: 0.85rem;
+    }
+    .cloud-approach-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        row-gap: 15px;
+        padding: 10px;
+    }
+    .cloud-approach-sub {
+        width: 80%;
+        max-width: 300px;
+        margin: auto;
+        height: auto;
+        padding: 20px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .cloud-approach-sub img {
+        width: 60px;
+        height: 60px;
+    }
+    .cloud-approach-sub p {
+        font-size: 14px;
+    }
+}
 
-
-
-
-
+@media (max-width: 480px) {
+    .cloud-services-container {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .cloud-services-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cloud-services-content h1 {
+        font-size: 1.8rem;
+    }
+    .cloud-services-content p {
+        font-size: 0.95rem;
+    }
+    .AboutContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: auto;
+        gap: 20px;
+    }
+    .TextContent {
+        width: 100%;
+        text-align: center;
+    }
+    .TextContent h3 {
+        font-size: 18px;
+    }
+    .cloud-sec-coontainer {
+        height: auto;
+        padding: 5%;
+    }
+    .cloud-approach-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        row-gap: 15px;
+        padding: 10px;
+    }
+    .cloud-approach-sub {
+        width: 80%;
+        max-width: 300px;
+        margin: auto;
+        height: auto;
+        padding: 20px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .cloud-approach-sub img {
+        width: 100%;
+        height: 50px;
+    }
+    .cloud-approach-sub p {
+        font-size: 12px;
+    }
+}

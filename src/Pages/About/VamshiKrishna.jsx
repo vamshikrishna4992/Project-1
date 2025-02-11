@@ -8,12 +8,6 @@ function VamshiKrishna() {
     return (
         <div className='Main-About'>
             <Navbar />
-
-            {/* Banner Section */}
-            {/* <div className="About-banner"> */}
-            {/* <div className='About-back-Container '>
-        <h1 className="banner-title">Vamshi Krishna</h1>
-      </div> */}
             <div className="bio-banner">
                 <h1 className="bio-title">Vamshi Krishna</h1>
             </div>

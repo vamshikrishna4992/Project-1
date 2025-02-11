@@ -8,7 +8,7 @@ body {
 
 .header-container {
   position: relative;
-  width: 100%;
+  width: auto;
   min-height: 85vh; 
   color: white;
   display: flex;

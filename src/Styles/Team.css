@@ -121,7 +121,7 @@
   transform: scale(1.05);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .team-container {
       flex-direction: column;

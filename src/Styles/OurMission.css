@@ -1,41 +1,24 @@
-/* AboutUs Container */
+
 .AboutContainer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 30px;
     padding: 50px;
     margin: auto;
-    background-color: #000; /* Black Background */
-    color: #fff; /* White text */
-    flex-direction: row-reverse; /* Moves image to the right */
+    background-color: #000; 
+    color: #fff; 
+    flex-direction: row; 
     font-family: 'Poppins', sans-serif;
-    height: 50vh;
-}
-
-/* Image Styling */
-.aboutusimg {
-    width: 50%;
-    max-width: 500px;
     height: auto;
-    border-radius: 12px;
-    filter: brightness(90%) contrast(1.1);
-    transition: transform 0.4s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.aboutusimg:hover {
-    filter: brightness(100%);
-    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
-}
-
-/* Text Content */
 .TextContent {
     width: 50%;
-    text-align: justify;
-
+    text-align: left; 
 }
 
-/* Heading Styling */
+
 .TextContent h3 {
     font-size: 32px;
     margin-bottom: 15px;
@@ -43,7 +26,6 @@
     letter-spacing: 1.5px;
 }
 
-/* Custom Colors */
 .white-text {
     color: white;
 }
@@ -52,39 +34,59 @@
     color: #ffcc00;
 }
 
+.VideoSection {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center; 
+}
+
+.react-player {
+    border-radius: 12px;
+    overflow: hidden;
+}
 
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .AboutContainer {
         padding: 30px;
+        gap: 20px;
+    }
+
+    .TextContent h3 {
+        font-size: 28px;
     }
 }
 
 @media (max-width: 768px) {
     .AboutContainer {
-        flex-direction: column;
+        flex-direction: column; 
         text-align: center;
         gap: 20px;
-    }
-
-    .aboutusimg {
-        width: 90%;
-        max-width: none;
     }
 
     .TextContent {
         width: 100%;
     }
+
+    .VideoSection {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .react-player {
+        width: 100%;
+        height: auto;
+    }
 }
+
 
 @media (max-width: 480px) {
     .TextContent h3 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
-    .Aboutredirect {
-        padding: 10px 20px;
-        font-size: 15px;
+    .TextContent p {
+        font-size: 14px;
     }
 }

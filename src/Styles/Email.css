@@ -1,31 +1,27 @@
-/* Email Container */
+/* Worked on this code: AnilKumar */
+
 .email-container {
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
-    /* border-radius: 12px; */
     width: auto;
     height: auto;
-    /* box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); */
-}
-
-/* Heading */
-.email-container h2 {
+  }
+  
+  .email-container h2 {
     font-size: 24px;
     color: #f0a500;
     margin-bottom: 18px;
-}
-
-/* Container */
-.email-input-container {
+  }
+  
+  .email-input-container {
     display: flex;
     justify-content: center;
     gap: 8px;
-}
-
-/* Email Input */
-.email-input {
+  }
+  
+  .email-input {
     width: 40%;
     padding: 10px;
     border: 1px solid #f0a500;
@@ -34,21 +30,20 @@
     background-color: transparent;
     color: white;
     transition: color 0.3s ease-in-out;
-}
-
-.email-input:focus,
-.email-input:not(:placeholder-shown) {
-    /* color: #f0a500; */
+  }
+  
+  .email-input:focus,
+  .email-input:not(:placeholder-shown) {
     outline: none;
     border-color: #f0a500;
-}
-
-.email-input::placeholder {
+  }
+  
+  .email-input::placeholder {
     color: #ccc;
-}
+  }
+  
 
-/* Subscribe Button */
-.subscribe-button {
+  .subscribe-button {
     padding: 10px 15px;
     background-color: #f0a500;
     color: black;
@@ -57,11 +52,53 @@
     font-size: 14px;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-}
-
-
-.subscribe-button:hover {
+  }
+  
+  .subscribe-button:hover {
     background-color: #000;
     color: #f0a500;
     border: 1px solid #f0a500;
-}
+  }
+  
+
+  @media (max-width: 768px) {
+    .email-container h2 {
+      font-size: 20px;
+    }
+  
+    .email-input {
+      width: 60%; 
+    }
+  
+    .subscribe-button {
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .email-container {
+      padding: 15px;
+    }
+  
+    .email-container h2 {
+      font-size: 18px;
+    }
+  
+    .email-input-container {
+      flex-direction: column; 
+      align-items: center;
+      gap: 10px; 
+    }
+  
+    .email-input {
+      width: 80%;
+      font-size: 13px;
+    }
+  
+    .subscribe-button {
+      width: 40%;
+      padding: 10px;
+      font-size: 12px; 
+    }
+  }

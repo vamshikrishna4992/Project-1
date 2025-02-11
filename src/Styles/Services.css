@@ -1,110 +1,193 @@
-
-  .service-container{
-    background-color: black;
-
-
-  }
-   .service-container .service-content{
-    color: azure;
-    /* padding-left: 25px; */
-    /* margin: 20px 0; */
-  } 
-  .service-container .service-content h1{
-    margin-left: 3%;
-  }
-  .service-container .service-content h1 span{
-    color: goldenrod;
-  }
-
-  .service-content h1 {
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .service-container .service-content p{
-    /* text-align: left; */
-    margin-left: 50px;
-    /* margin-bottom: 20px; */
-    line-height: 1.5;
-  }
-  .service-container .service-slider{
-    width: 100%;
-  }
-  .service-container .service-slider img{
-    width: 100%;
-    height: 300px;
-  }
-
-  .services-card {
-    display: flex;
-    gap: 60px;
-    justify-content: center;
-    width: 100%;
-    height: 300px;
-    padding: 20px;
+/* Service Container */
+.service-container {
+  background-color: black;
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Title & Content */
+.service-content {
+  color: azure;
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-content h1 {
+  font-size: clamp(28px, 4vw, 36px);
+  margin-bottom: 10px;
+}
+
+.service-content h1 span {
+  color: goldenrod;
+}
+
+.service-content p {
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Cards */
+.services-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Individual Service Card */
 .services-rows {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 160px;
-    padding: 20px;
-    text-align: center;
-    position: relative; /* Ensures button can be positioned relative to card */
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    z-index: 1; /* Ensure the card is above the background */
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .services-rows:hover {
-    transform: translateY(-10px); /* Slight lift effect on hover */
-    z-index: 2; 
+  transform: translateY(-10px);
+  z-index: 2;
 }
 
 .services-rows img {
-    width: 80%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
+  width: 80%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .services-rows p {
-    margin-top: 3px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
 }
 
-/* Initially hide the button */
+/* Hover Button */
 .hover-button {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    bottom: 5px; /* Position the button near the bottom */
-    left: 50%;
-    transform: translateX(-50%) translateY(30px); /* Position the button slightly below the bottom edge */
-    background-color: white;
-    color: rgb(247, 207, 12);
-    border: 2px solid goldenrod;
-    border-radius: 20px;
-    padding: 5px 30px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease;
-    z-index: 3; /* Make sure button is on top of the card */
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background-color: white;
+  color: goldenrod;
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+  padding: 5px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease;
+  z-index: 3;
 }
 
-/* On hover of .project-rows, show the button */
+/* Show button on hover */
 .services-rows:hover .hover-button {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0); /* Move the button to the bottom edge */
-    transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
 }
 
-/* Hover effect on the button */
+/* Button Hover Effect */
 .hover-button:hover {
-    border-color: rgb(221, 181, 81);
+  border-color: rgb(221, 181, 81);
+}
+
+/* -------------------------------- */
+/* ✅ RESPONSIVE DESIGN */
+/* -------------------------------- */
+
+/* Tablets (Max Width: 1024px) */
+@media (max-width: 1024px) {
+  .services-card {
+      gap: 30px;
+  }
+
+  .services-rows {
+      width: 150px;
+      padding: 15px;
+  }
+
+  .services-rows img {
+      height: 160px;
+  }
+
+  .hover-button {
+      padding: 4px 25px;
+      font-size: 13px;
+  }
+}
+
+/* Mobile (Max Width: 768px) */
+@media (max-width: 768px) {
+  .services-card {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .services-rows {
+      width: 45%;
+      padding: 15px;
+  }
+
+  .services-rows img {
+      height: 140px;
+  }
+
+  .hover-button {
+      font-size: 12px;
+      padding: 4px 20px;
+  }
+}
+
+/* Small Screens (Max Width: 480px) */
+@media (max-width: 480px) {
+  .service-content h1 {
+      font-size: 24px;
+  }
+
+  .service-content p {
+      font-size: 14px;
+  }
+
+  .services-card {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .services-rows {
+      width: 90%;
+      max-width: 250px;
+      padding: 10px;
+  }
+
+  .services-rows img {
+      height: 120px;
+  }
+
+  .services-rows p {
+      font-size: 12px;
+  }
+
+  .hover-button {
+      font-size: 12px;
+      padding: 4px 18px;
+  }
 }

@@ -9,9 +9,9 @@ import { FaQuoteRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const testimonials = [
     {
         id: 1,
-        company: "State Board for Community and Technical Colleges",
+        company: "Tech Solutions Ltd.",
         feedback:
-            " Transform your business with ERP Consultancy Services in the USA—optimize processes, enhance efficiency, and achieve sustainable growth through tailored solutions. Transform your business with ERP Consultancy Services in the USA—optimize processes, enhance efficiency, and achieve sustainable growth through tailoredsolutions",
+            "Transform your business with Consultancy Services in enhance efficiency, and achieve sustainable growth through tailored solutions",
         image: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     {

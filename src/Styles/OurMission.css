@@ -1,4 +1,4 @@
-/* AboutUs Container */
+
 .AboutContainer {
     display: flex;
     align-items: center;
@@ -6,20 +6,19 @@
     gap: 30px;
     padding: 50px;
     margin: auto;
-    background-color: #000; /* Black Background */
-    color: #fff; /* White text */
-    flex-direction: row; /* Default: text on left, video on right */
+    background-color: #000; 
+    color: #fff; 
+    flex-direction: row; 
     font-family: 'Poppins', sans-serif;
     height: auto;
 }
 
-/* Text Content */
 .TextContent {
     width: 50%;
-    text-align: left; /* Ensures text aligns properly */
+    text-align: left; 
 }
 
-/* Heading Styling */
+
 .TextContent h3 {
     font-size: 32px;
     margin-bottom: 15px;
@@ -27,7 +26,6 @@
     letter-spacing: 1.5px;
 }
 
-/* Custom Colors */
 .white-text {
     color: white;
 }
@@ -36,25 +34,19 @@
     color: #ffcc00;
 }
 
-/* Video Section */
 .VideoSection {
     width: 50%;
     max-width: 500px;
     display: flex;
-    justify-content: center; /* Center the video */
+    justify-content: center; 
 }
 
-/* React Player Styling */
 .react-player {
     border-radius: 12px;
     overflow: hidden;
 }
 
-/* -------------------------------- */
-/* ✅ RESPONSIVE DESIGN */
-/* -------------------------------- */
 
-/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
     .AboutContainer {
         padding: 30px;
@@ -66,10 +58,9 @@
     }
 }
 
-/* ✅ Mobile Screens (max-width: 768px) */
 @media (max-width: 768px) {
     .AboutContainer {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column; 
         text-align: center;
         gap: 20px;
     }
@@ -89,7 +80,7 @@
     }
 }
 
-/* ✅ Small Screens (max-width: 480px) */
+
 @media (max-width: 480px) {
     .TextContent h3 {
         font-size: 24px;

@@ -1,4 +1,4 @@
-/* Service Container */
+
 .service-container {
   background-color: black;
   padding: 40px 0;
@@ -8,7 +8,6 @@
   align-items: center;
 }
 
-/* Title & Content */
 .service-content {
   color: azure;
   width: 90%;
@@ -33,7 +32,6 @@
   margin: 0 auto;
 }
 
-/* Services Cards */
 .services-card {
   display: flex;
   justify-content: center;
@@ -43,7 +41,6 @@
   max-width: 1200px;
 }
 
-/* Individual Service Card */
 .services-rows {
   background-color: #fff;
   border-radius: 20px;
@@ -76,7 +73,6 @@
   color: #333;
 }
 
-/* Hover Button */
 .hover-button {
   opacity: 0;
   visibility: hidden;
@@ -96,7 +92,6 @@
   z-index: 3;
 }
 
-/* Show button on hover */
 .services-rows:hover .hover-button {
   opacity: 1;
   visibility: visible;
@@ -104,16 +99,12 @@
   transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
 }
 
-/* Button Hover Effect */
 .hover-button:hover {
   border-color: rgb(221, 181, 81);
 }
 
-/* -------------------------------- */
-/* ✅ RESPONSIVE DESIGN */
-/* -------------------------------- */
 
-/* Tablets (Max Width: 1024px) */
+
 @media (max-width: 1024px) {
   .services-card {
       gap: 30px;
@@ -134,7 +125,6 @@
   }
 }
 
-/* Mobile (Max Width: 768px) */
 @media (max-width: 768px) {
   .services-card {
       flex-wrap: wrap;
@@ -157,7 +147,6 @@
   }
 }
 
-/* Small Screens (Max Width: 480px) */
 @media (max-width: 480px) {
   .service-content h1 {
       font-size: 24px;

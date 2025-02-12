@@ -4,12 +4,12 @@ import gsap from "gsap";
 import "../../Styles/SoftwareDevelopment.css";
 import Footer from "../../Components/Footer";
 import WhyChoose from "../../Components/WhyChoose";
-import icon1 from '../../assets/images/icon1.svg'; 
-import icon2 from '../../assets/images/icon2.svg'; 
-import icon3 from '../../assets/images/icon3.svg'; 
-import icon4 from '../../assets/images/icon4.svg'; 
-import icon5 from '../../assets/images/icon5.svg'; 
-import icon6 from '../../assets/images/icon6.svg'; 
+import icon1 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/end to end development.png'; 
+import icon2 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/ios android development.png'; 
+import icon3 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/responsive design.png'; 
+import icon4 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/scalable solutions.png'; 
+import icon5 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/Skype_Picture_2025_02_12T07_13_16_359Z.jpeg'; 
+import icon6 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/web development.png'; 
 
 const SoftwareDevelopment = () => {
   const textRef = useRef(null);
@@ -94,19 +94,19 @@ const UnlockSoftware = () => {
 
 const SoftwareApproach = () => {
   const content = [
-    { title: "Handle increased traffic and data", image: icon1 },
-    { title: "Designed according to needs", image:icon2 },
-    { title: "flow of goods, information, resources", image: icon3},
-    { title: "scalable solutions", image: icon4 },
-    { title: "Fully responsive and optimized", image: icon5},
-    {title: "Identify & fix bugs to ensure a flawless",image: icon6,},
+    { title: "End To End Devlopment", image: icon1 },
+    { title: "Ios Android Devlopment", image:icon2 },
+    { title: "Responsive Design", image: icon3},
+    { title: "Scalable Solutions", image: icon4 },
+    { title: "ERP & CRM Systems", image: icon5},
+    {title: "Web Devlopment",image: icon6,},
   ];
 
   return (
     <>
     <div className="software-main">
     <div className="software-approach-contariner">
-        <h2 className="software-approach-content">KrystalNest’s Approach to IT Staffing Services</h2>
+        <h2 className="software-approach-content">KrystalNest’s Approach to Software Development Services</h2>
         <div className="content-circle-container">
           {content.map((item, index) => (
             <div className="content-circle" key={index}>

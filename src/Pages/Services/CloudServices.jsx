@@ -5,12 +5,12 @@ import gsap from "gsap";
 import '../../Styles/CloudServices.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
 import Footer from "../../Components/Footer.jsx";
-import approach4 from '../../assets/images/approach4.png';
-import approach2 from '../../assets/images/approach2.png'
-import approach1 from '../../assets/images/approach1.png'
-import approach3 from '../../assets/images/approach3.png'
-import approach5 from '../../assets/images/approach5.png'
-import approach6 from '../../assets/images/approach6.png';
+import approach4 from '../../assets/images/Apporches/CLOUD SERVICES/server_13806863.png';
+import approach2 from '../../assets/images/Apporches/CLOUD SERVICES/gear_10214626.png'
+import approach1 from '../../assets/images/Apporches/CLOUD SERVICES/carbon--ibm-cloud-internet-services.png'
+import approach3 from '../../assets/images/Apporches/CLOUD SERVICES/repair_8500751.png'
+import approach5 from '../../assets/images/Apporches/CLOUD SERVICES/services_12249556.png'
+import approach6 from '../../assets/images/Apporches/CLOUD SERVICES/web_8500931.png';
 import cloudInfo from '../../assets/images/cloud-info.png';
 
 

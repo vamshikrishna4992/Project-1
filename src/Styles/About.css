@@ -133,7 +133,7 @@ position: relative;
     display: flex;
     justify-content: center;
     margin: 30px 0;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     margin: auto;
 }
 
@@ -426,7 +426,7 @@ position: relative;
     .Our-Team{
         /* margin-bottom: 100px; */
         height: auto;
-        border: 2px solid red
+        /* border: 2px solid red */
     }
     .content{
         margin-bottom: 13px;

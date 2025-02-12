@@ -254,7 +254,7 @@ body {
 /* Ensure No Overlapping and Proper Padding */
 @media (max-width: 768px) {
     .software-development-container {
-        height: auto;
+        height: 30vh;
         padding-top: 10px; 
         padding-bottom: 20px; 
       }

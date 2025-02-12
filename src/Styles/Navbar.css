@@ -6,7 +6,7 @@
   padding: 20px 50px;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.253);
-  width: 80%;
+  width: 90%;
   top: 0;
   margin: auto;
   height: 25px;
@@ -15,6 +15,7 @@
   font-weight: bold;
   text-align: center;
   animation: fadeSlide 1s ease-in-out;
+  margin-top: 10px;
 }
 
 /* Logo */
@@ -43,8 +44,10 @@
 .all-nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:flex-end ;
+  gap: 30px;
   width: 60%;
+  /* border: 2px solid blue; */
 }
 
 .nav-links {
@@ -125,6 +128,7 @@
   border-radius: 25px;
   cursor: pointer;
   list-style: none;
+  padding: 5px;
 }
 
 .nav-contact-btn .contactus {
@@ -159,7 +163,7 @@
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .navbar {
-    width: 95%;
+    width: 80%;
     padding: 15px 25px;
     height: auto;
   }
@@ -183,6 +187,7 @@
     display: none;
     padding: 20px;
     transition: all 0.3s ease-in-out;
+    /* border : 2px solid red; */
   }
 
   .all-nav-links.mobile-active {

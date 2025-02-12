@@ -49,11 +49,14 @@ const About = () => {
   }, []);
   return (
    <>
-     <Navbar/>
+     
     <div className="about-main-container">
+    <Navbar/>
       <div className="about-hero-section">
       <div className="line"></div>
+      {/* <div className="below-480"></div> */}
     <div>
+    {/* <hr className="line" /> */}
     <h1>Revolutionize Your <br /> Business Practices.</h1>
     <p>Design. Develop. Digital. IT Staffing</p>
     </div>
@@ -98,8 +101,8 @@ const About = () => {
 
       <div className="main-container">
         {/* Team Member 1 */}
-        <div className="container">
-          <Link to="/VamshiKrishna">
+        <div className="container" >
+          <Link to="/VamshiKrishna" className="profile-about">
             <div className="image-container">
               <img src={image1} alt="Vamshi Krishna" />
             </div>
@@ -137,7 +140,7 @@ const About = () => {
         </div>
 
         {/* Team Member 4 */}
-        <div className="container">
+        <div className="container" id="team-one">
           <Link to="/Lahari">
             <div className="image-container">
               <img src={image4} alt="Lahari" />
@@ -150,7 +153,7 @@ const About = () => {
         </div>
 
         {/* Team Member 5 */}
-        <div className="container">
+        <div className="container" id="team-two">
           <Link to="/Bhavana">
             <div className="image-container">
               <img src={image5} alt="Bhavana" />

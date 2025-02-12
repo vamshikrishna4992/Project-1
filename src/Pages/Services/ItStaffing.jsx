@@ -1,17 +1,17 @@
 
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import Navbar from '../../Components/Navbar';
 import gsap from "gsap";
 import '../../Styles/ITStaffing.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
 import itStaffImg from '../../assets/images/IT-STAFFING-1.png'
 import Footer from '../../Components/Footer.jsx'
-import icon1 from '../../assets/images/hr-management.png'
-import icon2 from '../../assets/images/lead-management.png'
-import icon3 from '../../assets/images/people-arrows.png'
-import icon4 from '../../assets/images/people-group.png'
-import icon5 from '../../assets/images/referral-user.png'
-import icon6 from '../../assets/images/users-gear.png'
+import icon1 from '../../assets/images/Apporches/IT STAFFING/co-worker_18030490.png'
+import icon2 from '../../assets/images/Apporches/IT STAFFING/connection_18030520.png'
+import icon3 from '../../assets/images/Apporches/IT STAFFING/team-management_13450629.png'
+import icon4 from '../../assets/images/Apporches/IT STAFFING/team_1401932.png'
+import icon5 from '../../assets/images/Apporches/IT STAFFING/approved_942833.png'
+import icon6 from '../../assets/images/Apporches/IT STAFFING/teamwork_1401936.png'
 
 const ItStaffing = () => {
   const textRef = useRef(null);
@@ -44,8 +44,8 @@ const ItStaffing = () => {
         <div className="ITStaffing-services-content">
           <h1 ref={textRef} className="ITStaffing-animated-text">IT Staffing Services</h1>
           <p ref={descriptionRef} className="ITStaffing-description">
-            "Connecting your business with the best IT talent.  
-            Empowering teams with top-tier professionals for success. "
+            Connecting your business with the best IT talent.  
+            Empowering teams with top-tier professionals for success. 
           </p>
         </div>
       </div>
@@ -72,8 +72,8 @@ const Unlock = () => {
           <div className="TextContent">
 
             <p>
-              With today's fast-changing technological landscape, the right talent is what's going to take your business up the ladder. At KrystalNest, we specialize in helping organizations connect with top IT professionals to drive innovation, optimize operations, and deliver impactful results. Whether you need temporary staff, permanent hires, or specialized technical expertise, we are here to help you build the dream team that aligns with your unique goals and business needs.
-              It's focused on knowing what challenges your business is facing, and then finding the appropriate professionals that have the right kind of skills and experience to meet your needs. Whether it's IT strategy and software development or infrastructure management and cybersecurity, we present you with the best options to take you and your business forward.
+              With todays fast-changing technological landscape, the right talent is whats going to take your business up the ladder. At KrystalNest, we specialize in helping organizations connect with top IT professionals to drive innovation, optimize operations, and deliver impactful results. Whether you need temporary staff, permanent hires, or specialized technical expertise, we are here to help you build the dream team that aligns with your unique goals and business needs.
+              Its focused on knowing what challenges your business is facing, and then finding the appropriate professionals that have the right kind of skills and experience to meet your needs. Whether its IT strategy and software development or infrastructure management and cybersecurity, we present you with the best options to take you and your business forward.
             </p>
 
           </div>

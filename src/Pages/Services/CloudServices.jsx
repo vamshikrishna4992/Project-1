@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import Navbar from '../../Components/Navbar';
 import gsap from "gsap";
@@ -45,33 +44,34 @@ const CloudServices = () => {
         <div className="cloud-services-content">
           <h1 ref={textRef} className="cloud-animated-text">Cloud Services</h1>
           <p ref={descriptionRef} className="cloud-description">
-            "In today’s fast-paced digital world, businesses need agile, scalable, and secure solutions to stay ahead. "
-          </p>
+          "In today’s fast-paced digital world, businesses need agile, scalable, and secure solutions to stay ahead. "</p>
         </div>
       </div>
-      <Unlock />
-      <Approach />
+      <UnlockCloud />
+      <CloudApproach  />
       <Footer />
     </>
   );
 };
 
-
-const Unlock = () => {
-  return (
-    <>
-
-      <div className="cloud-sec-coontainer">
-        <div className="cloud-head1">
-          <h2>Unlocking the Power of <span>Cloud Services</span></h2>
-        </div>
-        <div className="AboutContainer"> {/* Changed class name */}
-          <img className="aboutusimg" src={cloudInfo} alt="About Us Image" />
-
-          <div className="TextContent">
-
-            <p>
-              Cloud hosting is the practice of hosting websites, applications, and other resources on virtual
+const UnlockCloud = () => {
+return (
+  <>
+    <div className="cloud-sec-coontainer">
+      <div className="cloud-head1">
+        <h2>
+          Unlocking the Power of <span>Cloud Services</span>
+        </h2>
+      </div>
+      <div className="AboutCloudContainer">
+        <img
+          className="aboutusimg"
+          src={cloudInfo}
+          alt="About Us Image"
+        />
+        <div className="CloudTextContent">
+          <p>
+          Cloud hosting is the practice of hosting websites, applications, and other resources on virtual
               servers that draw computing resources from a vast network of physical servers. This model
               provides several advantages, including increased reliability, scalability, and cost-effectiveness.
               Cloud hosting services are categorized into Infrastructure as a Service (IaaS), Platform as a
@@ -79,70 +79,46 @@ const Unlock = () => {
               customization.
               In the fast-paced and dynamic world of technology, businesses are constantly seeking ways to enhance
               their agility, scalability, and overall efficiency. One transformative solution that has gained immense
-
-            </p>
-
-          </div>
+          </p>
         </div>
       </div>
-    </>
-  )
+    </div>
+  </>
+);
 };
 
-const Approach = () => {
-  const cloudapproaches = [
-    {
-      icon: approach4,
-      content: 'Implement robust data backup and recovery strategies',
-      hoverContent: 'Ensure continuous data availability with secure backups and quick recovery solutions.'
-    },
-    {
-      icon: approach2,
-      content: 'Encrypt data at rest and in transit',
-      hoverContent: 'Protect sensitive information by using advanced encryption methods for data security.'
-    },
-    {
-      icon: approach5,
-      content: 'Continuously monitor and adapt to evolving threats',
-      hoverContent: 'Stay ahead of security risks with real-time monitoring and adaptive threat detection.'
-    },
-    {
-      icon: approach6,
-      content: 'Leverage cloud provider security features',
-      hoverContent: 'Enhance protection using built-in security measures from trusted cloud providers.'
-    },
-    {
-      icon: approach1,
-      content: 'Regularly update and patch systems',
-      hoverContent: 'Keep your infrastructure secure by applying the latest updates and security patches.'
-    },
-    {
-      icon: approach3,
-      content: 'Implement cloud security monitoring and logging',
-      hoverContent: 'Track and analyze security events to detect and respond to potential threats effectively.'
-    }
-  ];
+const CloudApproach = () => {
+const content = [
+  {hoverContent:'From conceptualization to final deployment, we take responsibility for every phase',title: "Handle increased traffic and data", image: approach4 },
+  {hoverContent: 'In this digitally dominant world, business-web applications play a very crucial role for companies to make relationships.', title: "Designed according to needs", image:approach2 },
+  {hoverContent: ' We can develop mobile applications for both iOS and Android platforms.',title: "flow of goods, information, resources", image: approach5},
+  {hoverContent: 'Enterprise software is important for managing complex business processes and improving operational efficiency.',title: "scalable solutions", image: approach6 },
+  {hoverContent: 'Software development does not stop at deployment. Ongoing maintenance and support are essential to keep your software working.', title: "Fully responsive and optimized", image: approach1},
+  {hoverContent: 'software is the backbone of every successful business. From automating processes to enhancing customer experiences.',title: "Identify & fix bugs to ensure a flawless",image: approach3,},
+];
 
-
-  return (
-    <>
-      <div className="cloud-approach-main-container">
-        <h2 className="cloud-head2">KrystalNest’s Approach to Cloud Services</h2>
-        <div className="cloud-approach-container">
-          {cloudapproaches.map((approach, index) => (
-            <div className="cloud-approach-sub" key={index}>
-              <img src={`${approach.icon}`} alt={approach.icon} />
-              <p>{approach.content}</p>
-              <div className="cloud-hover-content">
-                <p>{approach.hoverContent}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <WhyChoose />
+return (
+  <>
+  <div className="cloud-approach-contariner">
+      <h2 className="cloud-approach-content">KrystalNest’s Approach to Cloud Services</h2>
+      <div className="cloud-circle-container">
+        {content.map((item, index) => (
+          <div className="cloud-circle" key={index}>
+            <img src={item.image} alt={item.title} className="cloud-image" />
+            <p className="cloud-title">{item.title}</p>
+            <div className="cloud-hover-content">
+            <p>{item.hoverContent}</p>
+          </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
+    <div className="why">
+    <WhyChoose />
+    </div>
+  </>
   )
+      
 }
 
 export default CloudServices;

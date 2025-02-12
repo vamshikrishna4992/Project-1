@@ -94,12 +94,12 @@ const UnlockSoftware = () => {
 
 const SoftwareApproach = () => {
   const content = [
-    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "Handle increased traffic and data", image: icon1 },
-    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Designed according to needs", image:icon2 },
-    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "flow of goods, information, resources", image: icon3},
-    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "scalable solutions", image: icon4 },
-    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Fully responsive and optimized", image: icon5},
-    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "Identify & fix bugs to ensure a flawless",image: icon6,},
+    { sdhoverContent:'From conceptualization to final deployment, we take responsibility for every phase',title: "Handle increased traffic and data", image: icon1 },
+    {sdhoverContent: 'In this digitally dominant world, business-web applications play a very crucial role for companies to make relationships.', title: "Designed according to needs", image:icon2 },
+    { sdhoverContent: ' We can develop mobile applications for both iOS and Android platforms.',title: "flow of goods, information, resources", image: icon3},
+    { sdhoverContent: 'Enterprise software is important for managing complex business processes and improving operational efficiency.',title: "scalable solutions", image: icon4 },
+    {sdhoverContent: 'Software development does not stop at deployment. Ongoing maintenance and support are essential to keep your software working.', title: "Fully responsive and optimized", image: icon5},
+    {sdhoverContent: 'software is the backbone of every successful business. From automating processes to enhancing customer experiences.',title: "Identify & fix bugs to ensure a flawless",image: icon6,},
   ];
 
   return (

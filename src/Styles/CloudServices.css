@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,11 +10,10 @@ body {
     position: relative;
     width: 100%;
     height: 60vh;
-    height: min-content;
     color: white;
     text-align: center;
     padding-top: 20px;
-    z-index: 1; /* Ensure text stays above */
+    z-index: 2;
 }
 
 .cloud-services-container::before {
@@ -58,8 +56,10 @@ body {
     margin-left: 80px;
 }
 
-/* About Us Section */
-.AboutContainer {
+/* ****************** Unlock start ********************* */
+
+/* AboutUs Container */
+.AboutCloudContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,59 +69,46 @@ body {
     background-color: #000;
     color: #fff;
     opacity: 0;
+    height: 40vh;
     animation: fadeIn 1s ease-in-out forwards;
     flex-direction: row-reverse;
     font-family: Arial, sans-serif;
+    z-index: 3; 
+
+
 }
 
+/* Image Styling */
 .aboutusimg {
-    width: 50%;
-    max-width: 500px;
-    height: 400px;
+    width: 60%;
+    max-width: 650px;
+    height: 350px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    filter: brightness(90%);
+    z-index: 4;
 }
 
-.aboutusimg:hover {
+/* .aboutusimg:hover {
     transform: scale(1.05);
     filter: brightness(100%);
-}
+} */
 
-.TextContent {
+/* Text Content */
+.CloudTextContent{
     width: 50%;
     text-align: left;
     transform: translateY(20px);
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
+    z-index: 2;
 }
 
-.TextContent h3 {
+.CloudTextContent h3 {
     font-size: 30px;
     margin-bottom: 10px;
-    color: #ffcc00;
+    color: #ffcc00; 
 }
 
-/* Button Styling */
-.Aboutredirect {
-    background: linear-gradient(90deg, #ffcc00, #ff9900);
-    color: black;
-    border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.Aboutredirect:hover {
-    background: linear-gradient(90deg, #ff9900, #ff6600);
-    transform: translateY(-3px);
-}
-
-/* Animations */
+/* Keyframe Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -138,48 +125,128 @@ body {
     }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .AboutContainer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .aboutusimg {
-        width: 100%;
-    }
-
-    .TextContent {
-        width: 100%;
-    }
+.cloud-head1 h2 span {
+    color: gold;
 }
 
-/* Cloud Approach Section */
-.cloud-approach-main-container {
-    padding: 20px;
-    background-color: #e8b541;
-    font-weight: bold;
-}
-
-.cloud-approach-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 50px;
-    gap: 30px;
-    row-gap: 100px;
-    width: 80%;
-    margin: auto;
-    align-self: center;
-}
-
-.cloud-approach-main-container h2 {
+.cloud-head1 h2 {
     text-align: center;
-    color: #000;
+    background-color: #000;
     font-size: xx-large;
 }
 
+.cloud-sec-coontainer {
+    background-color: #000;
+    padding: 1%;
+    height: 480px;
+}
+
+/* ****************** Unlock end ********************* */
+
+/* **************Approach start***************** */
+
+.why{
+    background-color:#e8b541 ;
+}
+.why h2{
+    text-align: center;
+}
+.why div{
+    text-align: left;
+}
+
+.cloud-approach-contariner {
+    background-color: #e8b541;
+    padding: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+.cloud-approach-content {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    z-index: 4; 
+}
+
+.cloud-circle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px;
+    row-gap: 30px;
+    width: 80%;
+    margin: auto;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 1; 
+    height: 100vh;
+}
+.cloud-circle:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 25px; 
+}
+.cloud-circle {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d9d9d9; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+    z-index: 1; 
+}
+
+.cloud-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.cloud-title{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    z-index: 2; 
+}
+.cloud-circle:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: scale(1.1);
+    z-index: 100;
+}
+.cloud-hover-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: rgba(225, 165, 0, 1);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cloud-circle:hover .cloud-hover-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    
+}
+
 /* Cloud Approach Cards */
-.cloud-approach-sub {
+/* .cloud-approach-sub {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #d9d9d9;
@@ -199,10 +266,10 @@ body {
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     transform: scale(1.1);
     z-index: 100;
-}
+} */
 
 /* Hover Content */
-.cloud-hover-content {
+.cloud-content{
     position: absolute;
     top: 100%;
     left: 50%;
@@ -220,46 +287,143 @@ body {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.cloud-approach-sub:hover .cloud-hover-content {
+.cloud-circle:hover .cloud-content{
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, 0);
     
 }
 
-/* Cloud Headings */
-.cloud-head1 h2 span {
-    color: gold;
-}
 
-.cloud-head1 h2 {
-    text-align: center;
-    background-color: #000;
-    font-size: xx-large;
-}
+/* ***************Responsive************ */
 
-.cloud-sec-coontainer {
-    background-color: #000;
-    padding: 1%;
-    height: 60vh;
-}
 
-/* Responsive Design for Cloud Approach */
 @media (max-width: 1024px) {
-    .cloud-approach-container {
-        grid-template-columns: repeat(2, 1fr);
-        height :auto;
+    .cloud-services-container{
+        height: 45vh;
     }
-}
-
-@media (max-width: 768px) {
-    .cloud-approach-container {
-        grid-template-columns: repeat(2, 1fr);
+    .AboutCloudContainer {
+        gap: 20px;
+        padding: 40px;
+        display: flex;
+        height: 75%;
     }
-
-    .cloud-approach-sub {
+    .cloud-services-content{
         width: 80%;
+        margin-left: 10%;
+    }
+    .cloud-container {
+        height: 40vh;
+    }
+    .cloud-content {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .aboutusimg {
+        width: 60%;
         height: auto;
+    }
+
+    .cloudTextContent {
+        width: 60%;
+    }
+    .cloud-circle-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .cloud-circle {
+        width: 140px;
+        height: 140px;
         padding: 30px;
     }
+}
+
+/* Ensure No Overlapping and Proper Padding */
+@media (max-width: 768px) {
+    .cloud-services-container{
+        height: 30vh;
+    }
+    .cloud-services-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .cloud-services-content h1 {
+        font-size: 2rem;
+      }
+    
+      .cloud-services-content p {
+        font-size: 1rem;
+      }
+    .cloud-services-content{
+        height: 30vh;
+        padding-top: 10px; 
+        padding-bottom: 20px; 
+      }
+    .cloud-services-content {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .AboutCloudContainer {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 20px; 
+        height: auto; 
+        gap: 20px; 
+    }
+    .aboutusimg {
+        width: 60%;
+        height: auto;
+    }
+   
+  
+    .CloudTextContent {
+      width: 100%;
+      text-align: center;
+
+    }
+  
+    .CloudTextContent h3 {
+      font-size: 20px;
+    }
+  
+    .cloud-sec-coontainer {
+      height: auto;
+      padding: 5%;
+    }
+  
+    .cloud-circle-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: auto;
+        row-gap: 20px;
+        column-gap: 20px;
+    
+    }
+  
+    .cloud-circle {
+        width: 60%; 
+        height: 120px; 
+        padding: 20px;
+
+    }
+  
+    .cloud-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .cloud-title {
+      font-size: 14px;
+    }
+
+  
+
 }

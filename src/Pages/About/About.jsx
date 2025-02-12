@@ -73,7 +73,7 @@ const About = () => {
       </div>
 
       {/* Video Section */}
-      <div className='VideoSection'>
+      <div className='VideoSection1'>
         <ReactPlayer url={vedio} controls={true} className="react-player" width="100%" height="500px" />
       </div>
 

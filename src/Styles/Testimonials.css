@@ -93,7 +93,7 @@
 
 @media (max-width: 1024px) {
     .testimonial-card {
-        max-width: 75%;
+        /* max-width: 75%; */
         padding: 25px;
     }
 
@@ -112,7 +112,7 @@
     }
 
     .testimonial-card {
-        max-width: 90%;
+        /* max-width: 90%; */
         padding: 20px;
         min-height: 220px;
     }
@@ -136,6 +136,14 @@
         font-size: 1.5rem;
         top: 50%;
     }
+
+    .prev-btn {
+        left: 5%;
+    }
+
+    .next-btn {
+        right: 5%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -144,7 +152,7 @@
     }
 
     .testimonial-card {
-        max-width: 95%;
+        /* max-width: 95%; */
         padding: 15px;
         min-height: 200px;
     }

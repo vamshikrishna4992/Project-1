@@ -130,9 +130,11 @@ position: relative;
 /* Video Section */
 .VideoSection {
     width: 100%;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     margin: 30px 0;
+    border: 2px solid blueviolet;
+    margin: auto;
 }
 
 /* Fundamental Principles Section */
@@ -302,6 +304,10 @@ position: relative;
     /* padding-bottom: 20px; */
     border-radius: 10px;
 }
+/* .react-player{
+    border: 2px solid red;
+    width: 100%;
+} */
 
 
 /* Responsive Styles */
@@ -407,6 +413,10 @@ position: relative;
         width: 90%;
         margin: auto;
     }
+    .VideoSection1{
+        width: 80%;
+        margin: auto;
+    }
     #team-one,#team-two{
         display: flex;
         align-self: center;
@@ -430,7 +440,6 @@ position: relative;
       width: 100%;
       /* padding-eft: 20px; */
       font-size: 10px;
-     
     }
     
    
@@ -486,8 +495,12 @@ position: relative;
         
     }
     .Fundamental{
-        
-        margin-bottom: 0;
+        padding: 0 20px;
+    }
+    .VideoSection1{
+        width: 85%;
+        margin: auto;
+        /* height: 250px; */
     }
   }
 

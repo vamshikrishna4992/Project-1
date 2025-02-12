@@ -79,15 +79,13 @@ body {
     max-width: 650px;
     height: 350px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    filter: brightness(90%);
     z-index: 4;
 }
 
-.aboutusimg:hover {
+/* .aboutusimg:hover {
     transform: scale(1.05);
     filter: brightness(100%);
-}
+} */
 
 /* Text Content */
 .SoftwareTextContent {

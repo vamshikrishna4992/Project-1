@@ -12,7 +12,7 @@ body {
     color: white;
     text-align: center;
     padding-top: 20px;
-    z-index: 1; /* Ensure text stays above */
+    z-index: 1; 
 }
 
 .ITStaffing-services-container::before {
@@ -148,22 +148,6 @@ body {
     }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .AboutContainer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .aboutusimg {
-        width: 100%;
-    }
-
-    .TextContent {
-        width: 100%;
-    }
-}
-
 .ITStaffing-head1 h2 span{
     color: gold;
 }
@@ -174,8 +158,8 @@ body {
 }
 .ITStaffing-sec-coontainer{
     background-color: #000;
-    padding: 1%;
-    height: 600px;
+    padding: 2%;
+    height: 85vh;
 }
 
  
@@ -187,27 +171,71 @@ body {
 
 
 .cloud-approach-main-container{
-    padding: 20px;
-    background-color: #e8b541;
     font-weight: bold;
+    background-color: #e8b541;
+    padding: 20px;
+    text-align: center;
+    z-index: 3;
 }
 
 .cloud-approach-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 50px;
-    gap: 30px;
-    row-gap: 100px;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px;
+    row-gap: 30px;
     width: 80%;
     margin: auto;
     align-self: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 1; 
+    height: 100vh;
 }
 .cloud-approach-main-container h2{
     text-align: center;
     color: #000;
     font-size: xx-large;
 }
+.cloud-approach-sub:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 25px; 
+}
 .cloud-approach-sub{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d9d9d9; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+    z-index: 1; 
+}
+.circle-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.cloud-text {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    z-index: 2; 
+}
+.why{
+    background-color:#e8b541 ;
+}
+.why h2{
+    text-align: center;
+}
+.why div{
+    text-align: left;
+}
+/* .cloud-approach-sub{
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 background-color: #d9d9d9;
 color: black;
@@ -228,65 +256,78 @@ align-content: center;
 }
 .cloud-approach-sub p{
 font-weight: 500;
-}
+} */
 
 
 /* ******************Appoch end ***************** */
-/* Responsive Adjustments */
-/* General Responsive Adjustments */
+
+/* Responsive Design */
 @media (max-width: 1024px) {
     .ITStaffing-services-content {
         width: 80%;
         margin-left: 10%;
-    }
-    
-    .AboutContainer {
-        gap: 20px;
-        padding: 40px;
-    }
-
-    .aboutusimg {
-        max-width: 400px;
-        height: auto;
-    }
-
-    .cloud-approach-container {
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    /* IT Staffing Services */
-    .ITStaffing-services-container {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    .ITStaffing-services-content {
-        width: 90%;
-        margin: 5% auto;
     }
 
     .ITStaffing-services-content h1 {
         font-size: 2.5rem;
     }
 
-    .ITStaffing-services-content p {
-        font-size: 1rem;
-    }
-
-    /* About Section */
     .AboutContainer {
-        flex-direction: column;
-        text-align: center;
         padding: 30px;
+        gap: 20px;
     }
 
     .aboutusimg {
-        width: 100%;
-        max-width: 100%;
         height: auto;
+    }
+
+    .cloud-approach-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        padding: 40px;
+        padding-top: 40px;
+        gap: 30px;
+    }
+    .cloud-approach-sub {
+        width: 140px;
+        height: 140px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .ITStaffing-services-content {
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .ITStaffing-services-content h1 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .ITStaffing-services-content p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .ITStaffing-description {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+
+    .AboutContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .aboutusimg {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     .TextContent {
@@ -298,31 +339,56 @@ font-weight: 500;
         font-size: 24px;
     }
 
-    /* IT Staffing Approach */
     .cloud-approach-container {
         grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        padding: 30px;
+        width: 100%;
+        height: auto;
+        row-gap: 20px;
+        column-gap: 20px;
+    
+    }
+  
+    .cloud-approach-sub {
+        width: 60%; 
+        height: 100px; 
+        padding: 20px;
+
+    }
+  
+    .circle-img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .cloud-text {
+      font-size: 14px;
+    }
+}
+
+/* @media (max-width: 480px) {
+    .ITStaffing-services-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .ITStaffing-description {
+        font-size: 0.9rem;
+    }
+
+    .TextContent h3 {
+        font-size: 20px;
+    }
+
+    .cloud-approach-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .cloud-approach-sub {
-        width: 70%;
-        height: auto;
-        padding: 30px;
+        width: 100px;
+        height: 100px;
     }
-    .ITStaffing-sec-coontainer {
-        height: auto;
-        padding: 5%;
-    }
+} */
 
-    .why {
-        padding: 20px;
-    }
 
-    .why div {
-        text-align: center;
-    }
-}
 
 
    

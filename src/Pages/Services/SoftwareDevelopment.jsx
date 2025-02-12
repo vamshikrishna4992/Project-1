@@ -104,9 +104,8 @@ const SoftwareApproach = () => {
 
   return (
     <>
-    <div className="software-main">
     <div className="software-approach-contariner">
-        <h2 className="software-approach-content">KrystalNest’s Approach to IT Staffing Services</h2>
+        <h2 className="software-approach-content">KrystalNest’s Approach to Software Development</h2>
         <div className="content-circle-container">
           {content.map((item, index) => (
             <div className="content-circle" key={index}>
@@ -119,7 +118,6 @@ const SoftwareApproach = () => {
       <div className="why">
       <WhyChoose />
       </div>
-    </div>
     </>
   );
 };

@@ -101,15 +101,12 @@ const Approach = () => {
         <div className="cloud-approach-container">
           {itstaffingapproaches.map((approach, index) => (
             <div className="cloud-approach-sub" key={index}>
-              <img src={`${approach.icon}`} alt={approach.icon} className="circle-img" />
-              <p className="cloud-text">{approach.content}</p>
+              <img src={`${approach.icon}`} alt={approach.icon} />
+              <p>{approach.content}</p>
             </div>
           ))}
         </div>
-       
-      </div>
-      <div className="why">
-      <WhyChoose />
+        <WhyChoose />
       </div>
     </>
   )

@@ -94,12 +94,12 @@ const UnlockSoftware = () => {
 
 const SoftwareApproach = () => {
   const content = [
-    { title: "Handle increased traffic and data", image: icon1 },
-    { title: "Designed according to needs", image:icon2 },
-    { title: "flow of goods, information, resources", image: icon3},
-    { title: "scalable solutions", image: icon4 },
-    { title: "Fully responsive and optimized", image: icon5},
-    {title: "Identify & fix bugs to ensure a flawless",image: icon6,},
+    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "Handle increased traffic and data", image: icon1 },
+    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Designed according to needs", image:icon2 },
+    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "flow of goods, information, resources", image: icon3},
+    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "scalable solutions", image: icon4 },
+    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Fully responsive and optimized", image: icon5},
+    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "Identify & fix bugs to ensure a flawless",image: icon6,},
   ];
 
   return (
@@ -111,6 +111,9 @@ const SoftwareApproach = () => {
             <div className="content-circle" key={index}>
               <img src={item.image} alt={item.title} className="circle-image" />
               <p className="circle-content">{item.title}</p>
+              <div className="sd-hover-content">
+              <p>{item.sdhoverContent}</p>
+            </div>
             </div>
           ))}
         </div>

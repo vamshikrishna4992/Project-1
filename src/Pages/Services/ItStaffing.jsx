@@ -85,12 +85,12 @@ const Unlock = () => {
 
 const Approach = () => {
   const itstaffingapproaches = [
-    { icon: icon1, content: 'Access to Top Talent ' },
-    { icon: icon2, content: 'Fast and Effective Hiring' },
-    { icon: icon3, content: 'Technical IT Roles ' },
-    { icon: icon4, content: 'Managed Staffing Services' },
-    { icon: icon5, content: 'Contract- to- Hire' },
-    { icon: icon6, content: 'Cost-Effective results' }
+    { icon: icon1, content: 'Access to Top Talent ' ,hoverContent:'Gain access to highly skilled professionals who bring expertise, innovation, and efficiency to your business' },
+    { icon: icon2, content: 'Fast and Effective Hiring',hoverContent:'Quickly find top talent to grow your business efficiently' },
+    { icon: icon3, content: 'Technical IT Roles ',hoverContent:'Expert professionals in development, cybersecurity, cloud computing, and more to power your business.' },
+    { icon: icon4, content: 'Managed Staffing Services',hoverContent:'End-to-end staffing solutions to find, hire, and manage top talent for your business' },
+    { icon: icon5, content: 'Contract- to- Hire',hoverContent:'Flexible hiring that allows you to evaluate talent before making a full-time commitment.' },
+    { icon: icon6, content: 'Cost-Effective results',hoverContent:'Optimize hiring and staffing while reducing costs for maximum efficiency. '  }
 
   ]
 
@@ -103,6 +103,10 @@ const Approach = () => {
             <div className="cloud-approach-sub" key={index}>
               <img src={`${approach.icon}`} alt={approach.icon} />
               <p>{approach.content}</p>
+              <div className="cloud-hover-content">
+              <p>{approach.hoverContent}</p>
+            </div>
+              
             </div>
           ))}
         </div>

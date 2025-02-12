@@ -94,31 +94,18 @@ const UnlockSoftware = () => {
 
 const SoftwareApproach = () => {
   const content = [
-<<<<<<< HEAD
     { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "Handle increased traffic and data", image: icon1 },
     {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Designed according to needs", image:icon2 },
     { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "flow of goods, information, resources", image: icon3},
     { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "scalable solutions", image: icon4 },
     {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Fully responsive and optimized", image: icon5},
     {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "Identify & fix bugs to ensure a flawless",image: icon6,},
-=======
-    { title: "End To End Devlopment", image: icon1 },
-    { title: "Ios Android Devlopment", image:icon2 },
-    { title: "Responsive Design", image: icon3},
-    { title: "Scalable Solutions", image: icon4 },
-    { title: "ERP & CRM Systems", image: icon5},
-    {title: "Web Devlopment",image: icon6,},
->>>>>>> 52eb6220a55584ea0bfc9c337e447b54832bda59
   ];
 
   return (
     <>
     <div className="software-approach-contariner">
-<<<<<<< HEAD
         <h2 className="software-approach-content">KrystalNest’s Approach to Software Development</h2>
-=======
-        <h2 className="software-approach-content">KrystalNest’s Approach to Software Development Services</h2>
->>>>>>> 52eb6220a55584ea0bfc9c337e447b54832bda59
         <div className="content-circle-container">
           {content.map((item, index) => (
             <div className="content-circle" key={index}>

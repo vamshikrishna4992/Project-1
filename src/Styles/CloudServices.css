@@ -206,7 +206,7 @@ body {
     top: 100%;
     left: 50%;
     transform: translate(-50%, 10px);
-    background-color: rgba(225, 165, 0, 0.8);
+    background-color: rgba(225, 165, 0, 1);
     color: black;
     padding: 10px;
     border-radius: 8px;

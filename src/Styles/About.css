@@ -133,7 +133,7 @@ position: relative;
     display: flex;
     justify-content: center;
     margin: 30px 0;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     margin: auto;
 }
 

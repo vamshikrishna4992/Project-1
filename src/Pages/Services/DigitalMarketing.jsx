@@ -13,9 +13,9 @@ import social from '../../assets/images/socialmedia.png'
 
 const DigitalMarketing = () => {
 
-   const textRef = useRef(null); 
-    const descriptionRef = useRef(null);
-    const buttonRef = useRef(null);
+  const textRef = useRef(null);
+  const descriptionRef = useRef(null);
+  const buttonRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
@@ -38,76 +38,79 @@ const DigitalMarketing = () => {
   }, []);
   return (
     <>
-    <div className="dg-services-container">
-      <Navbar />
-      <div className="dg-services-content">
-        <h1 ref={textRef} className="dg-animated-text">Digital Marketing</h1>
-        <p ref={descriptionRef} className="cloud-description">
-        " In today's fast-changing online world, success is only possible with a robust digital presence. "
-        </p>
+      <div className="dg-services-container">
+        <Navbar />
+        <div className="dg-services-content">
+          <h1 ref={textRef} className="dg-animated-text">Digital Marketing</h1>
+          <p ref={descriptionRef} className="cloud-description">
+            " In today's fast-changing online world, success is only possible with a robust digital presence. "
+          </p>
+        </div>
       </div>
-    </div>
-    <DigUnlock/>
-    <DgApproach/>
-    <Footer />
-   </>
+      <DigUnlock />
+      <DgApproach />
+      <Footer />
+    </>
   )
 }
 
 
-const DigUnlock = ()=>{
-  return(
+const DigUnlock = () => {
+  return (
     <>
-          
-     <div className="cloud-sec-coontainer">
-      <div className="cloud-head1">
-        <h2>Driving Your Brand, Amplifying <span>Your Reach</span></h2>
-      </div>
-     <div className="dgContainer"> {/* Changed class name */}
+
+      <div className="cloud-sec-coontainer">
+        <div className="cloud-head1">
+          <h2>Driving Your Brand, Amplifying <span>Your Reach</span></h2>
+        </div>
+        <div className="dgContainer"> {/* Changed class name */}
           {/* <img className="aboutusimg" src='dg-info.png' alt="About Us Image" />  */}
 
           <div className="TextContent">
-            
+
             <p>
-            KrystalNest is here to make your business shine digitally in this modern world of digital marketing. By optimizing the entire potential of modern digital marketing strategies, it has become an imperative to establish a stronger presence in this fast-paced and highly competitive online environment. Our team of marketers and data analysts work collaboratively to design and execute results-driven, strategic plans for you to drive high-quality traffic, enhance brand visibility, and ultimately convert prospects into loyal, long-term customers.We provide a wide array of digital marketing services to cater to businesses of all sizes and industries. Our solutions are designed to meet your unique goals, ensuring measurable success across every channel.
-           
+              KrystalNest is here to make your business shine digitally in this modern world of digital marketing. By optimizing the entire potential of modern digital marketing strategies, it has become an imperative to establish a stronger presence in this fast-paced and highly competitive online environment. Our team of marketers and data analysts work collaboratively to design and execute results-driven, strategic plans for you to drive high-quality traffic, enhance brand visibility, and ultimately convert prospects into loyal, long-term customers.We provide a wide array of digital marketing services to cater to businesses of all sizes and industries. Our solutions are designed to meet your unique goals, ensuring measurable success across every channel.
+
             </p>
-            
+
           </div>
-          <img className="dgusimg" src='dg-info.png' alt="About Us Image" /> 
+          <img className="dgusimg" src='dg-info.png' alt="About Us Image" />
         </div>
-     </div>
+      </div>
     </>
   )
 };
 
-const DgApproach = ()=>{
-  const  dgapproaches = [
-   {icon:ads,content:'Google ads'},
-   {icon:analytics,content:'Google Analytics'},
-   {icon:email,content:'Email Marketing'},
-   {icon:graphic,content:'Graphic Designing'},
-   {icon:seo,content:'Search Engine Optimization'},
-   {icon:social,content:'Social Media Marketing'}
- 
+const DgApproach = () => {
+  const dgapproaches = [
+    { icon: ads, content: 'Google ads' },
+    { icon: analytics, content: 'Google Analytics' },
+    { icon: email, content: 'Email Marketing' },
+    { icon: graphic, content: 'Graphic Designing' },
+    { icon: seo, content: 'Search Engine Optimization' },
+    { icon: social, content: 'Social Media Marketing' }
+
   ]
-  
-   return (
-     <>
-     <div className="dg-approach-main-container">
-       <h2 className="dg-head2">KrystalNest’s Approach to Digital Marketing</h2>
-     <div className="dg-approach-container">
-     {dgapproaches.map((approach, index) => (
-        <div className="dg-approach-sub" key={index}>
-         <img src={`${approach.icon}`} alt={approach.icon} />
-         <p>{approach.content}</p>
+
+  return (
+    <>
+      <div className="cloud-approach-main-container">
+        <h2 className="cloud-head2">KrystalNest’s Approach to Digital Marketing</h2>
+        <div className="cloud-approach-container">
+          {dgapproaches.map((approach, index) => (
+            <div className="cloud-approach-sub" key={index}>
+              <img src={`${approach.icon}`} alt={approach.icon} />
+              <p>{approach.content}</p>
+              <div className="cloud-hover-content">
+                <p>{approach.hoverContent}</p>
+              </div>
+            </div>
+          ))}
         </div>
-     ))}
-     </div>
-     <WhyChoose/>
-     </div>
-     </>
-   )
- }
+        <WhyChoose />
+      </div>
+    </>
+  )
+}
 
 export default DigitalMarketing;

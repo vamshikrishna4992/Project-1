@@ -1,20 +1,25 @@
 import  { useEffect, useRef } from "react";
 import gsap from 'gsap'
-
-import '../Styles/About.css';
+import { Link } from "react-router-dom";
+import '../../Styles/About.css';
+// import VamshiKrishna from "./VamshiKrishna.jsx";
+// import UdayKiran from "./UdayKiran.jsx";
+// import VinayKumar from "./VinayKumar.jsx";
+// import Lahari from "./Lahari.jsx";
+// import Bhavana from "./Bhavana.jsx";
 import ReactPlayer from 'react-player';
-import Footer from '../Components/Footer.jsx';
-import Navbar from '../Components/Navbar.jsx';
-import vedio from '../assets/images/Messaging.mp4';
+import Footer from '../../Components/Footer.jsx';
+import Navbar from '../../Components/Navbar.jsx';
+import vedio from '../../assets/images/Messaging.mp4';
 // import BannerImg from '../assets/images/wmremove-transforme.jpeg'
-import Fundamental from '../assets/images/6-steps-creative-business-infographics-design-template.png';
+import Fundamental from '../../assets/images/6-steps-creative-business-infographics-design-template.png';
 
 // Data Array
-import image1 from '../assets/images/4.jpg';
-import image2 from '../assets/images/3.jpg';
-import image3 from '../assets/images/5.jpg';
-import image4 from '../assets/images/1.jpg';
-import image5 from '../assets/images/2.jpg';
+import image1 from '../../assets/images/4.jpg';
+import image2 from '../../assets/images/3.jpg';
+import image3 from '../../assets/images/5.jpg';
+import image4 from '../../assets/images/1.jpg';
+import image5 from '../../assets/images/2.jpg';
 
 
 
@@ -89,82 +94,76 @@ const About = () => {
 
       {/* Our Team Section - Only Images */}
       <div className="Our-Team">
-        <h2>Our Team</h2> 
-        
-             <div className="main-container">
+      <h2>Our Team</h2>
 
+      <div className="main-container">
+        {/* Team Member 1 */}
         <div className="container">
-        
-          <div className="image-container">
-            <img src={image1}  />
-          </div>
-          <div className="content">
-            <p>Vamshi Krishna</p>
-            <h3> CEO & Founder</h3>
-            
-          </div>
-
-          
-
+          <Link to="/VamshiKrishna">
+            <div className="image-container">
+              <img src={image1} alt="Vamshi Krishna" />
+            </div>
+            <div className="content">
+              <p>Vamshi Krishna</p>
+              <h3>CEO & Founder</h3>
+            </div>
+          </Link>
         </div>
+
+        {/* Team Member 2 */}
         <div className="container">
-        
-          <div className="image-container">
-            <img src={image2}  />
-          </div>
-          <div className="content">
-            <p>Uday Kiran </p>
-            <h3>Co-Founder</h3>
-            
-          </div>
-
-          
-
+          <Link to="/UdayKiran">
+            <div className="image-container">
+              <img src={image2} alt="Uday Kiran" />
+            </div>
+            <div className="content">
+              <p>Uday Kiran</p>
+              <h3>Co-Founder</h3>
+            </div>
+          </Link>
         </div>
+
+        {/* Team Member 3 */}
         <div className="container">
-        
-        <div className="image-container">
-          <img src={image3}  />
-        </div>
-        <div className="content">
-        <p>Vinay Kumar</p>
-          <h3>Operational Manager</h3>
-          
-          
+          <Link to="/VinayKumar">
+            <div className="image-container">
+              <img src={image3} alt="Vinay Kumar" />
+            </div>
+            <div className="content">
+              <p>Vinay Kumar</p>
+              <h3>Operational Manager</h3>
+            </div>
+          </Link>
         </div>
 
-        
+        {/* Team Member 4 */}
+        <div className="container">
+          <Link to="/Lahari">
+            <div className="image-container">
+              <img src={image4} alt="Lahari" />
+            </div>
+            <div className="content">
+              <p>Lahari</p>
+              <h3>Human Resources</h3>
+            </div>
+          </Link>
+        </div>
 
+        {/* Team Member 5 */}
+        <div className="container">
+          <Link to="/Bhavana">
+            <div className="image-container">
+              <img src={image5} alt="Bhavana" />
+            </div>
+            <div className="content">
+              <p>Bhavana</p>
+              <h3>Human Resources</h3>
+            </div>
+          </Link>
+        </div>
       </div>
-      <div className="container">
-        
-        <div className="image-container">
-          <img src={image4}  />
-        </div>
-        <div className="content">
-        <p>Lahari</p>
-          <h3>Human Resources</h3>
-          
-          
-        </div>
-      </div>
-      <div className="container">
-        <div className="image-container">
-          <img src={image5}  />
-        </div>
-        <div className="content">
-        <p>Bhavana</p>
-          <h3>Human Resources</h3>
-          
-          
-        </div>
-
-        
-
-      </div>
-
     </div>
-    </div>
+
 
      
 

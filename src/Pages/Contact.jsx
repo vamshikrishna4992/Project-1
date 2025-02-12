@@ -14,6 +14,18 @@ const Contact = () => {
     companyName: '',
     description: ''
   });
+  const [areaCode, setAreaCode] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+
+  const handleAreaCodeChange = (e) => {
+    const value = e.target.value.replace(/\D/g, ''); 
+    setAreaCode(value);
+  };
+
+  const handlePhoneNumberChange = (e) => {
+    const value = e.target.value.replace(/\D/g, '');
+    setPhoneNumber(value);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -50,8 +62,24 @@ const Contact = () => {
           <div className="form-group">
             <label className="form-label">Phone No :</label>
             <div className="phone-inputs">
-              <input type="text" placeholder="Area Code" className="input-field short-input" maxLength={5} required />
-              <input type="text" placeholder="Number" className="input-field" maxLength={10} pattern="[0-9]{10}" required />
+              <input
+                type="text"
+                placeholder="Area Code"
+                className="input-field short-input"
+                maxLength={5}
+                value={areaCode}
+                onInput={handleAreaCodeChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Number"
+                className="input-field"
+                maxLength={10}
+                value={phoneNumber}
+                onInput={handlePhoneNumberChange}
+                required
+              />
             </div>
           </div>
           <div className="form-group">

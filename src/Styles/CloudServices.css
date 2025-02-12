@@ -4,8 +4,10 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #0f0f0f, #1a1a2e);
     color: white;
-  }
-  .cloud-services-container {
+}
+
+/* Cloud Services Section */
+.cloud-services-container {
     position: relative;
     width: 100%;
     height: 60vh;
@@ -24,64 +26,53 @@ body {
     height: 100%;
     background: url("../assets/images/cloud-background.jpg") no-repeat center/cover;
     opacity: 0.25;
-    z-index: -1; 
+    z-index: -1;
 }
 
-  .cloud-services-content {
+.cloud-services-content {
     width: 60%;
     margin-top: 8%;
     margin-left: 20%;
     text-align: center;
-  }
-  
-  .cloud-services-content h1{
+}
+
+.cloud-services-content h1 {
     font-size: 3rem;
     font-weight: bold;
     max-width: 800px;
-    /* text-align: start; */
     margin: auto;
-    /* text-align: center; */
-  }
-  .cloud-services-content p{
+}
+
+.cloud-services-content p {
     max-width: 800px;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
-  }
-  
-  
+}
 
-  
-  .cloud-description {
+.cloud-description {
     margin-top: 20px;
     font-size: 1.1rem;
     color: #d1d1d1;
     margin-left: 80px;
-  }
+}
 
-
-
-
-
-/* ******************  Unlock start ********************* */
-
-/* AboutUs Container */
-.AboutContainer {  
+/* About Us Section */
+.AboutContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
     padding: 50px;
     margin: auto;
-    background-color: #000; 
-    color: #fff; 
+    background-color: #000;
+    color: #fff;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     font-family: Arial, sans-serif;
 }
 
-/* Image Styling */
 .aboutusimg {
     width: 50%;
     max-width: 500px;
@@ -96,7 +87,6 @@ body {
     filter: brightness(100%);
 }
 
-/* Text Content */
 .TextContent {
     width: 50%;
     text-align: left;
@@ -108,7 +98,7 @@ body {
 .TextContent h3 {
     font-size: 30px;
     margin-bottom: 10px;
-    color: #ffcc00; /* Gold Color */
+    color: #ffcc00;
 }
 
 /* Button Styling */
@@ -128,10 +118,9 @@ body {
 .Aboutredirect:hover {
     background: linear-gradient(90deg, #ff9900, #ff6600);
     transform: translateY(-3px);
-    /* box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3); */
 }
 
-/* Keyframe Animations */
+/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -164,37 +153,16 @@ body {
     }
 }
 
-.cloud-head1 h2 span{
-    color: gold;
-}
-.cloud-head1 h2{
-    text-align: center;
-    background-color: #000;
-    font-size: xx-large;
-}
-.cloud-sec-coontainer{
-    background-color: #000;
-    padding: 1%;
-    height: 600px;
-}
-
- 
-/* ******************  Unlock end ********************* */
-
-
-
-/* **************Approch start***************** */
-
-
-.cloud-approach-main-container{
+/* Cloud Approach Section */
+.cloud-approach-main-container {
     padding: 20px;
     background-color: #e8b541;
     font-weight: bold;
 }
 
-.cloud-approach-container{
+.cloud-approach-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 50px;
     gap: 30px;
     row-gap: 100px;
@@ -202,33 +170,94 @@ body {
     margin: auto;
     align-self: center;
 }
-.cloud-approach-main-container h2{
+
+.cloud-approach-main-container h2 {
     text-align: center;
     color: #000;
     font-size: xx-large;
 }
-.cloud-approach-sub{
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-background-color: #d9d9d9;
-color: black;
-border-radius: 100%;
-width: 50%;
-height: 160px;
-text-align: center;
-padding: 50px;
-margin: auto;
-align-content: center;
-}
-.cloud-approach-sub:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-.cloud-approach-sub img{
-    width: 80px;
-    height: 80px;
-}
-.cloud-approach-sub p{
-font-weight: 500;
+
+/* Cloud Approach Cards */
+.cloud-approach-sub {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d9d9d9;
+    color: black;
+    border-radius: 100%;
+    width: 50%;
+    height: 160px;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    align-content: center;
+    transition: transform 0.3s ease-in-out;
 }
 
+.cloud-approach-sub:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: scale(1.1);
+    z-index: 100;
+}
 
-/* ******************Appoch end ***************** */
+/* Hover Content */
+.cloud-hover-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: rgba(225, 165, 0, 0.8);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cloud-approach-sub:hover .cloud-hover-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    
+}
+
+/* Cloud Headings */
+.cloud-head1 h2 span {
+    color: gold;
+}
+
+.cloud-head1 h2 {
+    text-align: center;
+    background-color: #000;
+    font-size: xx-large;
+}
+
+.cloud-sec-coontainer {
+    background-color: #000;
+    padding: 1%;
+    height: 600px;
+}
+
+/* Responsive Design for Cloud Approach */
+@media (max-width: 1024px) {
+    .cloud-approach-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cloud-approach-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cloud-approach-sub {
+        width: 80%;
+        height: auto;
+        padding: 30px;
+    }
+}

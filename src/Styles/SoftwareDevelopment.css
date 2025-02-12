@@ -14,6 +14,7 @@ body {
     text-align: center;
     padding-top: 20px;
     z-index: 2;
+   
 }
 
 .software-development-container::before {
@@ -211,8 +212,47 @@ body {
     z-index: 2; 
 }
 
-/* ****************** Approach end ***************** */
-@media screen and (max-width: 480px) {
+/* ***************Responsive************ */
+
+
+@media (max-width: 1024px) {
+    .AboutSoftwareContainer {
+        gap: 20px;
+        padding: 40px;
+        display: flex;
+        height: 75%;
+    }
+    .software-development-container {
+        height: 40vh;
+    }
+    .software-development-content {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .aboutusimg {
+        width: 60%;
+        height: auto;
+    }
+
+    .SoftwareTextContent {
+        width: 60%;
+    }
+    .content-circle-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .content-circle {
+        width: 140px;
+        height: 140px;
+        padding: 30px;
+    }
+}
+
+/* Ensure No Overlapping and Proper Padding */
+@media (max-width: 768px) {
     .software-development-container {
         height: auto;
         padding-top: 10px; 
@@ -238,6 +278,10 @@ body {
         padding: 20px; 
         height: auto; 
         gap: 20px; 
+    }
+    .aboutusimg {
+        width: 60%;
+        height: auto;
     }
    
   
@@ -266,15 +310,15 @@ body {
     }
   
     .content-circle {
-        width: 70%; 
-        height: 100px; 
+        width: 60%; 
+        height: 120px; 
         padding: 20px;
 
     }
   
     .circle-image {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
     }
   
     .circle-content {
@@ -282,5 +326,5 @@ body {
     }
 
   
+
 }
-  

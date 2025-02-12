@@ -8,6 +8,7 @@
     column-gap: 120px;
     background-color: #e8b541;
     padding-bottom: 20px;
+   
 }
 .cloud-why-container .cloud-why-sub{
    border-radius: 10px;
@@ -27,28 +28,64 @@
 .cloud-head2{
     color: black;
 }
-@media screen and (max-width: 480px) {
+/* ************responsive**************** */
+
+
+
+/* For screens ≤ 1024px */
+@media screen and (max-width: 1024px) {
     .cloud-why-container {
-      grid-template-columns: repeat(1, 1fr);
-      padding-left: 20px;
-      padding-right: 20px;
-      column-gap: 0;
-      gap: 20px;
-      width: auto;
+        column-gap: 50px;
+        gap: 40px;
+        padding: 20px 30px;
     }
-  
+}
+
+/* For screens ≤ 768px */
+@media screen and (max-width: 768px) {
+    .cloud-why-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+        gap: 30px;
+        column-gap: 0;
+    }
+
+}
+
+/* For screens ≤ 600px */
+@media screen and (max-width: 600px) {
+    .cloud-why-container {
+        padding: 15px;
+        gap: 20px;
+    }
+
     .cloud-why-container .cloud-why-sub {
-    width: auto;
+        padding: 15px;
+        font-size: 14px;
+        /* text-align: center; */
     }
-  
+
     .answer {
-      padding-left: 5px;
-      font-size: 14px;
+        font-size: 12px;
+        padding-left: 5px;
     }
-  
-    .cloud-head2 {
-      font-size: 18px;
-      text-align: center;
+}
+
+/* For screens ≤ 480px */
+@media screen and (max-width: 480px) {
+  .cloud-why-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 15px;
+    gap: 20px;
+}
+    .cloud-why-container .cloud-why-sub {
+        padding: 12px;
+        font-size: 12px;
+        text-align: center;
     }
-  }
-  
+
+    .answer {
+        font-size: 11px;
+        padding-left: 3px;
+    }
+}

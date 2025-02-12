@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa"; // Icons for mobile menu
+import { FaBars, FaTimes } from "react-icons/fa"; 
 
 const Navbar = () => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleNavigation = (path) => {
     navigate(path);
     setIsSubmenuOpen(false);
-    setIsMobileMenuOpen(false); // Close mobile menu on navigation
+    setIsMobileMenuOpen(false); 
   };
 
   return (
@@ -56,4 +56,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

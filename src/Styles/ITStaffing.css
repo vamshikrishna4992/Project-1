@@ -232,3 +232,98 @@ font-weight: 500;
 
 
 /* ******************Appoch end ***************** */
+/* Responsive Adjustments */
+/* General Responsive Adjustments */
+@media (max-width: 1024px) {
+    .ITStaffing-services-content {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .AboutContainer {
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .aboutusimg {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .cloud-approach-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* IT Staffing Services */
+    .ITStaffing-services-container {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .ITStaffing-services-content {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .ITStaffing-services-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .ITStaffing-services-content p {
+        font-size: 1rem;
+    }
+
+    /* About Section */
+    .AboutContainer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .aboutusimg {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .TextContent {
+        width: 100%;
+        text-align: center;
+    }
+
+    .TextContent h3 {
+        font-size: 24px;
+    }
+
+    /* IT Staffing Approach */
+    .cloud-approach-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        padding: 30px;
+    }
+
+    .cloud-approach-sub {
+        width: 70%;
+        height: auto;
+        padding: 30px;
+    }
+    .ITStaffing-sec-coontainer {
+        height: auto;
+        padding: 5%;
+    }
+
+    .why {
+        padding: 20px;
+    }
+
+    .why div {
+        text-align: center;
+    }
+}
+
+
+   
+

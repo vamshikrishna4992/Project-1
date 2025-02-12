@@ -241,7 +241,7 @@ body {
 .cloud-sec-coontainer {
     background-color: #000;
     padding: 1%;
-    height: 600px;
+    height: 60vh;
 }
 
 /* Responsive Design for Cloud Approach */
@@ -254,8 +254,7 @@ body {
 
 @media (max-width: 768px) {
     .cloud-approach-container {
-        grid-template-columns: repeat(1, 1fr);
-        height: auto;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cloud-approach-sub {

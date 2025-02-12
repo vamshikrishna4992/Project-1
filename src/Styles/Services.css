@@ -6,8 +6,6 @@
   }
    .service-container .service-content{
     color: azure;
-    /* padding-left: 25px; */
-    /* margin: 20px 0; */
   } 
   .service-container .service-content h1{
     margin-left: 3%;
@@ -22,9 +20,7 @@
   }
 
   .service-container .service-content p{
-    /* text-align: left; */
     margin-left: 50px;
-    /* margin-bottom: 20px; */
     line-height: 1.5;
   }
   .service-container .service-slider{
@@ -51,14 +47,14 @@
     width: 160px;
     padding: 20px;
     text-align: center;
-    position: relative; /* Ensures button can be positioned relative to card */
+    position: relative; 
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    z-index: 1; /* Ensure the card is above the background */
+    z-index: 1; 
 }
 
 .services-rows:hover {
-    transform: translateY(-10px); /* Slight lift effect on hover */
+    transform: translateY(-10px); 
     z-index: 2; 
 }
 
@@ -76,14 +72,13 @@
     color: #333;
 }
 
-/* Initially hide the button */
 .hover-button {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    bottom: 5px; /* Position the button near the bottom */
+    bottom: 5px; 
     left: 50%;
-    transform: translateX(-50%) translateY(30px); /* Position the button slightly below the bottom edge */
+    transform: translateX(-50%) translateY(30px);
     background-color: white;
     color: rgb(247, 207, 12);
     border: 2px solid goldenrod;
@@ -93,18 +88,16 @@
     font-size: 16px;
     font-weight: bold;
     transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease;
-    z-index: 3; /* Make sure button is on top of the card */
+    z-index: 3; 
 }
-
-/* On hover of .project-rows, show the button */
 .services-rows:hover .hover-button {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0); /* Move the button to the bottom edge */
+    transform: translateX(-50%) translateY(0); 
     transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
 }
 
-/* Hover effect on the button */
+
 .hover-button:hover {
     border-color: rgb(221, 181, 81);
 }

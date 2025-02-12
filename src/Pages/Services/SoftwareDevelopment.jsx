@@ -67,8 +67,6 @@ const UnlockSoftware = () => {
           </h2>
         </div>
         <div className="AboutSoftwareContainer">
-          {" "}
-          {/* Changed class name */}
           <img
             className="aboutusimg"
             src="/development-1.png"
@@ -98,10 +96,10 @@ const SoftwareApproach = () => {
   const content = [
     { title: "Handle increased traffic and data", image: icon1 },
     { title: "Designed according to needs", image:icon2 },
-    { title: "flow of goods, information, and resources", image: icon3},
+    { title: "flow of goods, information, resources", image: icon3},
     { title: "scalable solutions", image: icon4 },
     { title: "Fully responsive and optimized", image: icon5},
-    {title: "We identify and fix bugs to ensure a flawless",image: icon6,},
+    {title: "Identify & fix bugs to ensure a flawless",image: icon6,},
   ];
 
   return (
@@ -126,4 +124,6 @@ const SoftwareApproach = () => {
   );
 };
 
+
 export default SoftwareDevelopment;
+

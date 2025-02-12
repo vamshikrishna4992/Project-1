@@ -183,3 +183,62 @@
     transform: translateY(0);
   }
 }
+@media screen and (max-width: 480px) {
+  .contact-banner {
+    padding: 50px 15px;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    max-width: 70%;
+    padding: 20px;
+  }
+
+  .form-group {
+    align-items: flex-start;
+    gap: 10px;
+    
+  }
+
+  .form-label {
+    min-width: auto;
+    font-size: 14px;
+    padding: 2.5%;
+  }
+
+  .name-inputs,
+  .phone-inputs {
+    gap: 5px;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+
+  .short-input {
+    max-width: 100%;
+  }
+
+  .contact-button {
+    font-size: 14px;
+    padding: 12px;
+        display: block;
+    margin: 0 auto;
+  }
+
+  .map-container {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+}

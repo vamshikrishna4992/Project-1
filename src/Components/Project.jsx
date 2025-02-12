@@ -21,21 +21,21 @@ function Project() {
       <h5>A smart IoT-based home
         automation system
         for modern living.</h5>
-      <Link to="/Projects"><button>know more</button></Link>
+      <Link to="/Project1"><button>know more</button></Link>
     </div>
     <div className='card-rows'>
       <img src = {Project1} alt=''/>
       <h5>An innovative AI-driven solution
         for predictive analytics
         in healthcare.</h5>
-      <Link to="/Projects"><button>know more</button></Link>
+      <Link to="/Project1"><button>know more</button></Link>
     </div>
     <div className='card-rows'>
       <img src = {Project3} alt=''/>
       <h5> A cloud-based e-commerce
           platform tailored for
           small businesses.</h5>
-      <Link to="/Projects"><button>know more</button></Link>
+      <Link to="/Project1"><button>know more</button></Link>
     </div>
     
     </div>

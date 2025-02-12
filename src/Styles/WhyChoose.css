@@ -27,3 +27,28 @@
 .cloud-head2{
     color: black;
 }
+@media screen and (max-width: 480px) {
+    .cloud-why-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 20px;
+      padding-right: 20px;
+      column-gap: 0;
+      gap: 20px;
+      width: auto;
+    }
+  
+    .cloud-why-container .cloud-why-sub {
+    width: auto;
+    }
+  
+    .answer {
+      padding-left: 5px;
+      font-size: 14px;
+    }
+  
+    .cloud-head2 {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  

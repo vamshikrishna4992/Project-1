@@ -134,7 +134,7 @@ const Approach = ()=>{
         <img src={`${approach.icon}`} alt={approach.icon} />
         <p>{approach.content}</p>
         <div className="cloud-hover-content">
-              <p>{approach.hoverText}</p>
+              <p>{approach.hoverContent}</p>
             </div>
        </div>
     ))}

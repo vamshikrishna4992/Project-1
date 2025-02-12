@@ -4,12 +4,12 @@ import gsap from "gsap";
 import "../../Styles/SoftwareDevelopment.css";
 import Footer from "../../Components/Footer";
 import WhyChoose from "../../Components/WhyChoose";
-import icon1 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/end to end development.png'; 
-import icon2 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/ios android.png'; 
-import icon3 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/responsive design.png'; 
-import icon4 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/scalable solutions.png'; 
-import icon5 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/Skype_Picture_2025_02_12T07_13_16_359Z.jpeg'; 
-import icon6 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/web development.png'; 
+import approach1 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/end to end development.png'; 
+import approach2 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/ios android.png'; 
+import approach3 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/responsive design.png'; 
+import approach4 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/scalable solutions.png'; 
+import approach5 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/Skype_Picture_2025_02_12T07_13_16_359Z.jpeg'; 
+import approach6 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/web development.png'; 
 
 const SoftwareDevelopment = () => {
   const textRef = useRef(null);
@@ -92,15 +92,49 @@ const UnlockSoftware = () => {
   );
 };
 
-const SoftwareApproach = () => {
-  const content = [
-    { title: "End To End Devlopment", image: icon1 },
-    { title: "Ios Android Devlopment", image:icon2 },
-    { title: "Responsive Design", image: icon3},
-    { title: "Scalable Solutions", image: icon4 },
-    { title: "ERP & CRM Systems", image: icon5},
-    {title: "Web Devlopment",image: icon6,},
-  ];
+// const SoftwareApproach = () => {
+//   const content = [
+//     { title: "End To End Devlopment", image: icon1 },
+//     { title: "Ios Android Devlopment", image:icon2 },
+//     { title: "Responsive Design", image: icon3},
+//     { title: "Scalable Solutions", image: icon4 },
+//     { title: "ERP & CRM Systems", image: icon5},
+//     {title: "Web Devlopment",image: icon6,},
+//   ];
+
+  const SoftwareApproach = ()=>{
+    const  content= [
+      {
+        icon: approach1,
+        content: 'End To End Devlopment',
+        hoverContent: 'Ensure continuous data availability with secure backups and quick recovery solutions.'
+      },
+      {
+        icon: approach2,
+        content: 'Ios Android Devlopment',
+        hoverContent: 'Protect sensitive information by using advanced encryption methods for data security.'
+      },
+      {
+        icon: approach3,
+        content: 'Responsive Design',
+        hoverContent: 'Stay ahead of security risks with real-time monitoring and adaptive threat detection.'
+      },
+      {
+        icon: approach4,
+        content: 'Scalable Solutions',
+        hoverContent: 'Enhance protection using built-in security measures from trusted cloud providers.'
+      },
+      {
+        icon: approach5,
+        content: 'ERP & CRM Systems',
+        hoverContent: 'Keep your infrastructure secure by applying the latest updates and security patches.'
+      },
+      {
+        icon: approach6,
+        content: 'Web Devlopment',
+        hoverContent: 'Track and analyze security events to detect and respond to potential threats effectively.'
+      }
+    ];
 
   return (
     <>
@@ -112,7 +146,11 @@ const SoftwareApproach = () => {
             <div className="content-circle" key={index}>
               <img src={item.image} alt={item.title} className="circle-image" />
               <p className="circle-content">{item.title}</p>
+              <div className="SoftWare-content">
+              <p>{SoftwareApproach.hoverContent}</p>
             </div>
+            </div>
+           
           ))}
         </div>
       </div>

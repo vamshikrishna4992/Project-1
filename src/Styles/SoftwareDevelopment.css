@@ -212,6 +212,56 @@ body {
     z-index: 2; 
 }
 
+/* Cloud Approach Cards */
+.cloud-approach-sub {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d9d9d9;
+    color: black;
+    border-radius: 100%;
+    width: 50%;
+    height: 160px;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    align-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cloud-approach-sub:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+/* Hover Content */
+.SoftWare-content{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: rgba(225, 165, 0, 1);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.content-circle:hover .SoftWare-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    
+}
+
+
 /* ***************Responsive************ */
 
 

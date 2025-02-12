@@ -218,3 +218,23 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .submenu {
+    position: relative;
+    width: 100%;
+    background: rgba(29, 29, 29, 0.068);
+    padding: 10px;
+    
+    display: none;
+  }
+  .submenu li{
+    color: white;
+    font-size: small;
+    text-align: start;
+  }
+
+  .services .submenu {
+    display: block;
+  }
+}

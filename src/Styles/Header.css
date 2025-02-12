@@ -12,11 +12,12 @@ body {
   min-height: 85vh; 
   color: white;
   display: flex;
-  justify-content: center; 
+  justify-content: start; 
   align-items: center; 
   padding: 5vh 20px; 
   z-index: 1;
-  text-align: center;
+  text-align: start;
+  padding-top: 10px;
 }
 
 .header-container::before {
@@ -39,8 +40,9 @@ body {
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
-  text-align: center;
-  gap: 10px;
+  text-align: start;
+  /* gap: 10px; */
+  padding-left: 30px;
 }
 
 .hero-section h1 {
@@ -71,8 +73,13 @@ body {
   align-items: center;
   gap: 10px;
   font-weight: bold;
-  text-align: center;
+  text-align: start;
   transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  text-decoration: none;
+}
+.headerButton{
+  text-decoration: none;
+  width: 100%;
 }
 
 .get-started:hover {

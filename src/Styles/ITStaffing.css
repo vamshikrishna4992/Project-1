@@ -300,8 +300,8 @@ font-weight: 500;
 
     /* IT Staffing Approach */
     .cloud-approach-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
         padding: 30px;
     }
 
@@ -310,46 +310,6 @@ font-weight: 500;
         height: auto;
         padding: 30px;
     }
-}
-
-@media (max-width: 480px) {
-    /* IT Staffing Services */
-    .ITStaffing-services-content h1 {
-        font-size: 2rem;
-    }
-
-    .ITStaffing-services-content p {
-        font-size: 0.9rem;
-    }
-
-    /* About Section */
-    .TextContent h3 {
-        font-size: 20px;
-    }
-
-    .Aboutredirect {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    /* IT Staffing Approach */
-    .cloud-approach-sub {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .cloud-approach-sub img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .cloud-approach-sub p {
-        font-size: 14px;
-    }
-}
-
-/* Ensure No Overlapping */
-@media (max-width: 768px) {
     .ITStaffing-sec-coontainer {
         height: auto;
         padding: 5%;
@@ -363,3 +323,7 @@ font-weight: 500;
         text-align: center;
     }
 }
+
+
+   
+

@@ -4,12 +4,12 @@ import gsap from "gsap";
 import '../../Styles/DigitalMarketing.css';
 import WhyChoose from "../../Components/WhyChoose.jsx";
 import Footer from "../../Components/Footer.jsx";
-import ads from '../../assets/images/ads.png';
-import analytics from '../../assets/images/analytics.png';
-import email from '../../assets/images/email.png';
-import graphic from '../../assets/images/graphicDesigning.png';
-import seo from '../../assets/images/seo.png';
-import social from '../../assets/images/socialmedia.png'
+import ads from '../../assets/images/Apporches/DIGITAL MARKETING/google ads.png';
+import analytics from '../../assets/images/Apporches/DIGITAL MARKETING/web_14997288.png';
+import email from '../../assets/images/Apporches/DIGITAL MARKETING/content writing.png';
+import graphic from '../../assets/images/Apporches/DIGITAL MARKETING/graphic-design_18062375.png';
+import seo from '../../assets/images/Apporches/DIGITAL MARKETING/search engine optimization.png';
+import social from '../../assets/images/Apporches/DIGITAL MARKETING/social media marketing.png';
 
 const DigitalMarketing = () => {
 

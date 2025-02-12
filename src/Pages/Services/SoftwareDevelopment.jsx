@@ -4,12 +4,12 @@ import gsap from "gsap";
 import "../../Styles/SoftwareDevelopment.css";
 import Footer from "../../Components/Footer";
 import WhyChoose from "../../Components/WhyChoose";
-import icon1 from '../../assets/images/icon1.svg'; 
-import icon2 from '../../assets/images/icon2.svg'; 
-import icon3 from '../../assets/images/icon3.svg'; 
-import icon4 from '../../assets/images/icon4.svg'; 
-import icon5 from '../../assets/images/icon5.svg'; 
-import icon6 from '../../assets/images/icon6.svg'; 
+import icon1 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/end to end development.png'; 
+import icon2 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/ios android development.png'; 
+import icon3 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/responsive design.png'; 
+import icon4 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/scalable solutions.png'; 
+import icon5 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/Skype_Picture_2025_02_12T07_13_16_359Z.jpeg'; 
+import icon6 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/web development.png'; 
 
 const SoftwareDevelopment = () => {
   const textRef = useRef(null);

@@ -16,6 +16,7 @@
 .project-content h1 {
   font-size: clamp(28px, 4vw, 36px);
   color: white;
+
 }
 
 .project-content h1 span {
@@ -28,6 +29,7 @@
   font-size: clamp(14px, 2vw, 16px);
   line-height: 1.5;
   max-width: 800px;
+  padding: 10px 0;
 }
 
 .project-cards {
@@ -137,7 +139,7 @@
 
   .card-rows {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
   }
 
   .card-rows img {

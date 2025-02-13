@@ -46,7 +46,7 @@ const Contact = () => {
       {/* Banner Section */}
       <div className="contact-banner">
         <h1 className="banner-title">Contact us</h1>
-        <p className="banner-description">We love to hear from you. Drop us a message if you are interested in our solutions and services.</p>
+        <p className="banner-description">We value your interest! Contact us to explore how our solutions and services can benefit you.</p>
       </div>
 
       {/* Contact Form Section */}

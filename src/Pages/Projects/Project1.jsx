@@ -6,8 +6,12 @@ import '../../Styles/Project1.css';
 
 const Project1 = () => {
   return (
-    <div>
-      <Navbar/>
+  <>
+    <div className="project-nav">
+    <Navbar/>
+    </div>
+    <div className="project-nav-contaniner">
+      
       <div className="project-banner">
         <h1>Our Projects</h1>
         <p>"Turning Ideas into Reality with Code."</p>
@@ -15,6 +19,7 @@ const Project1 = () => {
       <Project/>
        <Footer/>
     </div>
+  </>
   )
 }
 

@@ -29,11 +29,11 @@ const SoftwareDevelopment = () => {
       { opacity: 1, x: 0, rotateY: 0, duration: 1.8, ease: "power3.out" }
     );
 
-    gsap.fromTo(
-      buttonRef.current,
-      { opacity: 0, scale: 0.5 },
-      { opacity: 1, scale: 1, duration: 2, ease: "elastic.out(1, 0.5)" }
-    );
+    // gsap.fromTo(
+    //   buttonRef.current,
+    //   { opacity: 0, scale: 0.5 },
+    //   { opacity: 1, scale: 1, duration: 2, ease: "elastic.out(1, 0.5)" }
+    // );
   }, []);
   return (
     <>

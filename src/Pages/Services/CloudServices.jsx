@@ -89,12 +89,12 @@ return (
 
 const CloudApproach = () => {
 const content = [
-  {hoverContent:'From conceptualization to final deployment, we take responsibility for every phase',title: "Handle increased traffic and data", image: approach4 },
-  {hoverContent: 'In this digitally dominant world, business-web applications play a very crucial role for companies to make relationships.', title: "Designed according to needs", image:approach2 },
-  {hoverContent: ' We can develop mobile applications for both iOS and Android platforms.',title: "flow of goods, information, resources", image: approach5},
-  {hoverContent: 'Enterprise software is important for managing complex business processes and improving operational efficiency.',title: "scalable solutions", image: approach6 },
-  {hoverContent: 'Software development does not stop at deployment. Ongoing maintenance and support are essential to keep your software working.', title: "Fully responsive and optimized", image: approach1},
-  {hoverContent: 'software is the backbone of every successful business. From automating processes to enhancing customer experiences.',title: "Identify & fix bugs to ensure a flawless",image: approach3,},
+  {hoverContent:'Ensure continuous data availability with secure backups and quick recovery solutions.',title: "Implement robust data backup and recovery strategies", image: approach4 },
+  {hoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Encrypt data at rest and in transit", image:approach2 },
+  {hoverContent: 'Stay ahead of security risks with real-time monitoring and adaptive threat detection.',title: "Continuously monitor and adapt to evolving threats", image: approach5},
+  {hoverContent: 'Enhance protection using built-in security measures from trusted cloud providers.',title: "Leverage cloud provider security features", image: approach6 },
+  {hoverContent: 'Keep your infrastructure secure by applying the latest updates and security patches.', image: approach1},
+  {hoverContent: 'Track and analyze security events to detect and respond to potential threats effectively',title: "Implement cloud security monitoring and logging",image: approach3,},
 ];
 
 return (

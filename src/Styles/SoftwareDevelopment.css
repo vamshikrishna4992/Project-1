@@ -77,10 +77,10 @@ body {
 /* Image Styling */
 .aboutusimg {
     width: 60%;
-    max-width: 650px;
     height: 350px;
     border-radius: 10px;
     z-index: 4;
+    box-sizing: border-box;
 }
 
 /* .aboutusimg:hover {
@@ -134,7 +134,7 @@ body {
 .software-sec-coontainer {
     background-color: #000;
     padding: 1%;
-    height: 480px;
+    height: auto;
 }
 
 /* ****************** Unlock end ********************* */

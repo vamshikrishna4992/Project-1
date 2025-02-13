@@ -64,7 +64,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 50px;
+    padding: 30px 50px 50px 50px;
     margin: auto;
     background-color: #000;
     color: #fff;
@@ -81,25 +81,33 @@ body {
 /* Image Styling */
 .aboutusimg {
     width: 60%;
-    max-width: 650px;
+    /* max-width: 650px; */
     height: 350px;
     border-radius: 10px;
     z-index: 4;
+    padding-top: 30px;
+    box-sizing: border-box;
 }
 
 /* .aboutusimg:hover {
     transform: scale(1.05);
     filter: brightness(100%);
 } */
+ .aboutusimg:hover{
+    transform: scale(1);
+ }
 
 /* Text Content */
 .CloudTextContent{
     width: 50%;
-    text-align: left;
+    /* text-align: justify; */
     transform: translateY(20px);
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
     z-index: 2;
+}
+.CloudTextContent p{
+    text-align: left;
 }
 
 .CloudTextContent h3 {
@@ -133,12 +141,13 @@ body {
     text-align: center;
     background-color: #000;
     font-size: xx-large;
+    padding-top: 20px ;
 }
 
 .cloud-sec-coontainer {
     background-color: #000;
-    padding: 1%;
-    height: 480px;
+    /* padding: 1%; */
+    height: auto;
 }
 
 /* ****************** Unlock end ********************* */

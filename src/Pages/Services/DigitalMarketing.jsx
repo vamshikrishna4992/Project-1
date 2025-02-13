@@ -99,7 +99,7 @@ const DgApproach = () => {
         <div className="cloud-approach-container">
           {dgapproaches.map((approach, index) => (
             <div className="cloud-approach-sub" key={index}>
-              <img src={`${approach.icon}`} alt={approach.icon} />
+              <img src={`${approach.icon}`} alt={approach.icon} className="circle-icon"/>
               <p>{approach.content}</p>
               <div className="cloud-hover-content">
               <p>{approach.hoverContent}</p>

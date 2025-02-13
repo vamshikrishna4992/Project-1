@@ -93,7 +93,7 @@ const content = [
   {hoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Encrypt data at rest and in transit", image:approach2 },
   {hoverContent: 'Stay ahead of security risks with real-time monitoring and adaptive threat detection.',title: "Continuously monitor and adapt to evolving threats", image: approach5},
   {hoverContent: 'Enhance protection using built-in security measures from trusted cloud providers.',title: "Leverage cloud provider security features", image: approach6 },
-  {hoverContent: 'Keep your infrastructure secure by applying the latest updates and security patches.', image: approach1},
+  {hoverContent: 'Keep your infrastructure secure by applying the latest updates and security patches.',title:'Regularly update and patch systems', image: approach1},
   {hoverContent: 'Track and analyze security events to detect and respond to potential threats effectively',title: "Implement cloud security monitoring and logging",image: approach3,},
 ];
 

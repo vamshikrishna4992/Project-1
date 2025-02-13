@@ -47,9 +47,30 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  
-  
+  .dg1-hover-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: rgba(225, 165, 0, 1);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
 
+.dgm-approach-sub:hover .dg1-hover-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    
+}
   
   .cloud-description {
     margin-top: 20px;
@@ -83,12 +104,11 @@ body {
 /* Image Styling */
 .dgusimg {
     width: 50%;
-    max-width: 500px;
     height: 400px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     filter: brightness(90%);
-    /* border: 2px solid red; */
+    box-sizing: border-box;
 }
 .dgusimg:hover {
     transform: scale(1.05);
@@ -211,7 +231,7 @@ body {
     color: #000;
     font-size: xx-large;
 }
-.dg-approach-sub{
+.dgm-approach-sub{
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 background-color: #d9d9d9;
 color: black;
@@ -223,22 +243,20 @@ padding: 50px;
 margin: auto;
 align-content: center;
 }
-.dg-approach-sub:hover{
+.dgm-approach-sub:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-.dg-approach-sub img{
+.dgm-approach-sub img{
     width: 80px;
     height: 80px;
 }
-.dg-approach-sub p{
+.dgm-approach-sub p{
 font-weight: 500;
 }
 
 
 /* ******************Appoch end ***************** */
-/* Responsive Adjustments */
 /* Responsive Design */
-/* Responsive Design for Cloud Approach */
 @media (max-width: 1024px) {
     .dg-approach-container {
         grid-template-columns: repeat(2, 1fr);
@@ -255,8 +273,10 @@ font-weight: 500;
         height: auto;
         padding: 30px;
     }
+    .dgContainer{
+        display: flex;
+        flex-direction: column-reverse;
+      }
 }
-@media (max-width: 480px){
 
-}
 

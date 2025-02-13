@@ -83,12 +83,12 @@ const DigUnlock = () => {
 
 const DgApproach = () => {
   const dgapproaches = [
-    { icon: ads, content: 'Google ads' },
-    { icon: analytics, content: 'Google Analytics' },
-    { icon: email, content: 'Email Marketing' },
-    { icon: graphic, content: 'Graphic Designing' },
-    { icon: seo, content: 'Search Engine Optimization' },
-    { icon: social, content: 'Social Media Marketing' }
+    { icon: ads, content: 'Google ads', hoverContent: 'Reach the right audience and grow your business with Google Ads.' },
+    { icon: analytics, content: 'Google Analytics', hoverContent: 'Track, analyze, and optimize your website’s performance with real-time insights' },
+    { icon: email, content: 'Email Marketing', hoverContent: 'Engage customers and boost conversions with targeted email campaigns' },
+    { icon: graphic, content: 'Graphic Designing', hoverContent: 'Create stunning visuals that enhance branding and engage your audience. ' },
+    { icon: seo, content: 'Search Engine Optimization', hoverContent: 'Improve website visibility and rank higher on search engines to drive organic traffic' },
+    { icon: social, content: 'Social Media Marketing', hoverContent: 'Grow your brand and engage your audience through strategic social media campaigns' }
 
   ]
 
@@ -102,8 +102,8 @@ const DgApproach = () => {
               <img src={`${approach.icon}`} alt={approach.icon} />
               <p>{approach.content}</p>
               <div className="cloud-hover-content">
-                <p>{approach.hoverContent}</p>
-              </div>
+              <p>{approach.hoverContent}</p>
+            </div>
             </div>
           ))}
         </div>

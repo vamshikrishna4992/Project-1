@@ -10,6 +10,7 @@ import email from '../../assets/images/Apporches/DIGITAL MARKETING/content writi
 import graphic from '../../assets/images/Apporches/DIGITAL MARKETING/graphic-design_18062375.png';
 import seo from '../../assets/images/Apporches/DIGITAL MARKETING/search engine optimization.png';
 import social from '../../assets/images/Apporches/DIGITAL MARKETING/social media marketing.png';
+import Email from "../../Components/Email.jsx";
 
 const DigitalMarketing = () => {
 
@@ -49,6 +50,7 @@ const DigitalMarketing = () => {
       </div>
       <DigUnlock />
       <DgApproach />
+      <Email/>
       <Footer />
     </>
   )

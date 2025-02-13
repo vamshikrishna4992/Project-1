@@ -3,6 +3,7 @@ import Navbar from '../../Components/Navbar.jsx';
 import Footer from '../../Components/Footer.jsx';
 import Ceo from '../../assets/images/4.jpg';
 import { FaEnvelope, FaLinkedinIn, FaMapMarkedAlt, FaPhone } from 'react-icons/fa';
+import Email from '../../Components/Email.jsx';
 
 function VamshiKrishna() {
     return (
@@ -52,7 +53,7 @@ function VamshiKrishna() {
                     </div>
                 </div>
             </div>
-
+            <Email/>
             <Footer />
         </div>
     );

@@ -10,6 +10,7 @@ import icon3 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/responsive
 import icon4 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/scalable solutions.png'; 
 import icon5 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/Skype_Picture_2025_02_12T07_13_16_359Z.jpeg'; 
 import icon6 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/web development.png'; 
+import Email from "../../Components/Email";
 
 const SoftwareDevelopment = () => {
   const textRef = useRef(null);
@@ -52,6 +53,7 @@ const SoftwareDevelopment = () => {
       </div>
       <UnlockSoftware />
       <SoftwareApproach />
+      <Email/>
       <Footer />
     </>
   );

@@ -196,16 +196,16 @@
 /* Image container */
 .image-container {
     position: relative;
-    width: 100%; /* Adjusted for the container */
-    height: 100%; /* Adjusted to fit */
+    width: 100%; 
+    height: 100%;
     overflow: hidden;
-    flex: 1; /* Make the image container take available space */
+    flex: 1;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image covers the area */
+    object-fit: cover;
     border-radius: 5%;
 }
 

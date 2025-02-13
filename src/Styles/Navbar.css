@@ -220,37 +220,18 @@
   }
 }
 
-/* @media (max-width: 768px) {
-  .submenu {
-    position: relative;
-    width: 100%;
-    background: rgba(29, 29, 29, 0.068);
-    padding: 10px;
-    
-    display: none;
-  }
-  .submenu li{
-    color: white;
-    font-size: small;
-    text-align: start;
-  }
-
-  .services .submenu {
-    display: block;
-  }
-} */
 
 @media screen and (max-width: 768px) {
   .submenu {
       width: 90%;
-      background: rgba(0, 0, 0, 0.7); /* Darker background for visibility */
+      background: rgba(0, 0, 0, 0.7); 
       padding: 15px;
       text-align: center;
       margin-right: 30px;
   }
 
   .submenu li {
-      font-size: medium; /* Slightly larger font for readability */
+      font-size: medium; 
       text-align: center;
       color: white;
   }

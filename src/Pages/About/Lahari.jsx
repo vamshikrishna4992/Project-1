@@ -3,6 +3,7 @@ import Navbar from '../../Components/Navbar.jsx';
 import Footer from '../../Components/Footer.jsx';
 import Ceo from '../../assets/images/1.jpg';
 import { FaEnvelope, FaLinkedinIn, FaMapMarkedAlt, FaPhone } from 'react-icons/fa';
+import Email from '../../Components/Email.jsx';
 
 function Lahari() {
     return (
@@ -58,7 +59,7 @@ function Lahari() {
                     </div>
                 </div>
             </div>
-
+            <Email/>
             <Footer />
         </div>
     );

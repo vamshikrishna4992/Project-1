@@ -3,19 +3,69 @@
   overflow: hidden;
 }
 
+
+/* *************** */
+/* .about-main-container{
+ position: relative;
+  width: auto;
+  min-height: 85vh; 
+  color: white;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 5vh 20px; 
+  z-index: 1;
+  text-align: start;
+  padding-top: 10px;
+}
+.about-main-container::before {
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets//images/wmremove-transforme.jpeg") no-repeat center center;
+  background-size: cover; 
+  opacity: 0.5;
+  z-index: -1;
+} */
+
+/* ********************* */
 /* Banner Section */
 .contact-banner {
-  background: url('../assets/images/contactus-bg.jpeg') center/cover no-repeat;
+  /* background: url('../assets/images/contactus-bg.jpeg') center/cover no-repeat;
   background-size: cover;
   position: relative;
   color: white;
   text-align: center;
   padding: 80px 20px;  
-  overflow: hidden;
+  overflow: hidden; */
+  position: relative;
+  width: auto;
+  min-height: 85vh; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  background: url("../assets/images/contactus-bg.jpeg") no-repeat center/cover;
+  background-size: cover;
+  padding: 5vh 20px; 
+  z-index: 1;
+  text-align: center;
+  padding-top: 10px;
 }
 
 /* black overlay */
 .contact-banner::before {
+  /* content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0; */
   content: "";
   position: absolute;
   top: 0;
@@ -23,7 +73,8 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); 
-  z-index: 0;
+  opacity: 1;
+  z-index: -1;
 }
 
 /* Content on the banner */
@@ -188,8 +239,23 @@
 @media screen and (max-width: 480px) {
   .contact-banner {
     padding: 50px 15px;
+    background-size: cover; 
+    min-height: 60vh;
+    width: 100%;
+    height: 65vh;
+    background: url("../assets/images/contactus-bg-mobile.jpeg") no-repeat center/cover;
+    
   }
-
+.contact-banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0; 
+  background: rgba(0, 0, 0, 0.5); 
+  background-size: cover; 
+  opacity: 1;
+  z-index: 1;
+}
   .banner-title {
     font-size: 2rem;
   }
@@ -197,6 +263,7 @@
   .banner-description {
     font-size: 1.2rem;
   }
+
 
   .contact-form {
     max-width: 70%;

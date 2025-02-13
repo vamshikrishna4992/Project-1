@@ -94,12 +94,12 @@ const UnlockSoftware = () => {
 
 const SoftwareApproach = () => {
   const content = [
-    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "Handle increased traffic and data", image: icon1 },
-    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Designed according to needs", image:icon2 },
-    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "flow of goods, information, resources", image: icon3},
-    { sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "scalable solutions", image: icon4 },
-    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.', title: "Fully responsive and optimized", image: icon5},
-    {sdhoverContent: 'Protect sensitive information by using advanced encryption methods for data security.',title: "Identify & fix bugs to ensure a flawless",image: icon6,},
+    { sdhoverContent:'Optimize server scalability, implement load balancing, and use efficient database indexing to handle higher traffic and data growth.',title: "Handle increased traffic and data", image: icon1 },
+    {sdhoverContent: 'Develop software with a tailored architecture, considering user requirements, scalability, and maintainability.', title: "Designed according to needs", image:icon2 },
+    { sdhoverContent: ' Ensure seamless data flow, API integration, and resource management for efficient software operations and scalability.',title: "flow of goods, information, resources", image: icon3},
+    { sdhoverContent: 'Implement modular design, microservices, and distributed systems to ensure seamless scalability and performance.',title: "scalable solutions", image: icon4 },
+    {sdhoverContent: 'Ensure the application adapts to all screen sizes, improves performance, and enhances user experience across devices.', title: "Fully responsive and optimized", image: icon5},
+    {sdhoverContent: 'Use debugging tools, automated testing, and code reviews to detect and resolve issues for a smooth user experience.',title: "Identify & fix bugs to ensure a flawless",image: icon6,},
   ];
 
   return (

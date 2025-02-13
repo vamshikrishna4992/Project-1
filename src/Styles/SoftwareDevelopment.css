@@ -35,6 +35,7 @@ body {
     margin-top: 8%;
     margin-left: 20%;
     text-align: center;
+    
 }
 
 .software-development-content h1 {
@@ -76,16 +77,15 @@ body {
 /* Image Styling */
 .aboutusimg {
     width: 60%;
-    max-width: 650px;
     height: 350px;
     border-radius: 10px;
     z-index: 4;
+    box-sizing: border-box;
 }
 
-/* .aboutusimg:hover {
-    transform: scale(1.05);
-    filter: brightness(100%);
-} */
+.aboutusimg:hover {
+    transform: scale(1.0);
+}
 
 /* Text Content */
 .SoftwareTextContent {
@@ -133,7 +133,7 @@ body {
 .software-sec-coontainer {
     background-color: #000;
     padding: 1%;
-    height: 480px;
+    height: auto;
 }
 
 /* ****************** Unlock end ********************* */
@@ -241,7 +241,7 @@ body {
 }
 
 /* Cloud Approach Cards */
-.cloud-approach-sub {
+/* .cloud-approach-sub {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #d9d9d9;
@@ -261,7 +261,7 @@ body {
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     transform: scale(1.1);
     z-index: 100;
-}
+} */
 
 /* Hover Content */
 .SoftWare-content{

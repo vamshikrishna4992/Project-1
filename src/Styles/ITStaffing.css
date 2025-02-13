@@ -142,11 +142,11 @@ body {
 /* Image Styling */
 .aboutusimg {
     width: 50%;
-    max-width: 500px;
     height: 400px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     filter: brightness(90%);
+    box-sizing: border-box;
 }
 
 .aboutusimg:hover {
@@ -216,8 +216,7 @@ body {
 }
 .ITStaffing-sec-coontainer{
     background-color: #000;
-    padding: 1%;
-    height: 70vh;
+    height: auto;
 }
 
  

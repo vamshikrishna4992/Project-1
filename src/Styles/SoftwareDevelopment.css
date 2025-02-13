@@ -383,14 +383,14 @@ body {
         width: 100%;
         height: auto;
         row-gap: 20px;
-        column-gap: 20px;
+        /* column-gap: 20px; */
     
     }
   
     .content-circle {
-        width: 60%; 
-        height: 120px; 
-        padding: 20px;
+        width: 150px; 
+        height: 150px; 
+        padding: 30px;
 
     }
   

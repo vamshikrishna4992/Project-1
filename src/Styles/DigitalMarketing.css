@@ -13,6 +13,7 @@ body {
     text-align: center;
     padding-top: 20px;
     z-index: 1; /* Ensure text stays above */
+    
 }
 
 .dg-services-container::before {
@@ -276,6 +277,23 @@ font-weight: 500;
     .dgContainer{
         display: flex;
         flex-direction: column-reverse;
+      }
+      @media (max-width: 480px){
+      .cloud-approach-container{
+        gap: 50px;
+        padding-left: 8px;
+        margin-left: 3px;
+      }
+      .cloud-approach-sub{
+        width: 130px;
+        height: 130px;
+      }
+      .dgusimg{
+        width: auto;
+      }
+      .dg-services-content{
+        border: 2px soild red;
+      }
       }
 }
 

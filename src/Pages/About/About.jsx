@@ -20,6 +20,8 @@ import image2 from '../../assets/images/3.jpg';
 import image3 from '../../assets/images/5.jpg';
 import image4 from '../../assets/images/1.jpg';
 import image5 from '../../assets/images/2.jpg';
+import Email from "../../Components/Email.jsx";
+// import bhavana from '../../assets/images/bhavana.jpg'
 
 
 
@@ -97,7 +99,7 @@ const About = () => {
 
       {/* Our Team Section - Only Images */}
       <div className="Our-Team">
-      <h2>Our Team</h2>
+      <h2>Our Management Team</h2>
 
       <div className="main-container">
         {/* Team Member 1 */}
@@ -169,7 +171,7 @@ const About = () => {
 
 
      
-
+<Email/>
 <Footer />
     </div>
    </>

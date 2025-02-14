@@ -22,16 +22,7 @@ position: relative;
   padding-top: 10px;
 }
 .about-main-container::before {
-    /* content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: url("../assets//images/wmremove-transforme.jpeg") no-repeat center/cover;
-    opacity: 0.25;
-    z-index: -1;  */
-    content: "";
+   content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -43,9 +34,9 @@ position: relative;
   z-index: -1;
 }
 .about-hero-section {
-    width: 60%;
+    width: 80%;
     align-self: center;
-    margin-left: 7%;
+    margin-left: 0%;
     display: flex;
     gap: 20px;
   }
@@ -53,12 +44,12 @@ position: relative;
   .about-hero-section h1{
     font-size: 3rem;
     font-weight: bold;
-    max-width: 800px;
+    max-width: 900px;
     text-align: start;
     margin: auto;
   }
   .about-hero-section p{
-    max-width: 800px;
+    max-width: 900px;
     text-align: start;
     margin: auto;
     margin-top: 25px;
@@ -112,6 +103,7 @@ position: relative;
     text-align: center;
     padding:30px 50px 50px 50px;
     animation: fadeInUp 1.5s ease-in-out;
+    
 }
 
 @keyframes fadeInUp {
@@ -142,6 +134,9 @@ position: relative;
     font-size: 22px;
     /* height: 10vh; */
 
+}
+.Fundamental-Banner span{
+    color: #e5a514;
 }
 .Fundamental {
     display: flex;
@@ -188,6 +183,10 @@ position: relative;
     padding: 20px;
     /* background-color: white; */
 }
+.Our-Team span{
+    color: #e5a514;
+
+}
 .main-container{
     display: flex;
     justify-content: space-between;
@@ -197,11 +196,12 @@ position: relative;
     background-color: black;
     /* width: 50%; */
     /* max-width: 300px; */
-    margin: auto;
+    /* margin: auto; */
     padding-bottom: 20px; /* Adjusted for overlap */
     display: flex;
     flex-direction: column; /* Arrange items horizontally */
     justify-content:space-evenly;
+    margin-top: 2%;
     margin-left: 2%;
     margin-right: 2%;
     align-items: center; /* Center the content vertically */
@@ -229,7 +229,7 @@ position: relative;
     bottom: -15px; /* Overlap */
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
     padding: 8px;
     border-radius: 6px;
     z-index: 10;
@@ -303,91 +303,6 @@ position: relative;
     /* padding-bottom: 20px; */
     border-radius: 10px;
 }
-/* .react-player{
-    border: 2px solid red;
-    width: 100%;
-} */
-
-
-/* Responsive Styles */
-/* @media (max-width: 1200px) {
-    .content {
-        width: 70%;
-        font-size: 14px;
-        padding: 6px;
-    }
-    .content h3 {
-        font-size: 16px;
-    }
-    .content p {
-        font-size: 12px;
-    }
-    .Fundamental-Content {
-        max-width: 600px;
-        text-align: center;
-        margin: auto;
-    }
-    .line {
-        height: 150px;
-    }
-}
-
-@media (max-width: 992px) {
-    .main-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .container {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .container {
-        width: 90%;
-    }
-    .Our-Team {
-        height: auto;
-        margin-top: 100px;
-        padding-bottom: 50px;
-    }
-}
-
-@media (max-width: 576px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-    .Our-Team {
-        margin-top: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 5px;
-    }
-    .content {
-        font-size: 8px;
-        padding: 3px;
-    }
-    .content h3 {
-        font-size: 10px;
-    }
-    .content p {
-        font-size: 7px;
-    }
-    .Our-Team {
-        margin-top: 60px;
-        padding-bottom: 30px;
-    }
-} */
 
 @media (max-width: 1200px) {
     .main-container {

@@ -1,0 +1,59 @@
+.our-mission {
+    background-color: black;
+    padding: 20px;
+    height: 70vh;
+  }
+  
+  .mission-header {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .mission-header span{
+    color: #e5a514;
+  }
+  
+  .mission-content {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .video-section {
+    flex: 1;
+  }
+  
+  .video-section video {
+    width: 100%;
+    max-width: 500px;
+    height: 60%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mission-header {
+      text-align: center;
+    }
+    .our-mission{
+      height: auto;
+    }
+  
+    .mission-content {
+      flex-direction: column;
+    }
+  
+    .video-section {
+      order: -1;
+      margin-bottom: 20px;
+    }
+    .text-content{
+      text-align: center;
+    }
+  }
+  

@@ -12,7 +12,8 @@
   height: 25px;
   position: fixed;
   z-index: 1000;
-  font-weight: bold;
+  /* font-weight: bold; */
+  /* align-content: center; */
   text-align: center;
   animation: fadeSlide 1s ease-in-out;
   margin-top: 10px;
@@ -22,17 +23,18 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 3px;
 }
 
 .logo img {
   width: 40px;
   height: 40px;
+  margin-top: 5px;
 }
 
-.logo h3 {
+.logo p {
   color: white;
-  font-size: 1.5rem;
+  font-size:1 rem ;
   margin: 0;
 }
 
@@ -69,7 +71,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background: #ffcc00;
+  background: #e5a514;
   bottom: -5px;
   left: 50%;
   transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
@@ -124,7 +126,7 @@
   align-items: center;
   justify-content: center;
   background-color: black;
-  border: 0.5px solid gold;
+  border: 0.5px solid #e5a514;
   border-radius: 25px;
   cursor: pointer;
   list-style: none;
@@ -133,7 +135,7 @@
 
 .nav-contact-btn .contactus {
   text-decoration: none;
-  color: yellow;
+  color: #ffffff;
   font-weight: lighter;
   font-size: 1rem;
   text-align: center;
@@ -145,7 +147,7 @@
 }
 
 .nav-contact-btn:hover {
-  background-color: gold;
+  background-color: #e5a514;
 }
 
 .nav-contact-btn:hover .contactus {

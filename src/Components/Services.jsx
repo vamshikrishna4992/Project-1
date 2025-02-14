@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <div className="service-container">
       <div className="service-content">
-        <h1>Our <span>services</span></h1>
+        <h1>Our <span>Services</span></h1>
         <p>As a next-generation software company, we are dedicated to crafting tailored IT solutions that empower
           businesses to thrive in a digitally-driven world.
 

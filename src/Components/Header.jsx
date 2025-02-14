@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from "./Navbar"; 
-import {Link} from 'react-router-dom'
+import Navbar from "./Navbar";
+import { Link } from 'react-router-dom'
 import "../Styles/Header.css";
 import gsap from 'gsap'
 
@@ -30,20 +30,24 @@ const Header = () => {
     );
   }, []);
   return (
-    <div className="header-container">
-      <Navbar/>
-      <div className="hero-section">
-        <h1>Forging businesses to grow without any hassle.</h1>
-        <p className="description">
-          We build digital products and ecosystems that will support and grow your business seamlessly at any scale.
-        </p>
-        <Link to={'/contact'} className="headerButton">
-        <button ref={buttonRef} className="get-started">
-          Contact Us <span></span>
-        </button>
-        </Link>
+    <>
+      <Navbar />
+      <div className="header-container">
+
+        <div className="hero-section">
+          <h1>Forging businesses to grow without any hassle.</h1>
+          <p className="description">
+            We build digital products and ecosystems that will support and grow your business seamlessly at any scale.
+          </p>
+          <Link to={'/contact'} className="headerButton">
+            <button ref={buttonRef} className="get-started">
+              Contact Us <span></span>
+            </button>
+          </Link>
+        </div>
       </div>
-    </div>
+    </>
+
   );
 };
 

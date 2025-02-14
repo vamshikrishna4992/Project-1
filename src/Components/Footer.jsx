@@ -72,7 +72,7 @@ const Footer = () => {
             <ul>
               <li>
                 <a href="tel:+918923898349" className="contact-link">
-                  <FaPhoneAlt className="contact-icon" /> <span className="contact-info">+91 8923898349</span> 
+                  <FaPhoneAlt className="contact-icon" /> <span className="contact-info">+91 8008543535</span> 
                 </a>
               </li>
               <li>
@@ -100,7 +100,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="footer-copyright">
-        <p>© All Rights Reserved @ KrystalNest IT Solutions Pvt, Ltd.</p>
+        <p>© All Rights Reserved @ KrystalNest IT Solutions Pvt Ltd.</p>
       </div>
     </footer>
   );

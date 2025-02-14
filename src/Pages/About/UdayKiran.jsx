@@ -2,7 +2,7 @@ import '../../Styles/About-bio.css';
 import Navbar from '../../Components/Navbar.jsx';
 import Footer from '../../Components/Footer.jsx';
 import Ceo from '../../assets/images/3.jpg';
-import { FaEnvelope, FaLinkedinIn, FaMapMarkedAlt, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedinIn, FaMapMarkerAlt,  FaPhoneAlt } from 'react-icons/fa';
 
 function UdayKiran() {
     return (
@@ -45,10 +45,10 @@ function UdayKiran() {
                 {/* CEO Contact Details */}
                 <div className='bio-details'>
                     <div>
-                    <FaPhone /> 8923898349
+                    <FaPhoneAlt /> +91 8008543535
                     </div>  
                     <div>
-                    <FaMapMarkedAlt /> Ayyappa Society, Madhapur, Hyderabad, 500081.
+                    <FaMapMarkerAlt />  Ayyappa Society, Madhapur, Hyderabad, 500081.
                     </div>
                 </div>
             </div>

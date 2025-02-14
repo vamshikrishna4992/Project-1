@@ -14,7 +14,7 @@ body {
     padding-top: 20px;
     z-index: 1; 
 } */
-.cloud-approach-sub {
+/* .it-approach-sub {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #d9d9d9;
@@ -27,13 +27,11 @@ body {
     margin: auto;
     align-content: center;
     transition: transform 0.3s ease-in-out;
-}
+} */
 
-.cloud-approach-sub:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    transform: scale(1.1);
-    z-index: 100px;
+.it-approach-sub:hover {
+    visibility: hidden;
+    
 }
 
 .ITStaffing-services-container{
@@ -94,29 +92,37 @@ body {
     margin-left: 80px;
   }
 
-  .cloud-hover-content {
+  .it-hover-content {
     position: absolute;
-    top: 100%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, 10px);
-    background-color: rgba(225, 165, 0, 1);
-    color: black;
+    background-color: black;
+    color: white;
     padding: 10px;
-    border-radius: 8px;
-    width: 220px;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
     text-align: center;
     font-size: 0.9rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: #e5a514;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.cloud-approach-sub:hover .cloud-hover-content {
+.it-approach-sub:hover .it-hover-content {
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, 0);
     
+}
+.it-hover-content p{
+    font-size: 0.8rem;
+    padding-top: 4rem;
+    text-align: center;
+    align-content: center;
+
 }
 
 
@@ -233,7 +239,7 @@ body {
     font-weight: bold;
 }
 
-.cloud-approach-container{
+.it-approach-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 50px;
@@ -248,26 +254,28 @@ body {
     color: #000;
     font-size: xx-large;
 }
-.cloud-approach-sub{
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-background-color: #d9d9d9;
-color: black;
-border-radius: 100%;
-width: 50%;
-height: 160px;
-text-align: center;
-padding: 50px;
-margin: auto;
-align-content: center;
+.it-approach-sub{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d9d9d9;
+    color: black;
+    border-radius: 100%;
+    width: 50%;
+    height: 160px;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    align-content: center;
+    transition: transform 0.3s ease-in-out;
 }
-.cloud-approach-sub:hover{
+.it-approach-sub:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-.cloud-approach-sub img{
+.it-approach-sub img{
     width: 80px;
     height: 80px;
 }
-.cloud-approach-sub p{
+.it-approach-sub p{
 font-weight: 500;
 }
 
@@ -276,34 +284,38 @@ font-weight: 500;
 /* Responsive Adjustments */
 
 @media (max-width: 1024px) {
-    .cloud-approach-container {
+    .it-approach-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 768px) {
-    .cloud-approach-container {
+@media(max-width: 768px) {
+    .it-approach-container {
         grid-template-columns: repeat(2, 1fr);
 
     }
 
-    .cloud-approach-sub {
-        width: 150px;
-        height: 150px;
+    .it-approach-sub {
+        width: 69%;
+        height: 105%;
         padding: 30px;
     }
     @media (max-width: 480px){
-        .cloud-approach-container{
-          gap: 50px;
-          padding-left: 8px;
+        .it-approach-container{
+          gap: 70px;
+          padding-left: 8%;
           margin-left: 3px;
         }
-        .cloud-approach-sub{
-          width: 130px;
-          height: 130px;
+        .it-approach-sub{
+            width: 90px; 
+            height: 90px;
         }
-        .dgusimg{
-          width: auto;
+        .it-approach-sub p{
+        font-size: 10px;
+        }
+        .it-hover-content p{
+            padding-top: 1.2rem;
+           
         }
         }
 }

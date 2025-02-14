@@ -1,6 +1,7 @@
 import '../../Styles/About-bio.css';
 import Navbar from '../../Components/Navbar.jsx';
 import Footer from '../../Components/Footer.jsx';
+import Email from '../../Components/Email.jsx'
 import Ceo from '../../assets/images/Ceo-1.jpg';
 import { FaEnvelope, FaLinkedinIn,  FaMapMarkerAlt,  FaPhoneAlt } from 'react-icons/fa';
 

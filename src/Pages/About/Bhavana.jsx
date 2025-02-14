@@ -3,6 +3,7 @@ import Navbar from '../../Components/Navbar.jsx';
 import Footer from '../../Components/Footer.jsx';
 import Ceo from '../../assets/images/2.png';
 import { FaEnvelope, FaLinkedinIn,FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import Email from '../../Components/Email.jsx';
 
 function Bhavana() {
     return (

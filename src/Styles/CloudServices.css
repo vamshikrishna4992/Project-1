@@ -64,7 +64,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 30px 50px 50px 50px;
+    padding: 50px;
     margin: auto;
     background-color: #000;
     color: #fff;
@@ -207,7 +207,10 @@ body {
     background-color: #d9d9d9; 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 40px;
-    z-index: 1; 
+    z-index: 1;
+}
+.cloud-circle:hover{
+    visibility: hidden;
 }
 
 .cloud-image {
@@ -231,17 +234,17 @@ body {
 }
 .cloud-hover-content {
     position: absolute;
-    top: 100%;
     left: 50%;
     transform: translate(-50%, 10px);
-    background-color: rgba(225, 165, 0, 1);
-    color: black;
+    background-color: black;
+    color: white;
     padding: 10px;
-    border-radius: 8px;
-    width: 220px;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
     text-align: center;
     font-size: 0.9rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: #e5a514;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -252,6 +255,10 @@ body {
     visibility: visible;
     transform: translate(-50%, 0);
     
+}
+.cloud-hover-content p{
+    font-size: 0.8rem;
+    padding-top: 3rem;
 }
 
 /* Cloud Approach Cards */

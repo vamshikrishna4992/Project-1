@@ -100,12 +100,12 @@ const Approach = () => {
     <>
       <div className="cloud-approach-main-container">
         <h2 className="cloud-head2">KrystalNest’s Approach to IT Staffing Services</h2>
-        <div className="cloud-approach-container">
+        <div className="it-approach-container">
           {itstaffingapproaches.map((approach, index) => (
-            <div className="cloud-approach-sub" key={index}>
+            <div className="it-approach-sub" key={index}>
               <img src={`${approach.icon}`} alt={approach.icon} />
               <p>{approach.content}</p>
-              <div className="cloud-hover-content">
+              <div className="it-hover-content">
               <p>{approach.hoverContent}</p>
             </div>
               

@@ -5,16 +5,16 @@ import '../../Styles/About.css';
 import ReactPlayer from 'react-player';
 import Footer from '../../Components/Footer.jsx';
 import Navbar from '../../Components/Navbar.jsx';
-import Email from '../../Components/Email.jsx'
 import vedio from '../../assets/images/Messaging.mp4';
 import Fundamental from '../../assets/images/6-steps-creative-business-infographics-design-template.png';
+import Email from '../../Components/Email.jsx'
 
 // Data Array
 import image1 from '../../assets/images/Ceo-1.jpg';
-import image2 from '../../assets/images/3.jpg';
-import image3 from '../../assets/images/5.jpg';
-import image4 from '../../assets/images/1.jpg';
-import image5 from '../../assets/images/Bhavana.jpg';
+import image2 from '../../assets/images/Co-Founder.jpg';
+import image3 from '../../assets/images/Operational-Manager.jpg';
+import image4 from '../../assets/images/Hr-Manager-Lahari.jpg';
+import image5 from '../../assets/images/Hr-Manager-Bhavana.jpg';
 
 
 
@@ -164,7 +164,7 @@ const About = () => {
 
 
      
-{/* <Email/> */}
+<Email/>
 <Footer />
     </div>
    </>

@@ -262,7 +262,7 @@ font-weight: 500;
     }
 
     .dg-approach-sub {
-        width: 80%;
+        width: 73%;
         height: 110%;
         padding: 30px;
     }
@@ -290,6 +290,9 @@ font-weight: 500;
 }
 .dg-approach-sub p{
     font-size: 10px;
+}
+.dg-hover-content p{
+    padding-top: 1.8rem;
 }
   }
 

@@ -16,6 +16,12 @@ body {
     z-index: 2;
    
 }
+  .software-description {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #d1d1d1;
+    margin-left: 80px;
+  }
 
 .software-development-container::before {
     content: "";
@@ -426,5 +432,6 @@ body {
     .content-circle p{
         font-size: 10px;
 
-}
+    }
+
 }

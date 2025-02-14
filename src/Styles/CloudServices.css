@@ -261,28 +261,6 @@ body {
     padding-top: 3rem;
 }
 
-/* Cloud Approach Cards */
-/* .cloud-approach-sub {
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #d9d9d9;
-    color: black;
-    border-radius: 100%;
-    width: 50%;
-    height: 160px;
-    text-align: center;
-    padding: 50px;
-    margin: auto;
-    align-content: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.cloud-approach-sub:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    transform: scale(1.1);
-    z-index: 100;
-} */
 
 /* Hover Content */
 .cloud-content{
@@ -351,8 +329,8 @@ body {
     }
 
     .cloud-circle {
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 160px;
         padding: 30px;
     }
 }

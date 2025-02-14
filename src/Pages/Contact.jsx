@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "../Styles/Contact.css";
 import Navbar from '../Components/Navbar.jsx';
 import Footer from '../Components/Footer.jsx';

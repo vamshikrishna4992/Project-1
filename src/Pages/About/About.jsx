@@ -9,7 +9,6 @@ import vedio from '../../assets/images/Messaging.mp4';
 import Fundamental from '../../assets/images/6-steps-creative-business-infographics-design-template.png';
 import Email from '../../Components/Email.jsx'
 
-// Data Array
 import image1 from '../../assets/images/Ceo-1.jpg';
 import image2 from '../../assets/images/Co-Founder.jpg';
 import image3 from '../../assets/images/Operational-Manager.jpg';

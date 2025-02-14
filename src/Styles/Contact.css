@@ -265,7 +265,7 @@
   .contact-banner {
     padding: 50px 15px;
     background-size: cover; 
-    min-height: 60vh;
+    min-height: 50vh;
     width: 100%;
     height: 65vh;
     background: url("../assets/images/contactus-bg-mobile.jpeg") no-repeat center/cover;

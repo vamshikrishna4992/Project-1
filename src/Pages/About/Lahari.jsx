@@ -1,7 +1,7 @@
 import '../../Styles/About-bio.css';
 import Navbar from '../../Components/Navbar.jsx';
 import Footer from '../../Components/Footer.jsx';
-import Ceo from '../../assets/images/1.jpg';
+import Ceo from '../../assets/images/Hr-Manager-Lahari.jpg';
 import { FaEnvelope, FaLinkedinIn,  FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import Email from '../../Components/Email.jsx';
 
@@ -38,7 +38,7 @@ function Lahari() {
                 {/* CEO Information */}
                 <div className='bio-information'>
                     <p>
-                        Suresh is one of the founders of Kastech in 2007. He is a strong operations leader and expert on enterprise-wide IT solution deployments and implementations in the U.S. and overseas. Under his leadership, Kastech made a name for itself in delivering services across various technology platforms (including ERP, BI, Big Data, Cloud, and Analytics). Kastech adopted new technologies, proposed them to the customers, and implemented them successfully in a very cost-effective fashion.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ad facilis error. Eos qui aliquid harum possimus quae labore molestias tenetur atque perferendis modi eum assumenda repudiandae exercitationem accusamus fugiat sequi ratione, voluptates nam consequuntur accusantium! Repellat enim consequatur voluptatibus nobis nisi cumque iure sed, deserunt amet illo est tenetur.
                     </p>
     
                 </div>

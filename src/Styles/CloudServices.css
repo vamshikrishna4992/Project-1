@@ -440,6 +440,16 @@ body {
       font-size: 14px;
     }
 
-  
-
+} 
+@media (max-width: 480px){
+    .cloud-circle {
+        width: 50%;
+        height: 60%;
+    }
+    .cloud-circle p{
+        font-size: 10px;
+    }
+   .cloud-hover-content p{
+        padding-top: 2.2rem;
+    }
 }

@@ -52,7 +52,7 @@ function UdayKiran() {
                     </div>
                 </div>
             </div>
-
+            <Email/>
             <Footer />
         </div>
     );

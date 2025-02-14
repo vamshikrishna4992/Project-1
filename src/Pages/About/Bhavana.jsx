@@ -51,7 +51,7 @@ function Bhavana() {
                     </div>
                 </div>
             </div>
-
+            <Email/>
             <Footer />
         </div>
     );

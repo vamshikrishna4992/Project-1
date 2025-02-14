@@ -52,7 +52,7 @@ function VamshiKrishna() {
                     </div>
                 </div>
             </div>
-
+            <Email/>
             <Footer />
         </div>
     );

@@ -1,4 +1,4 @@
-/* Existing CSS (unchanged) */
+
 .footer-container {
   background-color: black;
   color: white;
@@ -167,6 +167,7 @@
 .contact-icon {
   font-size: 16px;
   color: #fff;
+  padding-right: 5px;
 }
 
 .contact-link {
@@ -212,7 +213,7 @@
 
   .footer-right {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     width: 100%;
     justify-content: center;

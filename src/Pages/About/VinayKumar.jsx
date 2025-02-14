@@ -52,7 +52,7 @@ function VinayKumar() {
                     </div>
                 </div>
             </div>
-
+            <Email/>
             <Footer />
         </div>
     );

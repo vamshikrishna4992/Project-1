@@ -11,6 +11,7 @@ import approach3 from '../../assets/images/Apporches/CLOUD SERVICES/repair_85007
 import approach5 from '../../assets/images/Apporches/CLOUD SERVICES/services_12249556.png'
 import approach6 from '../../assets/images/Apporches/CLOUD SERVICES/web_8500931.png';
 import cloudInfo from '../../assets/images/cloud-info.png';
+import Email from "../../Components/Email.jsx";
 
 
 const CloudServices = () => {
@@ -49,6 +50,7 @@ const CloudServices = () => {
       </div>
       <UnlockCloud />
       <CloudApproach  />
+      <Email/>
       <Footer />
     </>
   );

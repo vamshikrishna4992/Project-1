@@ -12,6 +12,7 @@ import icon3 from '../../assets/images/Apporches/IT STAFFING/team-management_134
 import icon4 from '../../assets/images/Apporches/IT STAFFING/team_1401932.png'
 import icon5 from '../../assets/images/Apporches/IT STAFFING/approved_942833.png'
 import icon6 from '../../assets/images/Apporches/IT STAFFING/teamwork_1401936.png'
+import Email from "../../Components/Email.jsx";
 
 const ItStaffing = () => {
   const textRef = useRef(null);
@@ -51,6 +52,7 @@ const ItStaffing = () => {
       </div>
       <Unlock />
       <Approach />
+      <Email/>
       <Footer />
     </>
   );

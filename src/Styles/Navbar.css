@@ -207,6 +207,7 @@
     box-shadow: none;
     background: rgba(252, 212, 250, 0.8);
     padding: 5px;
+   
   }
 }
 
@@ -221,22 +222,26 @@
   }
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .submenu {
-    position: relative;
-    width: 100%;
-    background: rgba(29, 29, 29, 0.068);
-    padding: 10px;
-    
-    display: none;
-  }
-  .submenu li{
-    color: white;
-    font-size: small;
-    text-align: start;
+      width: 90%;
+      background: rgba(0, 0, 0, 0.7); 
+      padding: 15px;
+      text-align: center;
+      margin-right: 30px;
   }
 
-  .services .submenu {
-    display: block;
+  .submenu li {
+      font-size: medium; 
+      text-align: center;
+      color: white;
   }
+  .mobile-active{
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    
+  }
+  
 }

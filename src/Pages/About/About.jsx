@@ -5,6 +5,7 @@ import '../../Styles/About.css';
 import ReactPlayer from 'react-player';
 import Footer from '../../Components/Footer.jsx';
 import Navbar from '../../Components/Navbar.jsx';
+import Email from '../../Components/Email.jsx'
 import vedio from '../../assets/images/Messaging.mp4';
 import Fundamental from '../../assets/images/6-steps-creative-business-infographics-design-template.png';
 
@@ -163,7 +164,7 @@ const About = () => {
 
 
      
-
+{/* <Email/> */}
 <Footer />
     </div>
    </>

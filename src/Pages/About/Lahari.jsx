@@ -52,7 +52,7 @@ function Lahari() {
                     </div>
                 </div>
             </div>
-
+            <Email/>
             <Footer />
         </div>
     );

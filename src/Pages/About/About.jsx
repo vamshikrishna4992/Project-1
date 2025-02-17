@@ -2,26 +2,18 @@ import  { useEffect, useRef } from "react";
 import gsap from 'gsap'
 import { Link } from "react-router-dom";
 import '../../Styles/About.css';
-// import VamshiKrishna from "./VamshiKrishna.jsx";
-// import UdayKiran from "./UdayKiran.jsx";
-// import VinayKumar from "./VinayKumar.jsx";
-// import Lahari from "./Lahari.jsx";
-// import Bhavana from "./Bhavana.jsx";
 import ReactPlayer from 'react-player';
 import Footer from '../../Components/Footer.jsx';
 import Navbar from '../../Components/Navbar.jsx';
 import vedio from '../../assets/images/Messaging.mp4';
-// import BannerImg from '../assets/images/wmremove-transforme.jpeg'
 import Fundamental from '../../assets/images/6-steps-creative-business-infographics-design-template.png';
+import Email from '../../Components/Email.jsx'
 
-// Data Array
-import image1 from '../../assets/images/4.jpg';
-import image2 from '../../assets/images/3.jpg';
-import image3 from '../../assets/images/5.jpg';
-import image4 from '../../assets/images/1.jpg';
-import image5 from '../../assets/images/2.jpg';
-import Email from "../../Components/Email.jsx";
-// import bhavana from '../../assets/images/bhavana.jpg'
+import image1 from '../../assets/images/Ceo-1.jpg';
+import image2 from '../../assets/images/Co-Founder.jpg';
+import image3 from '../../assets/images/Operational-Manager.jpg';
+import image4 from '../../assets/images/Hr-Manager-Lahari.jpg';
+import image5 from '../../assets/images/Hr-Manager-Bhavana.jpg';
 
 
 
@@ -81,7 +73,7 @@ const About = () => {
 
       {/* Fundamental Principles Section */}
       <div className='Fundamental-Banner'>
-      <h3>Fundamental Principles</h3>
+      <h3>Fundamental <span>Principles</span></h3>
       </div>
       <div className='Fundamental'>
 
@@ -99,7 +91,7 @@ const About = () => {
 
       {/* Our Team Section - Only Images */}
       <div className="Our-Team">
-      <h2>Our Management Team</h2>
+      <h2>Our <span> Management</span></h2>
 
       <div className="main-container">
         {/* Team Member 1 */}

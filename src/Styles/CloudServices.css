@@ -64,7 +64,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 30px 50px 50px 50px;
+    padding: 50px;
     margin: auto;
     background-color: #000;
     color: #fff;
@@ -294,7 +294,9 @@ body {
 
 @media (max-width: 1024px) {
     .cloud-services-container{
-        height: 45vh;
+        height: 50vh;
+        align-items: center;
+        align-content: center;
     }
     .AboutCloudContainer {
         gap: 20px;
@@ -337,9 +339,6 @@ body {
 
 /* Ensure No Overlapping and Proper Padding */
 @media (max-width: 768px) {
-    .cloud-services-container{
-        height: 30vh;
-    }
     .cloud-services-content {
         width: 90%;
         margin-left: auto;

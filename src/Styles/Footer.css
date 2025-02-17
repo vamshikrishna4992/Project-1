@@ -1,4 +1,4 @@
-/* Existing CSS (unchanged) */
+
 .footer-container {
   background-color: black;
   color: white;
@@ -167,6 +167,7 @@
 .contact-icon {
   font-size: 16px;
   color: #fff;
+  padding-right: 5px;
 }
 
 .contact-link {
@@ -212,7 +213,7 @@
 
   .footer-right {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     width: 100%;
     justify-content: center;
@@ -298,6 +299,30 @@
   .contact-link {
     font-size: 14px;
   }
+
+  .footer-brand .brand-name {
+    font-size: 24px;
+  }
+
+  .footer-links h3,
+  .footer-contact h3,
+  .quick-links h3 {
+    font-size: 16px;
+  }
+
+  .footer-links a,
+  .quick-links a,
+  .contact-link {
+    font-size: 13px;
+  }
+
+  .tag-line p {
+    font-size: 12px;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+  }
 }
 
 
@@ -354,6 +379,30 @@
 
   .footer-links.quick-links ul{
     padding-left: 0;
+  }
+
+  .footer-brand .brand-name {
+    font-size: 20px;
+  }
+
+  .footer-links h3,
+  .footer-contact h3,
+  .quick-links h3 {
+    font-size: 14px;
+  }
+
+  .footer-links a,
+  .quick-links a,
+  .contact-link {
+    font-size: 12px;
+  }
+
+  .tag-line p {
+    font-size: 11px;
+  }
+
+  .footer-copyright {
+    font-size: 9px;
   }
   
 }

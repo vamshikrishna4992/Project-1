@@ -15,7 +15,7 @@ const Project1 = () => {
       
       <div className="project-banner">
         <h1>Our Projects</h1>
-        <p>"Turning Ideas into Reality with Code."</p>
+        <p>Turning Ideas into Reality with Code.</p>
       </div>
       <Project/>
       <Email/>

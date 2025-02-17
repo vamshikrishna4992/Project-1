@@ -9,7 +9,7 @@ function Project() {
   return (
     <div className="project-container">
       <div className="project-content">
-        <h1>Our <span>project</span></h1>
+        <h1>Our <span>Project</span></h1>
         <p>As a next-generation software company, we are dedicated to crafting tailored IT solutions that empower
           businesses to thrive in a digitally-driven world.
         </p>
@@ -26,7 +26,7 @@ function Project() {
           <div className='card-rows'>
             <img src={Project1} alt='' />
             <h5>An innovative AI-driven solution
-              for predictive analytics
+              for <br />predictive analytics
               in healthcare.</h5>
             <Link to="/project1"><button>know more</button></Link>
           </div>

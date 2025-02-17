@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../Styles/Contact.css";
 import Navbar from '../Components/Navbar.jsx';
 import Footer from '../Components/Footer.jsx';
 import Email from "../Components/Email.jsx";
+import robotImg from '../assets/images/ImNotRobot.png'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const handleAreaCodeChange = (e) => {
-    const value = e.target.value.replace(/\D/g, ''); 
+    const value = e.target.value.replace(/\D/g, '');
     setAreaCode(value);
     setFormData({ ...formData, phoneAreaCode: value });
   };
@@ -101,25 +102,25 @@ const Contact = () => {
           <div className="form-group">
             <label className="form-label">Name :</label>
             <div className="name-inputs">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 name="firstName"
-                placeholder="First Name" 
-                className="input-field" 
-                maxLength={30} 
+                placeholder="First Name"
+                className="input-field"
+                maxLength={30}
                 value={formData.firstName}
-                onChange={handleChange} 
-                required 
+                onChange={handleChange}
+                required
               />
-              <input 
-                type="text" 
+              <input
+                type="text"
                 name="lastName"
-                placeholder="Last Name" 
-                className="input-field" 
-                maxLength={30} 
+                placeholder="Last Name"
+                className="input-field"
+                maxLength={30}
                 value={formData.lastName}
-                onChange={handleChange} 
-                required 
+                onChange={handleChange}
+                required
               />
             </div>
           </div>
@@ -150,29 +151,29 @@ const Contact = () => {
 
           <div className="form-group">
             <label className="form-label">E-mail :</label>
-            <input 
-              type="email" 
+            <input
+              type="email"
               name="email"
-              placeholder="Enter your email" 
-              className="input-field" 
-              maxLength={50} 
+              placeholder="Enter your email"
+              className="input-field"
+              maxLength={50}
               value={formData.email}
-              onChange={handleChange} 
-              required 
+              onChange={handleChange}
+              required
             />
           </div>
 
           <div className="form-group">
             <label className="form-label">Company :</label>
-            <input 
-              type="text" 
+            <input
+              type="text"
               name="companyName"
-              placeholder="Enter company name" 
-              className="input-field" 
-              maxLength={40} 
+              placeholder="Enter company name"
+              className="input-field"
+              maxLength={40}
               value={formData.companyName}
-              onChange={handleChange} 
-              required 
+              onChange={handleChange}
+              required
             />
           </div>
 
@@ -189,10 +190,12 @@ const Contact = () => {
             />
           </div>
 
-          <div className="form-group">
-            <label>
-              <input type="checkbox" required /> I'm not a robot
+          <div className="captcha-container">
+            <label className="captcha-label">
+              <input type="checkbox" required className="captcha-checkbox" />
+              I'm not a robot
             </label>
+            <img src={robotImg} alt="captcha" className="captcha-image" />
           </div>
 
           <button className="contact-button" type="submit" disabled={loading}>

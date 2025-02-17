@@ -3,50 +3,56 @@
   flex-direction: column;
   background-color: black;
   padding: 40px 0;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
 }
 
 .project-content {
   margin-bottom: 30px;
-  width: 90%;
+  width: 100%;
   max-width: 900px;
+  /* margin-left: 20px; */
 }
 
 .project-content h1 {
   font-size: clamp(28px, 4vw, 36px);
   color: white;
-
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
 }
 
 .project-content h1 span {
-  color: goldenrod;
+  color:#e5a514;
 }
 
 .project-content p {
+  box-sizing: border-box;
   color: white;
   margin: 0 auto;
+  padding-left: 20px;
   font-size: clamp(14px, 2vw, 16px);
-  line-height: 1.5;
-  max-width: 800px;
-  padding: 10px 0;
+  /* line-height: 1.5; */
+  /* max-width: 800px; */
 }
 
 .project-cards {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  width: 90%;
-  max-width: 1200px;
+  justify-content: space-evenly;
+  /* gap: 40px; */
+  width: 100%;
+  /* margin-left: 2%; */
+  /* margin-right: 2%; */
+  /* max-width: 1200px; */
   background-color: black;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .card-rows {
@@ -74,7 +80,7 @@
 }
 
 .card-rows button {
-  background-color: goldenrod;
+  background-color: #e5a514;
   color: #fff;
   border: none;
   padding: 10px 18px;
@@ -109,6 +115,9 @@
 }
 
 @media (max-width: 768px) {
+  .project-content{
+    text-align: center;
+  }
   .cards {
     flex-direction: column;
     align-items: center;

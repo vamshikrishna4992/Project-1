@@ -85,7 +85,7 @@ const Navbar = () => {
           <img src="./KN.png" alt="logo" />
         </Link>
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}> 
-          <h3>KrystalNest</h3>
+          <p>KrystalNest</p>
         </Link>
       </div>
 

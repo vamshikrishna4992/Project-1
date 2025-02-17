@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
 import { FaInstagram, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import "../Styles/Team.css";

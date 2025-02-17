@@ -1,20 +1,14 @@
 import '../../Styles/About-bio.css';
 import Navbar from '../../Components/Navbar.jsx';
 import Footer from '../../Components/Footer.jsx';
-import Ceo from '../../assets/images/2.jpg';
-import { FaEnvelope, FaLinkedinIn, FaMapMarkedAlt, FaPhone } from 'react-icons/fa';
+import Ceo from '../../assets/images/Hr-Manager-Bhavana.jpg';
+import { FaEnvelope, FaLinkedinIn,FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import Email from '../../Components/Email.jsx';
 
 function Bhavana() {
     return (
         <div className='Main-About'>
             <Navbar />
-
-            {/* Banner Section */}
-            {/* <div className="About-banner"> */}
-            {/* <div className='About-back-Container '>
-        <h1 className="banner-title">Bhavana</h1>
-      </div> */}
             <div className="bio-banner">
                 <h1 className="bio-title">Bhavana</h1>
             </div>
@@ -51,10 +45,10 @@ function Bhavana() {
                 {/* CEO Contact Details */}
                 <div className='bio-details'>
                     <div>
-                    <FaPhone /> 8923898349
+                    <FaPhoneAlt /> +91 8008543535
                     </div>  
                     <div>
-                    <FaMapMarkedAlt /> Ayyappa Society, Madhapur, Hyderabad, 500081.
+                    <FaMapMarkerAlt /> Ayyappa Society, Madhapur, Hyderabad, 500081.
                     </div>
                 </div>
             </div>

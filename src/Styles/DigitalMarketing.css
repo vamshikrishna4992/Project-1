@@ -293,6 +293,9 @@ font-weight: 500;
     padding-left: 2rem;
     margin-left: 3px;
   }
+  .dg-services-content h1{
+    font-size: 2rem;
+  }
   .dg-approach-sub{
     width: 80px;
     height: 80px; 
@@ -305,7 +308,9 @@ font-weight: 500;
     font-size: 10px;
 }
 .dg-hover-content p{
-    padding-top: 1.8rem;
+    /* padding-top: 1.8rem; */
+    padding: 10px;
+
 }
   }
 

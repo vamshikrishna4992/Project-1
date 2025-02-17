@@ -324,14 +324,12 @@ body {
         padding: 30px;
     }
 }
-
-/* Ensure No Overlapping and Proper Padding */
 @media (max-width: 768px) {
-    .software-development-container {
-        /* height: 0vh; */
-        /* padding-top: 50px; 
-        padding-bottom: 20px;  */
-      }
+    /* .software-development-container {
+        height: 0vh;
+        padding-top: 50px; 
+        padding-bottom: 20px; 
+      } */
     .software-development-content {
       width: 90%;
       margin-left: auto;
@@ -373,10 +371,10 @@ body {
       font-size: 20px;
     }
   
-    .software-sec-coontainer {
-      /* height: auto;
-      padding: 5%; */
-    }
+    /* .software-sec-coontainer {
+      height: auto;
+      padding: 5%;
+    } */
   
     .content-circle-container {
         grid-template-columns: repeat(2, 1fr);
@@ -406,6 +404,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .sd-hover-content p{
+        padding: 8px;
+    }
  
     .content-circle {
         width: 80px; 
@@ -415,9 +416,6 @@ body {
     .content-circle p{
         font-size: 10px;
 
-    }
-    .software-development-content h1{
-        padding-top: 15%;
     }
 
 }

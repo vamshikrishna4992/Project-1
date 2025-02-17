@@ -67,9 +67,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     max-width: 800px;
-    /* text-align: start; */
     margin: auto;
-    /* text-align: center; */
   }
   .ITStaffing-services-content p{
     max-width: 800px;
@@ -308,6 +306,9 @@ font-weight: 500;
         padding: 30px;
     }
     @media (max-width: 480px){
+        .ITStaffing-services-content h1{
+            font-size: 2rem;
+          }
         .it-approach-container{
           gap: 70px;
           padding-left: 8%;

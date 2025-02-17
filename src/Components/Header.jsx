@@ -31,9 +31,9 @@ const Header = () => {
   }, []);
   return (
     <>
-     
-      <div className="header-container">
       <Navbar />
+      <div className="header-container">
+
         <div className="hero-section">
           <h1>Forging businesses to grow without any hassle.</h1>
           <p className="description">

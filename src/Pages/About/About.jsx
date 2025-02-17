@@ -50,7 +50,7 @@ const About = () => {
       <div className="line"></div>
       {/* <div className="below-480"></div> */}
     <div>
-    {/* <hr className="line" /> */}
+    <hr className="line" />
     <h1>Revolutionize Your <br /> Business Practices.</h1>
     <p>Design. Develop. Digital. IT Staffing</p>
     </div>

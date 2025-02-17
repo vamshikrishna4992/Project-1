@@ -43,9 +43,10 @@ const About = () => {
   }, []);
   return (
    <>
+    <Navbar/>
      
     <div className="about-main-container">
-    <Navbar/>
+   
       <div className="about-hero-section">
       <div className="line"></div>
       {/* <div className="below-480"></div> */}

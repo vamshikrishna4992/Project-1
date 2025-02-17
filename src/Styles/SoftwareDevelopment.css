@@ -16,6 +16,12 @@ body {
     z-index: 2;
    
 }
+  .software-description {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #d1d1d1;
+    margin-left: 80px;
+  }
 
 .software-development-container::before {
     content: "";
@@ -26,7 +32,7 @@ body {
     height: 100%;
     background: url("software-bg.jpg") no-repeat center/cover;
     opacity: 0.25;
-    z-index: 1; 
+    z-index: -1; 
 
 }
 
@@ -249,28 +255,7 @@ body {
     
 }
 
-/* Cloud Approach Cards */
-/* .cloud-approach-sub {
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #d9d9d9;
-    color: black;
-    border-radius: 100%;
-    width: 50%;
-    height: 160px;
-    text-align: center;
-    padding: 50px;
-    margin: auto;
-    align-content: center;
-    transition: transform 0.3s ease-in-out;
-}
 
-.cloud-approach-sub:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    transform: scale(1.1);
-    z-index: 100;
-} */
 
 /* Hover Content */
 .SoftWare-content{
@@ -310,7 +295,9 @@ body {
         height: 75%;
     }
     .software-development-container {
-        height: 40vh;
+        height: 50vh;
+       align-items: center; 
+       align-content: center;
     }
     .software-development-content {
         width: 80%;
@@ -338,13 +325,13 @@ body {
     }
 }
 
-/* Ensure No Overlapping and Proper Padding */
+
 @media (max-width: 768px) {
-    .software-development-container {
-        height: 30vh;
-        padding-top: 10px; 
+    /* .software-development-container {
+        height: 0vh;
+        padding-top: 50px; 
         padding-bottom: 20px; 
-      }
+      } */
     .software-development-content {
       width: 90%;
       margin-left: auto;
@@ -386,10 +373,10 @@ body {
       font-size: 20px;
     }
   
-    .software-sec-coontainer {
+    /* .software-sec-coontainer {
       height: auto;
       padding: 5%;
-    }
+    */
   
     .content-circle-container {
         grid-template-columns: repeat(2, 1fr);
@@ -419,6 +406,7 @@ body {
 }
 
 @media (max-width: 480px) {
+ 
     .content-circle {
         width: 80px; 
         height: 80px; 
@@ -427,5 +415,9 @@ body {
     .content-circle p{
         font-size: 10px;
 
-}
+    }
+    .software-development-content h1{
+        padding-top: 15%;
+    }
+
 }

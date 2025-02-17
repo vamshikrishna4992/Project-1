@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import Navbar from "../../Components/Navbar";
 import gsap from "gsap";
 import "../../Styles/SoftwareDevelopment.css";
-import SoftWareDevelopmentimg from "../../assets/images/SoftWare-Development.png";
+import SoftWareDevelopmentimg from "../../assets/images/Soft-Ware-Development.png";
 import Footer from "../../Components/Footer";
 import WhyChoose from "../../Components/WhyChoose";
 import icon1 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/end to end development.png'; 
@@ -16,7 +16,7 @@ import Email from "../../Components/Email";
 const SoftwareDevelopment = () => {
   const textRef = useRef(null);
   const descriptionRef = useRef(null);
-  const buttonRef = useRef(null);
+  // const buttonRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
@@ -97,12 +97,12 @@ const UnlockSoftware = () => {
 
 const SoftwareApproach = () => {
   const content = [
-    { sdhoverContent:'Optimize server scalability, implement load balancing, and use efficient database indexing to handle higher traffic and data growth.',title: "Handle increased traffic and data", image: icon1 },
-    {sdhoverContent: 'Develop software with a tailored architecture, considering user requirements, scalability, and maintainability.', title: "Designed according to needs", image:icon2 },
-    { sdhoverContent: ' Ensure seamless data flow, API integration, and resource management for efficient software operations and scalability.',title: "flow of goods, information, resources", image: icon3},
-    { sdhoverContent: 'Implement modular design, microservices, and distributed systems to ensure seamless scalability and performance.',title: "scalable solutions", image: icon4 },
-    {sdhoverContent: 'Ensure the application adapts to all screen sizes, improves performance, and enhances user experience across devices.', title: "Fully responsive and optimized", image: icon5},
-    {sdhoverContent: 'Use debugging tools, automated testing, and code reviews to detect and resolve issues for a smooth user experience.',title: "Identify & fix bugs to ensure a flawless",image: icon6,},
+    { sdhoverContent:' Implement load balancing, and use efficient database indexing to handle higher traffic and data growth.',title: "Handle increased traffic and data", image: icon1 },
+    {sdhoverContent: 'Develop software with a tailored architecture, considering user requirements, and maintainability.', title: "Designed according to needs", image:icon2 },
+    { sdhoverContent: ' Ensure seamless data flow, API integration, and resource management for efficient software operations',title: "flow of goods, information, resources", image: icon3},
+    { sdhoverContent: 'Implement modular design, microservices, and distributed systems to ensure seamless performance.',title: "scalable solutions", image: icon4 },
+    {sdhoverContent: 'Ensure the application adapts to all screen sizes, enhances user experience across devices.', title: "Fully responsive and optimized", image: icon5},
+    {sdhoverContent: 'Use debugging tools, automated testing, and code reviews.resolve issues for a smooth user experience.',title: "Identify & fix bugs to ensure a flawless",image: icon6,},
   ];
 
   return (

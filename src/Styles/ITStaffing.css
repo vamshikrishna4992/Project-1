@@ -36,16 +36,12 @@ body {
 
 .ITStaffing-services-container{
     position: relative;
-  width: auto;
+  width: 100%;
   min-height: 60vh; 
   color: white;
-  display: flex;
-  justify-content: start; 
-  align-items: center; 
-  padding: 5vh 20px; 
-  z-index: 1;
-  text-align: start;
-  padding-top: 10px;
+  text-align: center;
+  padding-top: 20px;
+  z-index: 2;
 }
 
 .ITStaffing-services-container::before {
@@ -284,8 +280,19 @@ font-weight: 500;
 /* Responsive Adjustments */
 
 @media (max-width: 1024px) {
+    .ITStaffing-services-container{
+        height: 50vh;
+        align-items: center; 
+        align-content: center;
+    }
     .it-approach-container {
         grid-template-columns: repeat(2, 1fr);
+        padding-top: 1rem;
+    }
+    .it-approach-sub{
+        width: 55%; 
+        height: 85%;
+      
     }
 }
 
@@ -307,14 +314,15 @@ font-weight: 500;
           margin-left: 3px;
         }
         .it-approach-sub{
-            width: 90px; 
-            height: 90px;
+            width: 78%; 
+            height: 63%;
+           margin-left: -1.8rem;
         }
         .it-approach-sub p{
         font-size: 10px;
         }
         .it-hover-content p{
-            padding-top: 1.2rem;
+            padding-top: 2rem;
            
         }
         }

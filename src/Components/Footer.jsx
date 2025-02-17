@@ -77,7 +77,8 @@ const Footer = () => {
               </li>
               <li>
                 <a href="mailto:hr@krystalnest.com" className="contact-link">
-                  <FaEnvelope className="contact-icon" /><span className="contact-info">HR@krystalnest.com</span>
+                  <FaEnvelope className="contact-icon" /><span className="contact-info"> hr@krystalnestitsolutionsprivatelimted.co.in
+                  </span>
                 </a>
               </li>
               <li>

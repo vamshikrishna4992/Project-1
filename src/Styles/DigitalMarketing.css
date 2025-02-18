@@ -128,7 +128,7 @@ body {
     grid-template-columns: repeat(3,1fr);
     padding: 50px;
     gap: 30px;
-    row-gap: 100px;
+    /* row-gap: 100px; */
     width: 80%;
     margin: auto;
     align-self: center;
@@ -143,14 +143,18 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #d9d9d9;
     color: black;
-    border-radius: 100%;
-    width: 50%;
+    /* border-radius: 100%; */
+    /* width: 50%; */
+    border-radius: 50%;
+    width: 160px;;
     height: 160px;
     text-align: center;
-    padding: 50px;
+    /* padding: 50px; */
+    padding: 30px;
     margin: auto;
-    align-content: center;
+    align-items: center;
     transition: transform 0.3s ease-in-out;
+    align-content: center;
 }
 .dg-approach-sub:hover{
   visibility: hidden;
@@ -231,7 +235,9 @@ font-weight: 500;
 }
 .dg-hover-content p{
     font-size: 0.8rem;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
+    padding: 30px;
+    margin: auto;
     text-align: center;
     align-content: center;
 }
@@ -275,14 +281,22 @@ font-weight: 500;
     }
 
     .dg-approach-sub {
-        width: 73%;
+        /* width: 73%;
         height: 110%;
+        padding: 30px; */
+        width: 120px;
+        height: 120px;
         padding: 30px;
     }
     .dgContainer{
         display: flex;
         flex-direction: column-reverse;
       }
+      .dg-hover-content {
+        width: 90%;
+        height: 90%;
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 480px){
     .body{
@@ -297,8 +311,11 @@ font-weight: 500;
     font-size: 2rem;
   }
   .dg-approach-sub{
-    width: 80px;
-    height: 80px; 
+    /* width: 80px;
+    height: 80px;  */
+    width: 100px;
+    height: 100px;
+    padding: 15px;
 }
 .dg-approach-sub img{
     width: 50px;

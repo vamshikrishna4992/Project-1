@@ -309,7 +309,7 @@ body {
 .it-approach-sub p{
 /* font-weight: 500; */
 font-weight: 500;
-font-size: 13px;
+font-size: 14px;
 text-align: center;
 }
 
@@ -335,11 +335,6 @@ text-align: center;
         margin: auto; 
       
     }
-    .it-hover-content{
-        width: 140px;
-        height: 140px;
-        padding: 30px;
-    }
 }
 
 @media(max-width: 768px) {
@@ -359,11 +354,8 @@ text-align: center;
     .it-hover-content {
         width: 90%;
         height: 90%;
-        font-size: 0.7rem;
+        font-size: 10px;
     }
-    .it-approach-sub p{
-        font-size: 12px;
-        }
     @media (max-width: 480px){
         .ITStaffing-services-content h1{
             font-size: 2rem;

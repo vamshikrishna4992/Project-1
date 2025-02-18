@@ -1,115 +1,74 @@
-
-.Aboutcontainer {
-    display: flex;
-    margin: 0 0 0 0;
-    align-items: center;
-    /* justify-content: center; */
-    
-    width: 100%;
-    background-color: #000; 
-    color: #fff; 
-    flex-direction: row; 
-    font-family: 'Poppins', sans-serif;
-    height: auto;
-    border: 2px solid blue;
-}
-.our-mission{
-    text-align: start;
-    margin-left: 2%;
-    font-size: 32px;
+.our-mission {
+  background-color: black;
+  padding: 20px;
+  min-height: 70vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.Textcontent {
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    
-    border:2px solid  red;
-    margin-left: 0;
+.mission-header {
+  text-align: left;
+  font-size: 2rem;
+  /* margin-bottom: 20px; */
 }
 
-
-.Textcontent h3 {
-    font-size: 32px;
-    margin-bottom: 15px;
-    /* text-transform: uppercase; */
-    /* letter-spacing: 1.5px; */
+.mission-header span {
+  color: #e5a514;
 }
 
-.white-text {
-    color: white;
+.mission-content {
+  display: flex;
+  align-items: start; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; 
 }
 
-.gold-text {
-    color: #e5a514;
+.text-content {
+  flex: 1;
+  padding-right: 20px;
 }
 
-.VideoSection {
-    width: 50%;
-    max-width: 500px;
-    display: flex;
-    align-content: center;
-    justify-content: center; 
+.video-section {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
 }
 
-.react-player {
-    border-radius: 12px;
-    overflow: hidden;
+.video-section video {
+  width: 100%;
+  max-width: 500px;
+  height: 300px; 
 }
 
-
-@media (max-width: 1024px) {
-    .Aboutcontainer {
-        padding: 30px;
-        gap: 20px;
-    }
-
-    .Textcontent h3 {
-        font-size: 28px;
-    }
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .Aboutcontainer {
-        flex-direction: column; 
-        text-align: center;
-        gap: 20px;
-    }
+  .mission-header {
+    text-align: center;
+  }
 
-    .Textcontent {
-        width: 100%;
-    }
-    .Textcontent h3 {
-        /* font-size: 24px; */
-        text-align: center;
-    }
+  .our-mission {
+    min-height: auto;
+    padding: 40px 20px;
+  }
 
-    .Textcontent p {
-        /* font-size: 14px; */
-        text-align: center;
-    }
+  .mission-content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .VideoSection {
-        width: 100%;
-        max-width: 100%;
-    }
+  .video-section {
+    order: -1; 
+    margin-bottom: 20px;
+  }
 
-    .react-player {
-        width: 100%;
-        height: auto;
-    }
-}
+  .text-content {
+    text-align: center;
+    padding-right: 0;
+  }
 
-
-@media (max-width: 480px) {
-    .Textcontent h3 {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .Textcontent p {
-        font-size: 14px;
-        text-align: justify
-    }
+  .video-section video {
+    max-width: 90%; 
+  }
 }

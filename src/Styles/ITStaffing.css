@@ -88,6 +88,25 @@ body {
 
   .it-hover-content {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the element */
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #e5a514;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* position: absolute;
     top: 5%;
     left: 50%;
     transform: translate(-50%, 10px);
@@ -102,22 +121,23 @@ body {
     box-shadow: #e5a514;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; */
 }
 
 .it-approach-sub:hover .it-hover-content {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, 0);
+    /* transform: translate(-50%, 0); */
+    transform: translate(-50%, -50%);
     
 }
-.it-hover-content p{
+/* .it-hover-content p{
     font-size: 0.8rem;
     padding-top: 4rem;
     text-align: center;
     align-content: center;
 
-}
+} */
 
 
 
@@ -238,7 +258,7 @@ body {
     grid-template-columns: repeat(3,1fr);
     padding: 50px;
     gap: 30px;
-    row-gap: 100px;
+    /* row-gap: 100px; */
     width: 80%;
     margin: auto;
     align-self: center;
@@ -249,7 +269,7 @@ body {
     font-size: xx-large;
 }
 .it-approach-sub{
-    position: relative;
+    /* position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #d9d9d9;
     color: black;
@@ -260,17 +280,37 @@ body {
     padding: 50px;
     margin: auto;
     align-content: center;
+    transition: transform 0.3s ease-in-out; */
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d9d9d9;
+    color: black;
+    border-radius: 50%;
+    width: 160px;  /* Fixed width */
+    height: 160px; /* Fixed height */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.3s ease-in-out;
+    margin: auto;
 }
 .it-approach-sub:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .it-approach-sub img{
-    width: 80px;
-    height: 80px;
+    /* width: 80px;
+    height: 80px; */
+    width: 60px;
+    height: 60px;
 }
 .it-approach-sub p{
+/* font-weight: 500; */
 font-weight: 500;
+font-size: 13px;
+text-align: center;
 }
 
 
@@ -285,11 +325,14 @@ font-weight: 500;
     }
     .it-approach-container {
         grid-template-columns: repeat(2, 1fr);
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
     }
     .it-approach-sub{
-        width: 55%; 
-        height: 85%;
+        /* width: 55%; 
+        height: 85%; */
+        width: 140px;
+        height: 140px;
+        margin: auto; 
       
     }
 }
@@ -301,31 +344,47 @@ font-weight: 500;
     }
 
     .it-approach-sub {
-        width: 69%;
+        /* width: 69%;
         height: 105%;
-        padding: 30px;
+        padding: 30px; */
+        width: 130px;
+        height: 130px;
+        margin: auto; 
     }
+    .it-hover-content {
+        width: 90%;
+        height: 90%;
+        font-size: 0.7rem;
+    }
+    .it-approach-sub p{
+        font-size: 12px;
+        }
     @media (max-width: 480px){
         .ITStaffing-services-content h1{
             font-size: 2rem;
           }
         .it-approach-container{
-          gap: 70px;
+          /* gap: 70px;
           padding-left: 8%;
-          margin-left: 3px;
+          margin-left: 3px; */
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
         }
         .it-approach-sub{
-            width: 78%; 
+            /* width: 78%; 
             height: 63%;
-           margin-left: -1.8rem;
+           margin-left: -1.8rem; */
+           width: 110px;
+           height: 110px;
+           padding: 15px;
         }
         .it-approach-sub p{
         font-size: 10px;
         }
-        .it-hover-content p{
+        /* .it-hover-content p{
             padding-top: 2rem;
            
-        }
+        } */
         }
 }
 

@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import Navbar from "../../Components/Navbar";
 import gsap from "gsap";
 import "../../Styles/SoftwareDevelopment.css";
+import SoftWareDevelopmentimg from "../../assets/images/Soft-Ware-Development.png";
 import Footer from "../../Components/Footer";
 import WhyChoose from "../../Components/WhyChoose";
 import icon1 from '../../assets/images/Apporches/SOFTWARE DEVELOPMENT/end to end development.png'; 
@@ -15,7 +16,7 @@ import Email from "../../Components/Email";
 const SoftwareDevelopment = () => {
   const textRef = useRef(null);
   const descriptionRef = useRef(null);
-  const buttonRef = useRef(null);
+  // const buttonRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
@@ -71,7 +72,7 @@ const UnlockSoftware = () => {
         <div className="AboutSoftwareContainer">
           <img
             className="aboutusimg"
-            src="/development-1.png"
+            src={SoftWareDevelopmentimg}
             alt="About Us Image"
           />
           <div className="SoftwareTextContent">

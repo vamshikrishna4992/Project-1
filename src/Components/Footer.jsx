@@ -1,10 +1,26 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from 'react-icons/fa6'
 import "../Styles/Footer.css";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [contactText, setContactText] = useState("hr@krystalnestitsolutionsprivatelimted.co.in");
+ 
+  useEffect(()=>{
+    const updateContactInfo=()=>{
+      if(window.innerWidth <= 768){
+        setContactText('hr@krystalnest.com');
+      }else{
+        setContactText("hr@krystalnestitsolutionsprivatelimted.co.in")
+      }
+    }
+
+    updateContactInfo();
+    window.addEventListener("resize", updateContactInfo);
+    return ()=> window.removeEventListener("resize", updateContactInfo);
+  },[])
   return (
     <footer className="footer-container">
       <div className="footer-content">
@@ -76,8 +92,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:hr@krystalnest.com" className="contact-link">
-                  <FaEnvelope className="contact-icon" /><span className="contact-info">HR@krystalnest.com</span>
+                <a href="mailto:hr@krystalnestitsolutionsprivatelimted.co.in" className="contact-link">
+                  <FaEnvelope className="contact-icon" /><span className="contact-info contact-email">{contactText}</span>
                 </a>
               </li>
               <li>

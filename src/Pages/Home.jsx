@@ -1,12 +1,11 @@
 
 import Services from '../Components/Services.jsx';
 import Header from '../Components/Header.jsx'
-// import OurMission from '../Components/OurMission.jsx'
 import Footer from '../Components/Footer.jsx'
 import Email from '../Components/Email.jsx'
 import Testimonials from '../Components/Testimonials.jsx'
 import Project from '../Components/Project.jsx'
-import Dummy from '../Components/dummy.jsx';
+import OurMission from '../Components/OurMission.jsx';
 
 
 const Home = () => {
@@ -14,8 +13,7 @@ const Home = () => {
     <>
       <div>
         <Header/>
-        {/* <OurMission /> */}
-        <Dummy/>
+        <OurMission/>
         <Services/>
         <Project />
         <Testimonials /> 

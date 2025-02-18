@@ -227,12 +227,13 @@ body {
 }
 
 .circle-image {
-    /* width: 32%;
-    height: 32%;
+    /* 
     object-fit: cover;
     z-index: 2; */
-      width: 50%;
-    height: auto;
+      /* width: 50%;
+    height: auto; */
+    width: 32%;
+    height: 32%;
     object-fit: contain;
 }
 

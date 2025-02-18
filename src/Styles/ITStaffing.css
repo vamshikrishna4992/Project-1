@@ -335,6 +335,11 @@ text-align: center;
         margin: auto; 
       
     }
+    .it-hover-content{
+        width: 140px;
+        height: 140px;
+        padding: 30px;
+    }
 }
 
 @media(max-width: 768px) {

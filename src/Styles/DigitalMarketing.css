@@ -108,13 +108,13 @@ body {
     background-color: #000;
     font-size: xx-large;
 }
-.cloud-sec-coontainer{
+.dg-sec-coontainer{
     background-color: #000;
     height: auto;
     
 }
 
-/* **************Approch start***************** */
+/* *************Approch start**************** */
 
 
 .dg-approach-main-container{
@@ -128,7 +128,7 @@ body {
     grid-template-columns: repeat(3,1fr);
     padding: 50px;
     gap: 30px;
-    row-gap: 100px;
+    /* row-gap: 100px; */
     width: 80%;
     margin: auto;
     align-self: center;
@@ -138,24 +138,23 @@ body {
     color: #000;
     font-size: xx-large;
 }
-.dg-approach-sub {
+.dg-approach-sub{
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #d9d9d9;
     color: black;
+    /* border-radius: 100%; */
+    /* width: 50%; */
     border-radius: 50%;
-    width: 15vw; /* Adjusts dynamically based on viewport width */
-    max-width: 160px; /* Ensures it doesn't get too large */
-    height: 15vw; /* Matches width for perfect circle */
-    max-height: 160px;
+    width: 160px;;
+    height: 160px;
     text-align: center;
-    padding: 5%;
+    /* padding: 50px; */
+    padding: 30px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     transition: transform 0.3s ease-in-out;
+    align-content: center;
 }
 .dg-approach-sub:hover{
   visibility: hidden;
@@ -236,7 +235,9 @@ font-weight: 500;
 }
 .dg-hover-content p{
     font-size: 0.8rem;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
+    padding: 30px;
+    margin: auto;
     text-align: center;
     align-content: center;
 }
@@ -251,7 +252,7 @@ font-weight: 500;
 
 /* ******************Appoch end ***************** */
 /* Responsive Design */
-@media  (max-width: 1024px) {
+@media (max-width: 1024px) {
     .dg-services-container{
         height: 50vh;
         align-items: center;
@@ -279,18 +280,23 @@ font-weight: 500;
         grid-template-columns: repeat(2, 1fr);
     }
 
-        .dg-approach-sub {
-            width: 20vw;
-            max-width: 130px;
-            height: 20vw;
-            max-height: 130px;
-            padding: 10px;
-        }
-    
+    .dg-approach-sub {
+        /* width: 73%;
+        height: 110%;
+        padding: 30px; */
+        width: 120px;
+        height: 120px;
+        padding: 30px;
+    }
     .dgContainer{
         display: flex;
         flex-direction: column-reverse;
       }
+      .dg-hover-content {
+        width: 95%;
+        height: 95%;
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 480px){
     .body{
@@ -304,12 +310,12 @@ font-weight: 500;
   .dg-services-content h1{
     font-size: 2rem;
   }
-  .dg-approach-sub {
-    width: 25vw;
-    max-width: 100px;
-    height: 25vw;
-    max-height: 100px;
-    padding: 5px;
+  .dg-approach-sub{
+    /* width: 80px;
+    height: 80px;  */
+    width: 100px;
+    height: 100px;
+    padding: 15px;
 }
 .dg-approach-sub img{
     width: 50px;
@@ -320,10 +326,7 @@ font-weight: 500;
 }
 .dg-hover-content p{
     /* padding-top: 1.8rem; */
-    padding: 10px;
+    padding:10px;
 
 }
-  }
-
-
-
+}

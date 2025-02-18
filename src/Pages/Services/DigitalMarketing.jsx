@@ -61,7 +61,7 @@ const DigUnlock = () => {
   return (
     <>
 
-      <div className="cloud-sec-coontainer">
+      <div className="dg-sec-coontainer">
         <div className="cloud-head1">
           <h2>Driving Your Brand, Amplifying <span>Your Reach</span></h2>
         </div>

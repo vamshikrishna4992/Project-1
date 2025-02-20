@@ -1,0 +1,115 @@
+
+.Aboutcontainer {
+    display: flex;
+    margin: 0 0 0 0;
+    align-items: center;
+    /* justify-content: center; */
+    
+    width: 100%;
+    background-color: #000; 
+    color: #fff; 
+    flex-direction: row; 
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    border: 2px solid blue;
+}
+.our-mission{
+    text-align: start;
+    margin-left: 2%;
+    font-size: 32px;
+}
+
+.Textcontent {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    
+    border:2px solid  red;
+    margin-left: 0;
+}
+
+
+.Textcontent h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1.5px; */
+}
+
+.white-text {
+    color: white;
+}
+
+.gold-text {
+    color: #e5a514;
+}
+
+.VideoSection {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+
+.react-player {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+@media (max-width: 1024px) {
+    .Aboutcontainer {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .Textcontent h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Aboutcontainer {
+        flex-direction: column; 
+        text-align: center;
+        gap: 20px;
+    }
+
+    .Textcontent {
+        width: 100%;
+    }
+    .Textcontent h3 {
+        /* font-size: 24px; */
+        text-align: center;
+    }
+
+    .Textcontent p {
+        /* font-size: 14px; */
+        text-align: center;
+    }
+
+    .VideoSection {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .react-player {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .Textcontent h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .Textcontent p {
+        font-size: 14px;
+        text-align: justify
+    }
+}

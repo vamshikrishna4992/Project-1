@@ -1,0 +1,332 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1a1a2e);
+    color: white;
+  }
+  
+/* AboutUs Container */
+.dgContainer {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    margin: auto;
+    background-color: #000; 
+    color: #fff; 
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    /* flex-direction: row-reverse;  */
+    font-family: Arial, sans-serif;
+}
+
+/* Image Styling */
+.dgusimg {
+    /* width: 50%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(90%);
+    box-sizing: border-box; */
+    width: 60%;
+    height: auto;
+    max-height: 350px; 
+    object-fit: contain; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+/* .dgusimg:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+} */
+
+/* Text Content */
+.TextContent {
+    width: 50%;
+    text-align: left;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+.TextContent h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Gold Color */
+}
+
+/* Button Styling */
+.Aboutredirect {
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.Aboutredirect:hover {
+    background: linear-gradient(90deg, #ff9900, #ff6600);
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3);
+}
+
+
+
+
+
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.cloud-head1 h2 span{
+    color: gold;
+}
+.cloud-head1 h2{
+    text-align: center;
+    background-color: #000;
+    font-size: xx-large;
+}
+.dg-sec-coontainer{
+    background-color: #000;
+    height: auto;
+    
+}
+
+/* *************Approch start**************** */
+
+
+.dg-approach-main-container{
+    padding: 20px;
+    background-color: #e8b541;
+    font-weight: bold;
+}
+
+.dg-approach-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px;
+    gap: 30px;
+    /* row-gap: 100px; */
+    width: 80%;
+    margin: auto;
+    align-self: center;
+}
+.dg-approach-main-container h2{
+    text-align: center;
+    color: #000;
+    font-size: xx-large;
+}
+.dg-approach-sub{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d9d9d9;
+    color: black;
+    /* border-radius: 100%; */
+    /* width: 50%; */
+    border-radius: 50%;
+    width: 160px;;
+    height: 160px;
+    text-align: center;
+    /* padding: 50px; */
+    padding: 30px;
+    margin: auto;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    align-content: center;
+}
+.dg-approach-sub:hover{
+  visibility: hidden;
+}
+.dg-approach-sub img{
+    width: 80px;
+    height: 80px;
+}
+.dg-approach-sub p{
+font-weight: 500;
+}
+
+  .dg-services-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1; /* Ensure text stays above */
+    
+}
+
+.dg-services-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/dg-bg.jpeg") no-repeat center/cover;
+    opacity: 0.25;
+    z-index: -1; 
+}
+  .dg-services-content {
+    width: 60%;
+    margin-top: 8%;
+    margin-left: 20%;
+    text-align: center;
+  }
+  
+  .dg-services-content h1{
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 800px;
+    margin: auto;
+  }
+  .dg-services-content p{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .dg-hover-content {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: #e5a514;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dg-approach-sub:hover .dg-hover-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    
+}
+.dg-hover-content p{
+    font-size: 0.8rem;
+    /* padding-top: 4rem; */
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+  
+  .cloud-description {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #d1d1d1;
+    margin-left: 80px;
+  }
+
+
+/* ******************Appoch end ***************** */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .dg-services-container{
+        height: 50vh;
+        align-items: center;
+        align-content: center;
+    }
+    .dg-approach-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .AboutContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutusimg {
+        width: auto;
+    }
+
+    .TextContent {
+        width: 100%;
+    }
+    .dg-approach-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dg-approach-sub {
+        /* width: 73%;
+        height: 110%;
+        padding: 30px; */
+        width: 120px;
+        height: 120px;
+        padding: 30px;
+    }
+    .dgContainer{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .dg-hover-content {
+        width: 95%;
+        height: 95%;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 480px){
+    .body{
+        width: auto;
+    }
+  .dg-approach-container{
+    gap: 50px;
+    padding-left: 2rem;
+    margin-left: 3px;
+  }
+  .dg-services-content h1{
+    font-size: 2rem;
+  }
+  .dg-approach-sub{
+    /* width: 80px;
+    height: 80px;  */
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+}
+.dg-approach-sub img{
+    width: 50px;
+    height: 50px;
+}
+.dg-approach-sub p{
+    font-size: 10px;
+}
+.dg-hover-content p{
+    /* padding-top: 1.8rem; */
+    padding:10px;
+
+}
+}

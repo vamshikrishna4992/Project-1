@@ -1,0 +1,452 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1a1a2e);
+    color: white;
+}
+
+.software-development-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 2;
+   
+}
+  .software-description {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #d1d1d1;
+    margin-left: 80px;
+  }
+
+.software-development-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("software-bg.jpg") no-repeat center/cover;
+    opacity: 0.25;
+    z-index: -1; 
+
+}
+
+.software-development-content {
+    width: 60%;
+    margin-top: 8%;
+    margin-left: 20%;
+    text-align: center;
+    
+}
+
+.software-development-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 800px;
+    margin: auto;
+}
+
+.software-development-content p {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* ****************** Unlock start ********************* */
+
+/* AboutUs Container */
+.AboutSoftwareContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+    opacity: 0;
+    height: 40vh;
+    animation: fadeIn 1s ease-in-out forwards;
+    flex-direction: row-reverse;
+    font-family: Arial, sans-serif;
+    z-index: 3; 
+
+
+}
+
+
+.aboutusimg {
+    width: 60%;
+    height: auto;
+    max-height: 350px; 
+    object-fit: contain; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.aboutusimg:hover {
+    transform: scale(1.0);
+}
+
+/* Text Content */
+.SoftwareTextContent {
+    width: 50%;
+    text-align: left;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    z-index: 2;
+}
+
+.SoftwareTextContent h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffcc00; 
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.software-head1 h2 span {
+    color: gold;
+}
+
+.software-head1 h2 {
+    text-align: center;
+    background-color: #000;
+    font-size: xx-large;
+}
+
+.software-sec-coontainer {
+    background-color: #000;
+    padding: 1%;
+    height: auto;
+}
+
+/* ****************** Unlock end ********************* */
+
+/* **************Approach start***************** */
+
+.why{
+    background-color:#e8b541 ;
+}
+.why h2{
+    text-align: center;
+}
+.why div{
+    text-align: left;
+}
+
+.software-approach-contariner {
+    background-color: #e8b541;
+    padding: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+.software-approach-content {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    z-index: 4; 
+}
+
+.content-circle-container {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px;
+    row-gap: 30px;
+    width: 80%;
+    margin: auto;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 1; 
+    height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 1fr));  
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+}
+.content-circle:hover {
+    transform: scale(1.1);
+    /* box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 25px;  */
+}
+.content-circle {
+    /* width: 43%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d9d9d9; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+    z-index: 1;  */
+    width: 140px; 
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d9d9d9; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.content-circle:hover{
+    visibility: hidden;
+}
+
+.circle-image {
+    /* 
+    object-fit: cover;
+    z-index: 2; */
+      /* width: 50%;
+    height: auto; */
+    width: 32%;
+    height: 32%;
+    object-fit: contain;
+}
+
+.circle-content {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    z-index: 2; 
+  
+}
+/* .content-circle:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: scale(1.1);
+    z-index: 100;
+} */
+.sd-hover-content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: #e5a514;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.sd-hover-content p{
+    font-size: 0.7rem;
+    text-align: center;
+    align-content: center;
+    padding-top: 1.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.content-circle:hover .sd-hover-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    
+}
+
+
+
+/* Hover Content */
+.SoftWare-content{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: rgba(225, 165, 0, 1);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.content-circle:hover .SoftWare-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    
+}
+
+
+/* ***************Responsive************ */
+
+
+@media  (max-width: 1024px) {
+    .AboutSoftwareContainer {
+        gap: 20px;
+        padding: 40px;
+        display: flex;
+        height: 75%;
+    }
+    .software-development-container {
+        height: 50vh;
+       align-items: center; 
+       align-content: center;
+    }
+    .software-development-content {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .aboutusimg {
+        width: 60%;
+        height: auto;
+    }
+
+    .SoftwareTextContent {
+        width: 60%;
+    }
+    .content-circle-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .content-circle {
+        width: 140px;
+        height: 140px;
+        padding: 30px;
+    }
+}
+@media (max-width: 768px) {
+    /* .software-development-container {
+        height: 0vh;
+        padding-top: 50px; 
+        padding-bottom: 20px; 
+      } */
+    .software-development-content {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .software-development-content h1 {
+      font-size: 2rem;
+    }
+  
+    .software-development-content p {
+      font-size: 1rem;
+    }
+    .AboutSoftwareContainer {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 20px; 
+        height: auto; 
+        gap: 20px; 
+    }
+    .aboutusimg {
+        width: 60%;
+        height: auto;
+    }
+    .sd-hover-content p{
+        font-size: 0.5rem;
+        padding-top: 1rem;
+    }
+   
+  
+    .SoftwareTextContent {
+      width: 100%;
+      text-align: center;
+
+    }
+  
+    .SoftwareTextContent h3 {
+      font-size: 20px;
+    }
+  
+    /* .software-sec-coontainer {
+      height: auto;
+      padding: 5%;
+    } */
+  
+    .content-circle-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        /* height: auto;
+        row-gap: 20px; */
+        /* column-gap: 20px; */
+    
+    }
+  
+    .content-circle {
+        /* width: 150px; 
+        height: 150px; 
+        padding: 30px; */
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+
+    }
+  
+    .circle-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .circle-content {
+      font-size: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .sd-hover-content p{
+        padding: 8px;
+    }
+ 
+    .content-circle {
+        width: 80px; 
+        height: 80px; 
+
+    }
+    .content-circle p{
+        font-size: 7px;
+
+    }
+
+}

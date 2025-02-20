@@ -1,0 +1,28 @@
+import Footer from "../../Components/Footer"
+import Navbar from "../../Components/Navbar"
+import Project from "../../Components/Project";
+import Email from "../../Components/Email.jsx"
+import '../../Styles/Project1.css';
+
+
+const Project1 = () => {
+  return (
+  <>
+    <div className="project-nav">
+    <Navbar/>
+    </div>
+    <div className="project-nav-contaniner">
+      
+      <div className="project-banner">
+        <h1>Our Projects</h1>
+        <p>Turning Ideas into Reality with Code.</p>
+      </div>
+      <Project/>
+      <Email/>
+       <Footer/>
+    </div>
+  </>
+  )
+}
+
+export default Project1

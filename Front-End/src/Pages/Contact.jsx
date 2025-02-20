@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../Styles/Contact.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from '../Components/Navbar.jsx';
 import Footer from '../Components/Footer.jsx';
 import Email from "../Components/Email.jsx";
@@ -19,7 +21,6 @@ const Contact = () => {
   const [areaCode, setAreaCode] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
 
   const handleAreaCodeChange = (e) => {
     const value = e.target.value.replace(/\D/g, '');
@@ -44,7 +45,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setMessage("");
 
     const contactData = {
       firstName: formData.firstName,
@@ -57,7 +57,6 @@ const Contact = () => {
     };
 
     try {
-      // Add the API call here
       const response = await fetch("http://localhost:5000/contact", {
         method: "POST",
         headers: {
@@ -67,7 +66,15 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        setMessage("Message sent successfully!");
+        toast.success("Response sent successfully!", {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "dark",
+        });
         setFormData({
           firstName: '',
           lastName: '',
@@ -80,10 +87,26 @@ const Contact = () => {
         setAreaCode('');
         setPhoneNumber('');
       } else {
-        setMessage("Failed to send message. Please try again.");
+        toast.error("Failed to send Response. Please try again.", {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "dark",
+        });
       }
     } catch (error) {
-      setMessage("Error connecting to the server.");
+      toast.error("Error connecting to the server.", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "dark",
+      });
     } finally {
       setLoading(false);
     }
@@ -92,6 +115,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <Navbar />
+      <ToastContainer/>
       <div className="contact-banner">
         <h1 className="banner-title">Contact us</h1>
         <p className="banner-description">We value your interest! Contact us to explore how our solutions and services can benefit you.</p>
@@ -202,8 +226,6 @@ const Contact = () => {
             {loading ? "Submitting..." : "Submit"}
           </button>
         </form>
-
-        {message && <p className="form-message">{message}</p>}
       </div>
 
       <div className="map-container">

@@ -4,6 +4,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram } from 
 import { FaXTwitter } from 'react-icons/fa6'
 import "../Styles/Footer.css";
 import { useEffect, useState } from "react";
+import KN from  '../assets/images/Apporches/KN.png'
 
 const Footer = () => {
   const [contactText, setContactText] = useState("hr@krystalnestitsolutionsprivatelimted.co.in");
@@ -27,7 +28,7 @@ const Footer = () => {
         <div className="footer-left">
           <div className="footer-brand">
             <Link to="/">
-              <img src="KN.png" alt="KN Logo" className="logo" />
+              <img src={KN} alt="KN Logo" className="logo" />
             </Link>
             <h1>
               <Link to="/" className="brand-name">

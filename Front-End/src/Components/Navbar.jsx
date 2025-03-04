@@ -61,6 +61,7 @@ import React, { useState } from "react";
 import "../Styles/Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import KN from '../assets/images/Apporches/KN.png'
 
 
 const Navbar = () => {
@@ -82,7 +83,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}> 
-          <img src="./KN.png" alt="logo" />
+          <img src={KN} alt="logo" />
         </Link>
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}> 
           <p>KrystalNest</p>

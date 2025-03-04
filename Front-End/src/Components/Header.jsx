@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom'
 import "../Styles/Header.css";
-import gsap from 'gsap'
+import gsap from 'gsap';
 
 
 const Header = () => {

@@ -57,7 +57,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch("https://supabase.com/dashboard/project/jblmgmqngnibmadrfedh/editor/29294?schema=public", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

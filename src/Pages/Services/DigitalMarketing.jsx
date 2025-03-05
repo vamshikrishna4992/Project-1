@@ -89,7 +89,7 @@ const DgApproach = () => {
     { icon: analytics, content: 'Google Analytics', hoverContent: 'Track, analyze, and optimize your website’s performance with real-time insights' },
     { icon: email, content: 'Email Marketing', hoverContent: 'Engage customers and boost conversions with targeted email campaigns' },
     { icon: graphic, content: 'Graphic Designing', hoverContent: 'Create stunning visuals that enhance branding and engage your audience. ' },
-    { icon: seo, content: 'Search Engine Optimization', hoverContent: 'Improve website visibility and rank higher on search engines to drive organic traffic' },
+    { icon: seo, content: 'Search Engine Optimization', hoverContent: 'Improve website visibility and rank higher on search engines.' },
     { icon: social, content: 'Social Media Marketing', hoverContent: 'Grow your brand and engage your audience through strategic social media campaigns' }
 
   ]

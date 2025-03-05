@@ -315,7 +315,7 @@ body {
 /* ***************Responsive************ */
 
 
-@media (max-width: 1024px) {
+@media  (max-width: 1024px) {
     .AboutSoftwareContainer {
         gap: 20px;
         padding: 40px;

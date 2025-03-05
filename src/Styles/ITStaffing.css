@@ -289,7 +289,7 @@ body {
     width: 160px;  /* Fixed width */
     height: 160px; /* Fixed height */
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;

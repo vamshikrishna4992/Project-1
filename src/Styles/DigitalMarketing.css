@@ -304,8 +304,9 @@ font-weight: 500;
     }
   .dg-approach-container{
     gap: 50px;
-    padding-left: 2rem;
-    margin-left: 3px;
+    padding-left: 1.5rem;
+    margin-left: -10px;
+    
   }
   .dg-services-content h1{
     font-size: 2rem;
@@ -316,6 +317,10 @@ font-weight: 500;
     width: 100px;
     height: 100px;
     padding: 15px;
+    align-items: center;
+    justify-content: center;
+  
+  
 }
 .dg-approach-sub img{
     width: 50px;

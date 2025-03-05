@@ -421,8 +421,8 @@ body {
 } 
 @media (max-width: 480px){
     .cloud-circle {
-        width: 50%;
-        height: 60%;
+        width: 100px;
+        height: 100px;
     }
     .cloud-circle p{
         font-size: 10px;

@@ -286,8 +286,8 @@ body {
     background-color: #d9d9d9;
     color: black;
     border-radius: 50%;
-    width: 160px;  /* Fixed width */
-    height: 160px; /* Fixed height */
+    width: 140px;  /* Fixed width */
+    height: 140px; /* Fixed height */
     text-align: center;
     padding: 30px;
     display: flex;
@@ -296,6 +296,8 @@ body {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     margin: auto;
+
+    
 }
 .it-approach-sub:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -365,18 +367,25 @@ text-align: center;
           padding-left: 8%;
           margin-left: 3px; */
           grid-template-columns: repeat(2, 1fr);
-          gap: 20px;
+          gap: 30px;
+          margin-left: -19px;
+         
+    
         }
         .it-approach-sub{
             /* width: 78%; 
             height: 63%;
            margin-left: -1.8rem; */
-           width: 110px;
-           height: 110px;
+           width: 100px;
+           height: 100px;
            padding: 15px;
+           /* margin-left: -10px; */
+           justify-content: center;
+           align-items: center;
+          
         }
         .it-approach-sub p{
-        font-size: 10px;
+        font-size: 9px;
         }
         /* .it-hover-content p{
             padding-top: 2rem;

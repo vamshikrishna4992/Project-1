@@ -421,11 +421,11 @@ body {
 } 
 @media (max-width: 480px){
     .cloud-circle {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
     .cloud-circle p{
-        font-size: 10px;
+        font-size: 8px;
     }
    .cloud-hover-content p{
         padding-top: 2.2rem;
